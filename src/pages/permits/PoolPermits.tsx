@@ -27,10 +27,10 @@ export default function PoolPermits() {
             Updated: October 30, 2026
           </time>
         </div>
-        <h1 className="text-3xl sm:text-4xl font-bold font-serif text-slate-900" itemprop="name">
+        <h1 className="text-3xl sm:text-4xl font-bold font-serif text-slate-900" itemProp="name">
           {poolPermits.title}
         </h1>
-        <p className="text-base text-slate-600 leading-relaxed" itemprop="description">
+        <p className="text-base text-slate-600 leading-relaxed" itemProp="description">
           Requirements for private residential swimming pools, hot tubs, safety fencing enclosures, and self-closing gate inspections in the Town of Maplewood.
         </p>
       </header>

@@ -26,10 +26,10 @@ export default function ByLaws() {
             Updated: October 30, 2026
           </time>
         </div>
-        <h1 className="text-3xl sm:text-4xl font-bold font-serif text-slate-900" itemprop="name">
+        <h1 className="text-3xl sm:text-4xl font-bold font-serif text-slate-900" itemProp="name">
           Town of Maplewood Municipal By-laws
         </h1>
-        <p className="text-base text-slate-600 leading-relaxed" itemprop="description">
+        <p className="text-base text-slate-600 leading-relaxed" itemProp="description">
           Official repository of municipal by-laws enacted by Maplewood Town Council. These authoritative records govern noise control, property standards, winter parking, pool safety, open burning, and animal care.
         </p>
       </header>

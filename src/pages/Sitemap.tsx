@@ -1,5 +1,4 @@
 import { NavLink } from 'react-router-dom';
-import townData from '../data/townData.json';
 import SEOHead from '../components/SEOHead';
 
 export default function Sitemap() {

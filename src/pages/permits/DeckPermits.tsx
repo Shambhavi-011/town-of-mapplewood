@@ -26,10 +26,10 @@ export default function DeckPermits() {
             Updated: October 30, 2026
           </time>
         </div>
-        <h1 className="text-3xl sm:text-4xl font-bold font-serif text-slate-900" itemprop="name">
+        <h1 className="text-3xl sm:text-4xl font-bold font-serif text-slate-900" itemProp="name">
           {deckPermits.title}
         </h1>
-        <p className="text-base text-slate-600 leading-relaxed" itemprop="description">
+        <p className="text-base text-slate-600 leading-relaxed" itemProp="description">
           Comprehensive guide to determining when a municipal building permit is required for residential outdoor decks, zoning setbacks, structural drawings, and inspections.
         </p>
       </header>

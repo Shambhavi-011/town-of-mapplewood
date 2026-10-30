@@ -27,10 +27,10 @@ export default function RoadsMaintenance() {
             Updated: October 30, 2026
           </time>
         </div>
-        <h1 className="text-3xl sm:text-4xl font-bold font-serif text-slate-900" itemprop="name">
+        <h1 className="text-3xl sm:text-4xl font-bold font-serif text-slate-900" itemProp="name">
           {roadsMaintenance.title}
         </h1>
-        <p className="text-base text-slate-600 leading-relaxed" itemprop="description">
+        <p className="text-base text-slate-600 leading-relaxed" itemProp="description">
           Reporting guidelines for road damage, potholes, streetlighting outages, and municipal infrastructure repairs across the Town of Maplewood.
         </p>
       </header>

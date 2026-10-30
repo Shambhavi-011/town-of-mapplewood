@@ -35,10 +35,10 @@ export default function Contact() {
             Updated: October 30, 2026
           </time>
         </div>
-        <h1 className="text-3xl sm:text-4xl font-bold font-serif text-slate-900" itemprop="name">
+        <h1 className="text-3xl sm:text-4xl font-bold font-serif text-slate-900" itemProp="name">
           Contact the Town of Maplewood
         </h1>
-        <p className="text-base text-slate-600 leading-relaxed" itemprop="description">
+        <p className="text-base text-slate-600 leading-relaxed" itemProp="description">
           Reach our municipal administrative offices, citizen service center, departmental directors, and 24/7 emergency dispatch services.
         </p>
       </header>
@@ -48,7 +48,7 @@ export default function Contact() {
         <div className="p-5 bg-blue-50 rounded-xl border border-blue-200 space-y-2" data-contact="physical-address">
           <div className="text-2xl">🏛️</div>
           <h2 className="font-bold text-blue-950 text-base">Town Hall Location</h2>
-          <p className="text-xs text-blue-900 leading-relaxed" itemprop="address">
+          <p className="text-xs text-blue-900 leading-relaxed" itemProp="address">
             {townInfo.address}
           </p>
           <div className="text-[11px] text-blue-800 pt-2 border-t border-blue-200 font-medium">
@@ -60,7 +60,7 @@ export default function Contact() {
           <div className="text-2xl">📞</div>
           <h2 className="font-bold text-slate-900 text-base">Citizen Phone Lines</h2>
           <div className="text-xs text-slate-700 space-y-1">
-            <div><strong>General:</strong> <span itemprop="telephone">{townInfo.phone}</span></div>
+            <div><strong>General:</strong> <span itemProp="telephone">{townInfo.phone}</span></div>
             <div><strong>311 Hotline:</strong> <span>{townInfo.serviceQueue311}</span></div>
           </div>
           <div className="text-[11px] text-slate-500 pt-2 border-t border-slate-200">
