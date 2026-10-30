@@ -1,0 +1,28 @@
+# Robots.txt for Town of Maplewood (maplewood.fictionaltown.com)
+# Designed for high-fidelity indexing by municipal AI crawlers & search engines
+
+User-agent: *
+Allow: /
+
+# Canonical Sitemaps & Machine-readable Manifests
+Sitemap: https://maplewood.fictionaltown.com/sitemap.xml
+
+# LLM Scrapers & AI Chatbots (Wayhall, Claude, OpenAI, Perplexity)
+User-agent: WayhallBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Direct AI Context Index
+# See https://maplewood.fictionaltown.com/llms.txt for plain-text municipal knowledge base
+

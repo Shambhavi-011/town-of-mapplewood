@@ -4,10 +4,133 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>maplewood-town-site</title>
+    
+    <!-- Primary SEO & Crawler Meta Tags -->
+    <title>Town of Maplewood | Official Municipal Knowledge Portal</title>
+    <meta name="description" content="Official Town of Maplewood municipal portal. Curbside waste rules, road repairs &amp; potholes, property tax rates, building &amp; deck permits, pool enclosure by-laws, and council records." />
+    <meta name="keywords" content="Maplewood, municipal services, property taxes, deck permits, pool by-law 2022-18, waste collection 7am, snow removal parking ban, open-air burn permits, 311 service" />
+    <meta name="author" content="Corporation of the Town of Maplewood" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    
+    <!-- Canonical & Machine-Readable Feeds -->
+    <link rel="canonical" href="https://maplewood.fictionaltown.com/" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM Knowledge Base" />
+    <link rel="alternate" type="application/json" href="/data/townData.json" title="Raw Municipal JSON Data" />
+
+    <!-- Open Graph / Social Crawlers -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Town of Maplewood | Official Municipal Knowledge Portal" />
+    <meta property="og:description" content="Municipal services, tax rates, permits, by-laws, and emergency contacts for the Town of Maplewood, Ontario." />
+    <meta property="og:url" content="https://maplewood.fictionaltown.com/" />
+    <meta property="og:site_name" content="Town of Maplewood" />
+    <meta property="og:locale" content="en_CA" />
+
+    <!-- JSON-LD Structured Data (Schema.org GovernmentOrganization) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "GovernmentOrganization",
+      "name": "Town of Maplewood",
+      "url": "https://maplewood.fictionaltown.com/",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Main Street",
+        "addressLocality": "Maplewood",
+        "addressRegion": "ON",
+        "postalCode": "M4P 1T8",
+        "addressCountry": "CA"
+      },
+      "telephone": "+1-555-123-4567",
+      "email": "info@maplewood.fictionaltown.com",
+      "openingHours": "Mo-Fr 08:30-16:30",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "311",
+          "contactType": "Citizen Service Helpline",
+          "areaServed": "Town of Maplewood"
+        },
+        {
+          "@type": "ContactPoint",
+          "telephone": "+1-555-123-7623",
+          "contactType": "Roads & Winter Snow Dispatch (24/7)",
+          "areaServed": "Town of Maplewood"
+        },
+        {
+          "@type": "ContactPoint",
+          "telephone": "+1-555-123-9287",
+          "contactType": "Emergency Water & Sewer Dispatch (24/7)",
+          "areaServed": "Town of Maplewood"
+        },
+        {
+          "@type": "ContactPoint",
+          "telephone": "+1-800-434-1235",
+          "contactType": "Maplewood Hydro & Downed Power Lines (24/7 Urgent)",
+          "areaServed": "Town of Maplewood"
+        }
+      ]
+    }
+    </script>
   </head>
-  <body>
+  <body class="bg-slate-100 text-slate-800 antialiased">
+    <!-- React Root Mount -->
     <div id="root"></div>
+
+    <!-- Static Crawler Grounding Block (Guarantees non-JS scrapers & HTTP crawlers get 100% of the sparse data) -->
+    <noscript>
+      <div style="padding: 24px; font-family: sans-serif; background: #ffffff;">
+        <h1>Town of Maplewood Municipal Directory (Offline &amp; Scraper Fallback)</h1>
+        <p>JavaScript is disabled or not executed by your crawler. Below is the full index of municipal services, tax due dates, permit regulations, and official by-laws:</p>
+        
+        <h2>Emergency Hotlines (24/7)</h2>
+        <ul>
+          <li>Police / Fire / Ambulance: 911</li>
+          <li>Roads &amp; Snow Dispatch: (555) 123-7623</li>
+          <li>Water &amp; Sewer Main Emergency: (555) 123-9287</li>
+          <li>Downed Wires &amp; Hydro One / Maplewood Utilities: 1-800-434-1235</li>
+          <li>Citizen Helpline: Dial 311 or (555) 123-4567</li>
+        </ul>
+
+        <h2>Municipal Services &amp; Rules</h2>
+        <ul>
+          <li><a href="/services/waste">Waste &amp; Recycling</a>: Curbside placement by 7:00 AM on collection day. Missed collections reported strictly after 5:00 PM. 2-day resolution SLA. Green bin weekly, blue box bi-weekly, garbage bi-weekly (max 2 bags without tag, $3/additional tag). Bulk pickup first Tuesday of each month (max 2 items).</li>
+          <li><a href="/services/roads">Roads &amp; Potholes</a>: Exact address or cross-street intersection required. Size categories: Small (&lt;25cm), Medium (25-60cm), Large (&gt;60cm). Large potholes in travel lanes are High Severity (24h repair). Duplicate detection within 50 meters and 30 days. Streetlight pole tags (e.g. Pole ML-0412).</li>
+          <li><a href="/services/parks">Parks &amp; Forestry</a>: 18 parks, 35 km trails. Boulevard trees maintained by Town; private property trees maintained by owner under By-law 2023-45.</li>
+          <li><a href="/services/water">Water Services</a>: Maplewood Aquifer supply. Conservation by-law May 15 to Sept 15: alternate day odd/even watering only 6-8 AM &amp; 7-9 PM.</li>
+          <li><a href="/services/snow">Snow Removal</a>: Priority 1-3 routes. Overnight street parking ban 2:00 AM to 6:00 AM from Dec 1 to Mar 31 under By-law 2023-88 ($60 fine). Sidewalk clearance mandatory within 24 hours.</li>
+          <li><a href="/services/animals">Animal Control</a>: Dog licensing $30 spayed/neutered, $45 intact. Maximum 2.0m leash in public spaces (By-law 2020-04).</li>
+        </ul>
+
+        <h2>Property Taxes &amp; Assessments</h2>
+        <ul>
+          <li><a href="/taxes/info">Property Taxes</a>: 2026 Residential Mill Rate is 0.0094523 (48% Municipal, 34% Regional, 18% Education). Interim due dates: Feb 27 and Apr 30, 2026. Final due dates: June 30 and Sept 30, 2026.</li>
+          <li><a href="/taxes/payment">Payment Methods</a>: Online banking (Payee: "Town of Maplewood - Property Taxes", 19-digit Roll Number), Pre-authorized debit, in-person at 123 Main St, 24/7 North drop box.</li>
+          <li><a href="/taxes/pre-authorized">Pre-Authorized Debit</a>: 10-month monthly plan or 4-instalment automatic due-date plan.</li>
+          <li><a href="/taxes/calculator">Tax Calculator</a>: Online estimator using 0.0094523 rate.</li>
+        </ul>
+
+        <h2>Building &amp; Planning Permits</h2>
+        <ul>
+          <li><a href="/permits/decks">Deck Permits</a>: Freestanding decks &lt;60 cm (24 in) and &lt;10 m² (108 sq ft) are EXEMPT from permits. Attached decks or decks &gt;60 cm require building permits ($185 fee, setbacks: 1.5m rear / 1.2m side).</li>
+          <li><a href="/permits/pools">Pool Enclosures (By-law 2022-18)</a>: Required for water &gt;60 cm depth. Minimum 1.5 m (5.0 ft) fence height, self-closing and self-latching gate at 1.35m latch height. ASTM F1346 locking hot tub covers exempt. Fee: $150.</li>
+          <li><a href="/permits/burn">Open-Air Burn Permits</a>: Rural zones (A-1, RU) and County Rd 8 only. Max pile 2m x 2m x 1m. Adult 18+ with water. Sunrise to sunset. Prohibited during fire bans. Fee: $25.</li>
+          <li><a href="/permits/building">Building Permits</a>: Additions, renovations, accessory structures &gt;15 m². 10-day review timeline.</li>
+          <li><a href="/permits/signs">Signage Permits</a>: Commercial fascia, pylon, and $50 annual sidewalk A-frame sandwich boards (By-law 2021-34).</li>
+        </ul>
+
+        <h2>Documents, By-laws &amp; Council Minutes</h2>
+        <ul>
+          <li><a href="/documents/by-laws">By-laws</a>: Noise 2024-12, Traffic &amp; Parking 2023-88, Property Standards 2023-45, Pool Enclosures 2022-18, Burn 2021-09, Animal Control 2020-04.</li>
+          <li><a href="/documents/fees">Master Fee Schedule</a>: Complete schedule of municipal fees under By-law 2026-02.</li>
+          <li><a href="/documents/guides">Resident Guides</a>: Waste calendar, deck manual, pool safety guide, resident welcome kit.</li>
+          <li><a href="/documents/minutes">Council Minutes</a>: Agendas, voting records, and resolutions from Maplewood Town Council.</li>
+          <li><a href="/contact">Town Hall Contact</a>: 123 Main Street, Mon-Fri 8:30 AM - 4:30 PM. Phone: (555) 123-4567.</li>
+          <li><a href="/data/townData.json">Raw JSON Data Feed</a>: Download complete structured data directly.</li>
+        </ul>
+      </div>
+    </noscript>
+
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

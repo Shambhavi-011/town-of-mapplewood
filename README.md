@@ -79,16 +79,23 @@ Every route is structured using strict semantic HTML (`<article>`, `<header>`, `
 
 ## 🤖 AI Scraper & Wayhall Integration Design
 
-This application implements specific architectural guidelines to support AI ingestion:
+This application implements multi-layered scraping architecture to support both headless browser bots and lightweight HTTP-only scrapers (Python `requests`, BeautifulSoup, Scrapy, curl, Cheerio):
 
-1. **Centralized Grounding Data (`src/data/townData.json` & `townData.ts`):**  
-   All statutory numbers, SLA hours, fees, phone numbers, and by-law identifiers are maintained in a typed, single source of truth.
-2. **Strict Semantic Markup:**  
-   Every page is wrapped in `<article>` with `<header>`, `<section>`, and sequential heading tags (`<h1>`, `<h2>`, `<h3>`), allowing web crawlers and vector indexing pipelines to cleanly parse document hierarchy and chunk text contextually.
-3. **Exact Fact Citations:**  
-   Clear numeric values (e.g. *7:00 AM*, *5:00 PM*, *50 meters*, *30 days*, *1.5 meters*, *0.0094523*) prevent AI hallucination during citizen inquiries.
-4. **Interactive Wayhall Indicator:**  
-   A persistent floating assistant indicator on the layout showcases resident AI chat readiness across English, French, and Spanish in compliance with Wayhall Phase 1 Epic 3 (`US-12`).
+1. **Pre-rendered Static Snapshot in `index.html`:**  
+   Non-JavaScript crawlers immediately receive a clean semantic directory with all 22+ page links, contact numbers, and core rules (7:00 AM waste cutoff, 5:00 PM reporting threshold, 1.5m pool enclosure rule, deck permit exemptions, 0.0094523 tax mill rate).
+2. **Standard Machine-Readable Feeds:**  
+   - [`/robots.txt`](public/robots.txt): Explicitly grants crawling access to `WayhallBot`, `GPTBot`, `ClaudeBot`, `PerplexityBot`, and general web crawlers.
+   - [`/sitemap.xml`](public/sitemap.xml): Full XML sitemap covering all 22+ routes with `<lastmod>`, `<changefreq>`, and `<priority>`.
+   - [`/llms.txt`](public/llms.txt): Modern AI knowledge base manifest summarizing every topic with direct section links.
+   - [`/data/townData.json`](public/data/townData.json): Static JSON endpoint allowing scrapers to fetch structured municipal facts in 1 request.
+3. **Dynamic SEO & Schema.org Metadata ([`SEOHead.tsx`](src/components/SEOHead.tsx)):**  
+   Automatically injects per-page `<title>`, `<meta name="description">`, OpenGraph tags, canonical links, and Schema.org `GovernmentService` / `GovernmentOrganization` JSON-LD scripts on route navigation.
+4. **Section Anchors & Microdata Attributes:**  
+   Sections include direct IDs (`#missed-collection`, `#pothole-criteria`, `#permit-rules`, `#pool-by-law`, `#due-dates`) and microdata attributes (`data-kb-topic`, `data-sla`, `data-fee`, `data-bylaw-reference`) enabling Wayhall to cite specific section URLs in compliance with Epic 2 (`US-08`).
+5. **Dedicated HTML Site Map ([`/sitemap`](src/pages/Sitemap.tsx)):**  
+   Provides a clean, hierarchical index of all pages with sparse key-fact summaries for deep web crawl discovery.
+6. **Centralized Grounding Data (`src/data/townData.json` & `townData.ts`):**  
+   Single source of truth ensuring exact numeric values prevent AI hallucination.
 
 ---
 
@@ -104,19 +111,28 @@ maplewood-town-site/
 ├── tailwind.config.js
 ├── postcss.config.js
 ├── README.md
+├── public/
+│   ├── robots.txt                  # Directives for Web & AI Crawlers (WayhallBot, GPTBot, ClaudeBot)
+│   ├── sitemap.xml                 # Canonical XML sitemap with 22+ municipal endpoints
+│   ├── llms.txt                    # Standard LLM/AI scraper plain-text knowledge manifest
+│   └── data/
+│       ├── townData.json           # Public static JSON endpoint for programmatic scraping
+│       └── knowledge-base.json
 └── src/
     ├── main.tsx
     ├── App.tsx                     # Top-level Router configuration
     ├── index.css                   # Tailwind directives (@tailwind base/components/utilities)
     ├── App.css                     # Minimal root styling
     ├── components/
-    │   └── Layout.tsx              # Civic header, emergency bar, mega-nav, breadcrumbs & footer
+    │   ├── Layout.tsx              # Civic header, emergency bar, mega-nav, breadcrumbs & footer
+    │   └── SEOHead.tsx             # Dynamic metadata, canonical links & Schema.org JSON-LD injector
     ├── data/
     │   ├── townData.json           # Comprehensive municipal grounding dataset
     │   └── townData.ts             # Typed TypeScript exports
     └── pages/
         ├── Home.tsx                # Municipal portal dashboard
         ├── Contact.tsx             # Town Hall & departmental directory
+        ├── Sitemap.tsx             # Comprehensive HTML Site Map & Crawler Index
         ├── services/
         │   ├── WasteRecycling.tsx
         │   ├── RoadsMaintenance.tsx

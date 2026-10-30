@@ -1,0 +1,263 @@
+{
+  "townInfo": {
+    "name": "Town of Maplewood",
+    "domain": "maplewood.fictionaltown.com",
+    "motto": "Growing Together in Community and Nature",
+    "address": "123 Main Street, Maplewood, ON M4P 1T8",
+    "phone": "(555) 123-4567",
+    "serviceQueue311": "311 (within town limits) or (555) 311-MAPL",
+    "email": "info@maplewood.fictionaltown.com",
+    "hours": "Monday to Friday: 8:30 AM – 4:30 PM (Closed statutory holidays)",
+    "emergencyHotlines": {
+      "policeFireAmbulance": "911",
+      "roadsEmergency": "(555) 123-7623 (24/7 Dispatch)",
+      "waterSewerEmergency": "(555) 123-9287 (24/7 Water Dispatch)",
+      "hydroDownedWires": "Maplewood Hydro & Electric: 1-800-434-1235 (24/7 Urgent Line)"
+    }
+  },
+  "services": {
+    "wasteRecycling": {
+      "title": "Curbside Waste, Recycling & Organics Collection",
+      "curbsidePlacementRule": "All waste receptacles, blue recycling boxes, and green organic bins must be placed curbside by 7:00 AM on your scheduled collection day, and no earlier than 6:00 PM the evening prior.",
+      "missedCollectionPolicy": {
+        "cutoffTime": "Do not report a missed collection before 5:00 PM on your scheduled collection day. Collection trucks and municipal crews operate until 5:00 PM.",
+        "lateSetoutNotice": "If your bin was placed at the curb after 7:00 AM, crews are not required to return, and collection will take place on your next scheduled collection date.",
+        "serviceLevelAgreement": "Verified missed collections reported after 5:00 PM are resolved within 2 business days."
+      },
+      "schedules": {
+        "organicsGreenBin": "Weekly collection year-round. Accepted: fruit and vegetable scraps, meat, bones, coffee grounds, soiled paper towels, pizza boxes.",
+        "recyclingBlueBox": "Bi-weekly collection alternating with paper/cardboard and plastics/cans. Accepted: rigid plastics #1-#7, clean metal cans, paper, glass bottles.",
+        "garbage": "Bi-weekly collection. Maximum limit of 2 standard bags/bins per household. Additional bags require a municipal Bag Tag ($3.00 each)."
+      },
+      "bulkPickup": {
+        "schedule": "First Tuesday of each calendar month.",
+        "rules": "Maximum 2 large items per household per month (e.g., sofas, appliances with Freon removed and certified tag). Mattresses must be fully encased in sealed plastic wrap."
+      },
+      "hazardousWaste": "Household Hazardous Waste (HHW) depot located at 450 Transfer Rd. Open Saturdays 9:00 AM – 3:00 PM. Never place batteries, paint, motor oil, or propane tanks in curbside bins."
+    },
+    "roadsMaintenance": {
+      "title": "Roads, Potholes & Infrastructure Maintenance",
+      "potholeReporting": {
+        "reportingRequirements": "Reports must provide the exact street address or closest cross-street intersection (e.g., '12 Maple Street' or 'Main St and Oak Ave'), along with the lane direction (Northbound, Southbound, Eastbound, Westbound) and size estimation.",
+        "sizeGuide": [
+          { "size": "Small", "dimension": "Under 25 cm (10 inches) diameter, depth under 5 cm", "sla": "Inspected within 5 business days" },
+          { "size": "Medium", "dimension": "25 cm to 60 cm (10 to 24 inches) diameter, moderate depth", "sla": "Inspected within 3 business days" },
+          { "size": "Large", "dimension": "Over 60 cm (24 inches) diameter or severe depth", "sla": "Inspected within 24 hours (High severity)" }
+        ],
+        "travelLaneRule": "Any large pothole situated in an active travel lane or school zone is flagged High Severity for immediate crew dispatch.",
+        "duplicateDetectionThreshold": "Existing reports within 50 meters submitted within the last 30 days are automatically consolidated into existing work orders to prevent duplicate crew dispatches."
+      },
+      "urgentSafetyProtocols": {
+        "downedWiresNotice": "CRITICAL HAZARD: If you observe downed power lines, stay back at least 10 meters (33 feet). Call Maplewood Hydro at 1-800-434-1235 or 911 immediately. Do NOT submit via standard web ticket.",
+        "fallenTreeOnRoad": "If a fallen tree is actively obstructing vehicle traffic or touching overhead utility lines, call 911 and the 24/7 Road Dispatch at (555) 123-7623."
+      },
+      "streetlights": {
+        "reportingProcess": "Provide the 6-digit pole identification tag (e.g., 'Pole ML-0412') located at eye level on the metal pole. Typical repair timeline is 5 to 7 business days."
+      }
+    },
+    "parksForestry": {
+      "title": "Parks, Public Trails & Urban Forestry",
+      "parksInventory": "Maplewood manages 18 public municipal parks, 35 kilometers of multi-use trails, 4 splash pads, 8 sports fields, and 1 dedicated off-leash dog park.",
+      "treeMaintenance": {
+        "municipalResponsibility": "The Town maintains all boulevard trees located within the municipal right-of-way (typically within 4.5 meters of the curb). Tree trimming near primary power lines is coordinated with electric utilities.",
+        "privateTrees": "Trees situated entirely on private property are the legal responsibility of the property owner under By-law 2023-45 (Property Standards)."
+      },
+      "parkIssueReporting": "Report damaged park benches, playground equipment defects, fallen branches, trail washouts, or graffiti. High-priority safety hazards are addressed within 24 hours."
+    },
+    "waterServices": {
+      "title": "Municipal Drinking Water, Sewer & Quality",
+      "waterSource": "Drinking water is sourced from the Maplewood Aquifer and treated at the Central Water Purification Plant. Rigorous testing is conducted daily in accordance with provincial drinking water regulations.",
+      "conservationByLaw": {
+        "effectivePeriod": "May 15 to September 15 annually.",
+        "rules": "Lawn and garden watering permitted only on alternate days. Even-numbered municipal addresses may water on even calendar days; odd-numbered addresses on odd calendar days. Permitted hours are 6:00 AM – 8:00 AM and 7:00 PM – 9:00 PM only."
+      },
+      "emergencyWaterMainBreaks": "Call (555) 123-9287 immediately for water main breaks, sudden drop in municipal water pressure, or discolored water notices."
+    },
+    "snowRemoval": {
+      "title": "Winter Road Maintenance & Snow Clearing",
+      "priorityPlowingSchedule": [
+        { "priority": "Priority 1 (Arterial & Transit Routes)", "threshold": "Cleared within 4 to 6 hours after 5 cm of snowfall accumulation. Includes Main St, County Rd 8, emergency hospital routes." },
+        { "priority": "Priority 2 (Collector & School Zones)", "threshold": "Cleared within 8 hours following snowfall completion. Includes neighborhood feeder roads and bus zones." },
+        { "priority": "Priority 3 (Residential Streets & Cul-de-sacs)", "threshold": "Cleared within 16 to 24 hours after 8 cm accumulation. Residential routes are plowed only once Priority 1 and 2 are fully maintained." }
+      ],
+      "overnightParkingBan": "Under By-law 2023-88, on-street parking is strictly prohibited on all municipal streets between 2:00 AM and 6:00 AM from December 1 through March 31 to allow winter maintenance equipment to operate safely. Violations carry a $60 fine and possible vehicle towing.",
+      "sidewalkClearingByLaw": "Residential and commercial property owners are required by municipal by-law to clear snow and ice from adjacent public sidewalks within 24 hours following the end of snowfall."
+    },
+    "animalControl": {
+      "title": "Animal Services, Pet Licensing & Wildlife",
+      "licensingRequirements": "All domestic dogs residing in Maplewood must be licensed annually before March 31. Cats must possess a valid microchip or collar tag.",
+      "fees": {
+        "spayedNeuteredDog": "$30.00 / year",
+        "intactDog": "$45.00 / year",
+        "replacementTag": "$10.00"
+      },
+      "leashByLaw": "Under By-law 2020-04, dogs must be kept on a physical leash no longer than 2.0 meters (6.5 feet) at all times in public spaces, parks, and sidewalks, except within the fenced perimeter of Maplewood Bark Park (42 River Valley Rd).",
+      "lostFoundPets": "Stray or found domestic animals are sheltered at the Maplewood Regional Animal Care Center. Contact Animal Control Dispatch at (555) 123-4567 ext. 240."
+    }
+  },
+  "taxes": {
+    "propertyTaxes": {
+      "title": "Property Tax Assessments & Mill Rates",
+      "taxYear": 2026,
+      "residentialTaxRate": 0.0094523,
+      "distributionBreakdown": {
+        "municipalPortion": "48% (Local roads, fire protection, parks, recreation, snow clearing, waste)",
+        "regionalPortion": "34% (Public health, transit, emergency medical services, social housing)",
+        "educationPortion": "18% (Local school boards as mandated by the province)"
+      },
+      "instalmentDueDates": [
+        { "bill": "Interim Bill - Instalment 1", "dueDate": "February 27, 2026" },
+        { "bill": "Interim Bill - Instalment 2", "dueDate": "April 30, 2026" },
+        { "bill": "Final Bill - Instalment 1", "dueDate": "June 30, 2026" },
+        { "bill": "Final Bill - Instalment 2", "dueDate": "September 30, 2026" }
+      ],
+      "latePaymentPenalty": "Interest and penalty of 1.25% per month is added on the first day of each calendar month following default, in accordance with the Municipal Act."
+    },
+    "paymentMethods": [
+      {
+        "method": "Online Banking",
+        "instructions": "Add 'Town of Maplewood - Property Taxes' as a payee through your online banking institution. Enter your 19-digit Assessment Roll Number without spaces or dashes."
+      },
+      {
+        "method": "Pre-Authorized Payment (PAP) Plans",
+        "instructions": "Enroll in automatic withdrawals on the 1st of each month (10-month plan) or on statutory instalment due dates (4-instalment plan). No processing fee."
+      },
+      {
+        "method": "In-Person at Town Hall",
+        "instructions": "Visit Customer Service Counter at 123 Main Street. Accepted: Debit/Interac, Cash, Cheque, Money Order. Open Mon-Fri 8:30 AM – 4:30 PM."
+      },
+      {
+        "method": "24/7 Secure Drop Box",
+        "instructions": "Located outside the North Entrance of Town Hall (123 Main St). Cheques and stubs only; do not deposit cash."
+      },
+      {
+        "method": "Mail-in Cheque",
+        "instructions": "Payable to 'Town of Maplewood'. Mail to: Revenue & Taxation, 123 Main Street, Maplewood, ON M4P 1T8."
+      }
+    ],
+    "preAuthorizedPlans": {
+      "plan10Month": "Monthly withdrawals deducted on the 1st day of each month from January to October. Accounts must be in good standing (zero arrears) to qualify.",
+      "planInstalment": "Automatic withdrawal processed on the exact instalment due dates: February 27, April 30, June 30, and September 30.",
+      "enrollmentDeadline": "Applications must be received at least 14 calendar days prior to the first requested withdrawal date along with a VOID cheque or direct debit form."
+    }
+  },
+  "permits": {
+    "deckPermits": {
+      "title": "Residential Deck Construction Permits",
+      "permitRequirementRules": {
+        "exemptDecks": "A building permit is NOT required if the deck meets ALL of the following criteria: (1) It is completely freestanding (not structurally attached to the dwelling), (2) The walking surface does not exceed 60 cm (24 inches / 2.0 feet) above finished grade at any point, and (3) The total surface area is under 10 square meters (108 square feet). Note: Exemption from a permit does NOT exempt the structure from zoning setbacks.",
+        "mandatoryPermitDecks": "A building permit IS required if the deck: (1) Is physically attached to the house or any other primary building, regardless of height, OR (2) Has a finished walking surface higher than 60 cm (24 inches) above ground, OR (3) Forms part of an access or exit path required by building code."
+      },
+      "zoningSetbacks": "Minimum rear-yard setback: 1.5 meters from property line. Minimum interior side-yard setback: 1.2 meters from property line.",
+      "guardrailRequirements": "Walking surface between 60 cm and 180 cm above ground requires a minimum 90 cm (36 inches) high guardrail. Walking surface higher than 180 cm (6 feet) requires a minimum 107 cm (42 inches) guardrail with non-climbable vertical spindles spaced no wider than 10 cm (3.9 inches) apart.",
+      "applicationRequirements": [
+        "Completed Residential Permit Application Form",
+        "Dimensioned Site Plan (scaled drawing showing property boundaries, existing structures, and exact setbacks to new deck)",
+        "Construction Framing Drawings (post sizing, pier footings, beam spans, joist dimensions, railing design)",
+        "Permit Fee: $185.00 flat fee (covers plan review and two mandatory inspections: Footings prior to concrete pour, and Final completion)."
+      ]
+    },
+    "poolPermits": {
+      "title": "Swimming Pool Enclosure Permits (By-Law 2022-18)",
+      "mandatoryPermitRule": "Under Municipal By-law 2022-18, a Pool Enclosure Permit must be issued by the Chief Building Official BEFORE any excavation, installation, or water filling begins for any private swimming pool, hot tub, or decorative water pond capable of holding water deeper than 60 cm (24 inches). This applies equally to in-ground, above-ground, temporary, and inflatable pools.",
+      "fenceEnclosureSpecifications": {
+        "minimumHeight": "Minimum 1.5 meters (5.0 feet / 60 inches) continuous vertical height measured from outside grade.",
+        "climbingPrevention": "Fences must have no horizontal rails or climbable features with spacing under 1.2 meters. Chain-link mesh diamonds must not exceed 38 mm (1.5 inches).",
+        "gateRequirements": "Every access gate through the enclosure must be equipped with a self-closing spring device and a self-latching mechanism positioned on the inside face of the gate at least 1.35 meters (53 inches) above ground level. Gates must swing outwards away from the pool area.",
+        "hotTubExemption": "A hot tub with a locking rigid safety cover bearing ASTM F1346 certification is exempt from the fence enclosure requirement provided the cover is kept locked at all times when not in use."
+      },
+      "permitFee": "$150.00 flat review fee. Includes pre-excavation site inspection and final enclosure safety inspection."
+    },
+    "burnPermits": {
+      "title": "Open-Air Burn Permits & Fire Regulations",
+      "zoningEligibility": "Open-air burning is strictly permitted ONLY on properties zoned Rural (A-1, A-2, RU) or properties along County Road 8 and designated agricultural corridors. Open-air burning is strictly prohibited in urban residential subdivisions, townhome complexes, and commercial zones.",
+      "permitConditions": [
+        "Permit valid for the calendar year of issue; fee is $25.00 per season.",
+        "Burning permitted only between sunrise and sunset. Fires must be completely extinguished 30 minutes before sunset.",
+        "Burn pile dimensions must not exceed 2.0 meters by 2.0 meters with a maximum height of 1.0 meter.",
+        "Burn site must maintain a minimum 15-meter clearance from all structures, overhead utility lines, and property boundaries.",
+        "A responsible adult (18 years or older) must supervise the fire at all times with active extinguishing equipment (charged hose or pressurized water pump) on site.",
+        "Prohibited materials: tires, plastics, asphalt shingles, pressure-treated lumber, garbage, industrial waste, or hazardous chemicals."
+      ],
+      "fireBanRule": "All open-air burning permits are automatically revoked during municipal, county, or provincial Fire Bans declared by the Maplewood Fire Chief. Failure to adhere results in a minimum $500 fine plus firefighting emergency response cost recovery ($485/hour per apparatus)."
+    },
+    "buildingPermits": {
+      "title": "General Building & Construction Permits",
+      "scope": "Required for new home construction, additions, finished basements with secondary suites, structural alterations, plumbing additions, demolitions, and accessory buildings (sheds, garages) greater than 15 square meters (161 square feet).",
+      "reviewTimelines": "Residential applications are reviewed within 10 business days of complete submission. Commercial/industrial applications within 15 business days in accordance with the Ontario Building Code."
+    },
+    "signagePermits": {
+      "title": "Commercial & Temporary Signage Permits",
+      "regulations": "Governed by By-law 2021-34. Commercial storefront fascia signs, pylon signs, and temporary promotional banners require municipal permits. Portable A-frame (sandwich board) signs require an annual $50 sidewalk permit and must maintain a minimum 1.8-meter unobstructed pedestrian pathway."
+    }
+  },
+  "documents": {
+    "byLaws": [
+      {
+        "number": "2024-12",
+        "title": "Noise Control By-law",
+        "summary": "Prohibits construction noise between 7:00 PM and 7:00 AM on weekdays, and before 9:00 AM on Sundays and statutory holidays. Persistent canine barking and excessive amplified music prohibited at all times.",
+        "effectiveDate": "January 15, 2024"
+      },
+      {
+        "number": "2023-88",
+        "title": "Traffic & Winter Parking By-law",
+        "summary": "Establishes municipal speed limits, prohibited heavy truck routes, and the annual overnight winter parking ban (2:00 AM – 6:00 AM, Dec 1 – Mar 31).",
+        "effectiveDate": "November 1, 2023"
+      },
+      {
+        "number": "2023-45",
+        "title": "Property Standards By-law",
+        "summary": "Mandates maintenance of residential and commercial premises, long grass/weed control (maximum 20 cm height), exterior structural safety, and derelict vehicle prohibitions.",
+        "effectiveDate": "July 1, 2023"
+      },
+      {
+        "number": "2022-18",
+        "title": "Pool Enclosure By-law",
+        "summary": "Enforces perimeter safety fencing, minimum 1.5 m height, self-closing/latching gates for all residential pools and ponds deeper than 60 cm.",
+        "effectiveDate": "May 1, 2022"
+      },
+      {
+        "number": "2021-09",
+        "title": "Open-Air Burning By-law",
+        "summary": "Regulates rural outdoor fires, safety clearances, burn pile limits, and emergency fire bans across the township.",
+        "effectiveDate": "March 20, 2021"
+      },
+      {
+        "number": "2020-04",
+        "title": "Animal Care & Leash By-law",
+        "summary": "Sets mandatory pet licensing, maximum 2m leash length on public grounds, stoop-and-scoop requirements, and dangerous dog classifications.",
+        "effectiveDate": "April 10, 2020"
+      }
+    ],
+    "feeSchedules": [
+      { "category": "Building & Planning", "item": "Residential Deck Permit", "fee": "$185.00" },
+      { "category": "Building & Planning", "item": "Pool Enclosure Permit", "fee": "$150.00" },
+      { "category": "Building & Planning", "item": "Accessory Structure (> 15 m²)", "fee": "$220.00 base + $1.10/m²" },
+      { "category": "Building & Planning", "item": "New Single Detached Dwelling", "fee": "$1,850.00 base + $14.50/m²" },
+      { "category": "Fire & Emergency", "item": "Annual Open-Air Burn Permit (Rural)", "fee": "$25.00 / season" },
+      { "category": "Fire & Emergency", "item": "Commercial Fire Inspection Certificate", "fee": "$120.00" },
+      { "category": "Clerk & Licensing", "item": "Dog License (Spayed/Neutered)", "fee": "$30.00 / year" },
+      { "category": "Clerk & Licensing", "item": "Dog License (Intact)", "fee": "$45.00 / year" },
+      { "category": "Clerk & Licensing", "item": "Marriage License", "fee": "$135.00" },
+      { "category": "Clerk & Licensing", "item": "Commissioning of Oaths", "fee": "$25.00" },
+      { "category": "Finance & Taxation", "item": "Tax Certificate", "fee": "$55.00" },
+      { "category": "Finance & Taxation", "item": "Duplicate Tax Bill / Statement", "fee": "$15.00" },
+      { "category": "Public Works", "item": "Curbside Bag Tag (Excess Garbage)", "fee": "$3.00 / tag" },
+      { "category": "Public Works", "item": "Entrance / Culvert Permit", "fee": "$175.00" }
+    ],
+    "guides": [
+      { "title": "2026 Curbside Waste & Recycling Calendar", "format": "PDF", "size": "1.4 MB", "description": "Complete zone schedule for garbage, recycling, and green organics collection." },
+      { "title": "Backyard Deck Construction Manual", "format": "PDF", "size": "2.8 MB", "description": "Illustrated guide to setbacks, spans, footing depth, and building code standards." },
+      { "title": "Residential Pool Safety & Enclosure Handbook", "format": "PDF", "size": "1.9 MB", "description": "Clear guidelines for 1.5m fencing, gate hardware, and site inspection prep." },
+      { "title": "Town of Maplewood New Resident Welcome Kit", "format": "PDF", "size": "3.5 MB", "description": "Everything new residents need to know about municipal services, taxes, and bylaws." }
+    ],
+    "councilMinutes": [
+      { "meetingDate": "October 14, 2026", "type": "Regular Council Meeting", "status": "Approved", "highlights": "Approved 2027 Capital Infrastructure Budget, passed By-law 2026-44 on park trail lighting." },
+      { "meetingDate": "September 23, 2026", "type": "Regular Council Meeting", "status": "Approved", "highlights": "Reviewed Winter Road Maintenance Plan, endorsed Wayhall municipal AI chatbot initiative." },
+      { "meetingDate": "September 9, 2026", "type": "Planning & Zoning Committee", "status": "Approved", "highlights": "Public hearing on downtown revitalization zoning amendment and secondary suite provisions." },
+      { "meetingDate": "August 26, 2026", "type": "Regular Council Meeting", "status": "Approved", "highlights": "Authorized water treatment plant membrane filtration upgrade and aquifer conservation report." }
+    ]
+  }
+}
+

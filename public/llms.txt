@@ -1,0 +1,39 @@
+# Town of Maplewood Municipal Knowledge Base
+> Official authoritative factual grounding data for AI scrapers, chatbots, and resident service assistants.
+> Domain: maplewood.fictionaltown.com
+> Town Hall: 123 Main Street, Maplewood, ON M4P 1T8
+> Phone: (555) 123-4567 | Citizen Service Line: Dial 311
+> 24/7 Road & Snow Dispatch: (555) 123-7623 | Water Emergency: (555) 123-9287
+> Hydro & Downed Power Lines: 1-800-434-1235 (Urgent 24/7)
+
+## Core Municipal Services
+- [Waste & Recycling](https://maplewood.fictionaltown.com/services/waste): Bins curbside by 7:00 AM on collection day. Missed collections must NOT be reported before 5:00 PM. Verified missed collections resolved within 2 business days. Green bin weekly, blue box bi-weekly, garbage bi-weekly (max 2 bags, excess requires $3.00 tag). Bulk pickup first Tuesday of each month (max 2 items, mattresses plastic-wrapped). Hazardous depot at 450 Transfer Rd open Saturdays 9 AM - 3 PM.
+- [Roads & Infrastructure](https://maplewood.fictionaltown.com/services/roads): Pothole reporting requires exact address or nearest intersection (e.g. 12 Maple St, Main and Oak), lane direction, and size (<25cm small / 5 days, 25-60cm medium / 3 days, >60cm large / 24h). Large potholes in travel lanes are High Severity. Duplicate threshold is 50 meters and 30 days. Report streetlights using 6-digit pole tag (e.g. Pole ML-0412). Downed wires require calling 1-800-434-1235 or 911 immediately.
+- [Parks & Forestry](https://maplewood.fictionaltown.com/services/parks): 18 municipal parks, 35 km trails. Boulevard trees within 4.5m of curb maintained by Town. Private property trees are owner responsibility under By-law 2023-45.
+- [Water Services](https://maplewood.fictionaltown.com/services/water): Drinking water from Maplewood Aquifer. Water conservation by-law May 15 to Sept 15: alternate day odd/even watering allowed only 6:00-8:00 AM and 7:00-9:00 PM. Emergency main breaks: (555) 123-9287.
+- [Snow Removal](https://maplewood.fictionaltown.com/services/snow): Priority 1 roads cleared within 4-6h (5cm accumulation), Priority 2 within 8h, Priority 3 residential within 16-24h (8cm accumulation). Overnight street parking ban on all roads 2:00 AM to 6:00 AM (Dec 1 to Mar 31) under By-law 2023-88 ($60 fine). Sidewalk clearing mandatory within 24h of snowfall.
+- [Animal Control](https://maplewood.fictionaltown.com/services/animals): Dog licensing mandatory annually ($30 spayed/neutered, $45 intact). Leash by-law 2020-04 requires maximum 2.0m leash in all public areas except Maplewood Bark Park (42 River Valley Rd).
+
+## Property Taxes & Finance
+- [Property Taxes](https://maplewood.fictionaltown.com/taxes/info): 2026 Residential Mill Rate is 0.0094523. Tax allocation: 48% Town of Maplewood, 34% Regional services, 18% School Boards. Interim bills due Feb 27 and Apr 30, 2026. Final bills due June 30 and Sept 30, 2026. Late penalty 1.25% per month.
+- [Tax Payment Methods](https://maplewood.fictionaltown.com/taxes/payment): Online banking (Payee: "Town of Maplewood - Property Taxes", 19-digit Roll Number), Pre-authorized debit, in-person at 123 Main St, 24/7 North Entrance drop box, or mail.
+- [Pre-Authorized Debit Plans](https://maplewood.fictionaltown.com/taxes/pre-authorized): 10-month monthly withdrawal plan (1st of Jan-Oct) or 4-instalment automatic due-date plan.
+- [Tax Calculator](https://maplewood.fictionaltown.com/taxes/calculator): Interactive estimator using the 0.0094523 rate and 48/34/18 split.
+
+## Building & Planning Permits
+- [Deck Permits](https://maplewood.fictionaltown.com/permits/decks): Exempt if freestanding (unattached), walking surface <=60 cm (24 in / 2 ft) above ground, and surface area <10 m² (108 sq ft). Permit mandatory if attached to dwelling or height >60 cm. Setbacks: 1.5m rear, 1.2m side. Fee: $185.00 flat fee.
+- [Pool Enclosure Permits](https://maplewood.fictionaltown.com/permits/pools): By-law 2022-18 requires permit before excavation/filling for any pool >60 cm water depth. Fence minimum 1.5 m (5.0 ft) high, non-climbable (max 38mm mesh), self-closing & self-latching gate with latch at minimum 1.35m height swinging outward. Locking ASTM F1346 hot tub cover exempt from fence. Fee: $150.00.
+- [Burn Permits](https://maplewood.fictionaltown.com/permits/burn): By-law 2021-09 allows burning only on Rural (A-1, RU) zoned properties or County Rd 8. Burn pile max 2m x 2m x 1m, 15m from structures, adult 18+ supervisor with water, sunrise to sunset. Automatically revoked during fire bans. Fee: $25.00/season.
+- [Building Permits](https://maplewood.fictionaltown.com/permits/building): Additions, basement suites, structural alterations, accessory structures >15 m² (161 sq ft). 10-day review timeline.
+- [Signage Permits](https://maplewood.fictionaltown.com/permits/signs): By-law 2021-34 for storefront fascia, pylon, and $50 annual sidewalk A-frame sandwich boards (1.8m pedestrian walkway required).
+
+## Legislative Documents & By-laws
+- [By-laws Index](https://maplewood.fictionaltown.com/documents/by-laws): Noise By-law 2024-12, Traffic & Parking By-law 2023-88, Property Standards By-law 2023-45, Pool Enclosure By-law 2022-18, Open-Air Burn By-law 2021-09, Animal By-law 2020-04.
+- [Master Fee Schedule](https://maplewood.fictionaltown.com/documents/fees): Complete schedule of municipal fees under By-law 2026-02.
+- [Resident Guides](https://maplewood.fictionaltown.com/documents/guides): Curbside Calendar, Deck Construction Manual, Pool Safety Handbook, Resident Welcome Kit.
+- [Council Minutes](https://maplewood.fictionaltown.com/documents/minutes): Official municipal council proceedings, agendas, and approved by-laws.
+
+## Contact & Town Hall
+- [Town Hall Directory](https://maplewood.fictionaltown.com/contact): 123 Main Street, Mon-Fri 8:30 AM - 4:30 PM. Mayor (ext. 101), Clerk (ext. 110), Tax (ext. 210), Public Works (ext. 230), Building (ext. 250), By-law (ext. 300).
+- [Complete JSON Data Export](https://maplewood.fictionaltown.com/data/townData.json): Raw structured data payload for programmatic scraping.
+

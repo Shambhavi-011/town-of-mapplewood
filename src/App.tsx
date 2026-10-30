@@ -27,6 +27,7 @@ import Guides from './pages/documents/Guides';
 import CouncilMinutes from './pages/documents/CouncilMinutes';
 
 import Contact from './pages/Contact';
+import Sitemap from './pages/Sitemap';
 
 function App() {
   return (
@@ -63,8 +64,9 @@ function App() {
           <Route path="documents/guides" element={<Guides />} />
           <Route path="documents/minutes" element={<CouncilMinutes />} />
 
-          {/* Contact */}
+          {/* Contact & Sitemap */}
           <Route path="contact" element={<Contact />} />
+          <Route path="sitemap" element={<Sitemap />} />
         </Route>
       </Routes>
     </BrowserRouter>

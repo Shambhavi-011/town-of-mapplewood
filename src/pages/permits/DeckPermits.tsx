@@ -1,31 +1,53 @@
 import townData from '../../data/townData.json';
+import SEOHead from '../../components/SEOHead';
 
 export default function DeckPermits() {
   const { deckPermits } = townData.permits;
 
   return (
-    <article className="space-y-8 max-w-4xl mx-auto bg-white p-6 sm:p-10 rounded-2xl border border-slate-200 shadow-sm">
+    <article
+      className="space-y-8 max-w-4xl mx-auto bg-white p-6 sm:p-10 rounded-2xl border border-slate-200 shadow-sm"
+      itemScope
+      itemType="https://schema.org/GovernmentService"
+      data-kb-topic="deck-permits"
+    >
+      <SEOHead
+        title="Residential Deck Building Permits & Regulations"
+        description="Find out if your deck needs a permit in Maplewood: Freestanding decks <60cm (24in) and <10m² (108 sq ft) are exempt. Attached decks require permits ($185 fee, 1.5m rear / 1.2m side setbacks)."
+        category="Building Permits"
+      />
+
       <header className="border-b border-slate-200 pb-6 space-y-3">
-        <div className="inline-block bg-indigo-100 text-indigo-800 text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded">
-          Building Department &amp; Ontario Building Code
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          <div className="inline-block bg-indigo-100 text-indigo-800 text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded">
+            Building Department &amp; Ontario Building Code
+          </div>
+          <time dateTime="2026-10-30" className="text-xs text-slate-500 font-mono">
+            Updated: October 30, 2026
+          </time>
         </div>
-        <h1 className="text-3xl sm:text-4xl font-bold font-serif text-slate-900">
+        <h1 className="text-3xl sm:text-4xl font-bold font-serif text-slate-900" itemprop="name">
           {deckPermits.title}
         </h1>
-        <p className="text-base text-slate-600 leading-relaxed">
+        <p className="text-base text-slate-600 leading-relaxed" itemprop="description">
           Comprehensive guide to determining when a municipal building permit is required for residential outdoor decks, zoning setbacks, structural drawings, and inspections.
         </p>
       </header>
 
       {/* ── Key Rule: Exempt vs Required (Crucial Scraper Grounding) ── */}
-      <section className="space-y-4">
+      <section id="permit-rules" className="space-y-4" data-kb-section="permit-determination">
         <h2 className="text-2xl font-bold text-slate-900 font-serif">
           Do I Need a Permit for My Deck?
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {/* Exempt */}
-          <div className="p-5 bg-emerald-50 rounded-xl border border-emerald-200 space-y-2">
+          <div
+            className="p-5 bg-emerald-50 rounded-xl border border-emerald-200 space-y-2"
+            data-permit-status="exempt"
+            data-max-height="60cm"
+            data-max-area="10m2"
+          >
             <div className="flex items-center gap-2">
               <span className="text-emerald-700 font-bold text-lg">✅</span>
               <h3 className="font-bold text-emerald-950 text-base">Permit NOT Required (Exempt)</h3>
@@ -36,7 +58,11 @@ export default function DeckPermits() {
           </div>
 
           {/* Mandatory */}
-          <div className="p-5 bg-amber-50 rounded-xl border border-amber-200 space-y-2">
+          <div
+            className="p-5 bg-amber-50 rounded-xl border border-amber-200 space-y-2"
+            data-permit-status="mandatory"
+            data-trigger="attached-or-over-60cm"
+          >
             <div className="flex items-center gap-2">
               <span className="text-amber-700 font-bold text-lg">⚠️</span>
               <h3 className="font-bold text-amber-950 text-base">Building Permit MANDATORY</h3>
@@ -49,16 +75,25 @@ export default function DeckPermits() {
       </section>
 
       {/* ── Zoning Setbacks & Guardrails ── */}
-      <section className="space-y-4">
+      <section id="setbacks-and-guardrails" className="space-y-4">
         <h2 className="text-xl font-bold text-slate-900 font-serif">
           Zoning Setbacks &amp; Guardrail Safety Standards
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="p-4 bg-slate-50 rounded-xl border border-slate-200 text-xs text-slate-700 space-y-1">
+          <div
+            id="setbacks"
+            className="p-4 bg-slate-50 rounded-xl border border-slate-200 text-xs text-slate-700 space-y-1"
+            data-rear-setback="1.5m"
+            data-side-setback="1.2m"
+          >
             <strong className="text-slate-900 text-sm block">Property Boundary Setbacks</strong>
             <p>{deckPermits.zoningSetbacks}</p>
           </div>
-          <div className="p-4 bg-slate-50 rounded-xl border border-slate-200 text-xs text-slate-700 space-y-1">
+          <div
+            id="guardrails"
+            className="p-4 bg-slate-50 rounded-xl border border-slate-200 text-xs text-slate-700 space-y-1"
+            data-guardrail-height="90cm-107cm"
+          >
             <strong className="text-slate-900 text-sm block">Guardrail Height &amp; Spindles</strong>
             <p>{deckPermits.guardrailRequirements}</p>
           </div>
@@ -66,7 +101,7 @@ export default function DeckPermits() {
       </section>
 
       {/* ── Application Requirements & Fees ── */}
-      <section className="bg-slate-50 p-5 rounded-xl border border-slate-200 space-y-3">
+      <section id="checklist" className="bg-slate-50 p-5 rounded-xl border border-slate-200 space-y-3" data-fee="185.00">
         <h2 className="text-lg font-bold text-slate-900 font-serif">
           Permit Application Checklist &amp; Required Documents
         </h2>

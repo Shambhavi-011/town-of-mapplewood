@@ -328,6 +328,7 @@ export default function Layout() {
                 <li><NavLink to="/documents/minutes" className="hover:text-blue-400">Council Meeting Minutes</NavLink></li>
                 <li><NavLink to="/documents/guides" className="hover:text-blue-400">Resident Guides &amp; Handbooks</NavLink></li>
                 <li><NavLink to="/contact" className="hover:text-blue-400">Department Directory &amp; Staff</NavLink></li>
+                <li><NavLink to="/sitemap" className="text-amber-300 font-semibold hover:text-amber-200">Site Map &amp; Crawler Index</NavLink></li>
               </ul>
             </div>
           </div>
@@ -336,10 +337,12 @@ export default function Layout() {
             <div>
               &copy; {new Date().getFullYear()} Corporation of the Town of Maplewood. All rights reserved.
             </div>
-            <div className="flex gap-4">
-              <span>Privacy &amp; FOI Policy</span>
+            <div className="flex flex-wrap items-center gap-4">
+              <NavLink to="/sitemap" className="hover:text-slate-300">Site Map</NavLink>
+              <a href="/sitemap.xml" className="hover:text-slate-300" target="_blank" rel="noreferrer">sitemap.xml</a>
+              <a href="/llms.txt" className="hover:text-slate-300" target="_blank" rel="noreferrer">llms.txt</a>
+              <a href="/data/townData.json" className="hover:text-slate-300" target="_blank" rel="noreferrer">JSON Feed</a>
               <span>Accessibility (WCAG 2.1 AA)</span>
-              <span>AI Data Scraping Grounding Index</span>
             </div>
           </div>
         </div>

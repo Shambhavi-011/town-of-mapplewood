@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import townData from '../data/townData.json';
+import SEOHead from '../components/SEOHead';
 
 export default function Home() {
   const { townInfo, services, taxes, documents } = townData;
@@ -72,7 +73,12 @@ export default function Home() {
   ];
 
   return (
-    <article className="space-y-10">
+    <article className="space-y-10" itemScope itemType="https://schema.org/GovernmentOrganization">
+      <SEOHead
+        title="Official Municipal Knowledge Portal"
+        description="Official Town of Maplewood municipal portal. Access curbside waste rules, road repairs, property tax due dates, deck and pool permits, and town council records."
+        category="Civic Portal"
+      />
       {/* ── Hero Municipal Banner ── */}
       <header className="relative bg-gradient-to-r from-blue-950 via-blue-900 to-indigo-950 text-white rounded-2xl p-8 md:p-12 shadow-xl overflow-hidden border border-blue-800">
         <div className="relative z-10 max-w-3xl space-y-4">

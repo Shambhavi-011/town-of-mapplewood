@@ -1,38 +1,63 @@
 import townData from '../../data/townData.json';
+import SEOHead from '../../components/SEOHead';
 
 export default function RoadsMaintenance() {
   const { roadsMaintenance } = townData.services;
 
   return (
-    <article className="space-y-8 max-w-4xl mx-auto bg-white p-6 sm:p-10 rounded-2xl border border-slate-200 shadow-sm">
+    <article
+      className="space-y-8 max-w-4xl mx-auto bg-white p-6 sm:p-10 rounded-2xl border border-slate-200 shadow-sm"
+      itemScope
+      itemType="https://schema.org/GovernmentService"
+      data-kb-topic="roads-infrastructure"
+    >
+      <SEOHead
+        title="Roads, Potholes & Infrastructure Maintenance"
+        description="Guidelines for reporting potholes in Maplewood: Small (<25cm), Medium (25-60cm), Large (>60cm). Duplicate threshold 50m / 30 days. Emergency hydro hotline 1-800-434-1235."
+        category="Public Works"
+      />
+
       {/* ── Title & Intro Header ── */}
       <header className="border-b border-slate-200 pb-6 space-y-3">
-        <div className="inline-block bg-amber-100 text-amber-800 text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded">
-          Public Works &amp; Infrastructure
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          <div className="inline-block bg-amber-100 text-amber-800 text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded">
+            Public Works &amp; Infrastructure
+          </div>
+          <time dateTime="2026-10-30" className="text-xs text-slate-500 font-mono">
+            Updated: October 30, 2026
+          </time>
         </div>
-        <h1 className="text-3xl sm:text-4xl font-bold font-serif text-slate-900">
+        <h1 className="text-3xl sm:text-4xl font-bold font-serif text-slate-900" itemprop="name">
           {roadsMaintenance.title}
         </h1>
-        <p className="text-base text-slate-600 leading-relaxed">
+        <p className="text-base text-slate-600 leading-relaxed" itemprop="description">
           Reporting guidelines for road damage, potholes, streetlighting outages, and municipal infrastructure repairs across the Town of Maplewood.
         </p>
       </header>
 
       {/* ── Critical Urgent Safety Warning Banner ── */}
-      <section className="bg-red-50 border-l-4 border-red-600 p-5 rounded-r-xl space-y-3">
+      <section
+        id="urgent-hazards"
+        className="bg-red-50 border-l-4 border-red-600 p-5 rounded-r-xl space-y-3"
+        data-hazard-level="critical"
+      >
         <div className="flex items-center gap-2 text-red-900 font-bold text-base">
           <span>🚨</span> Urgent Safety Hazards: Downed Wires &amp; Obstructed Roads
         </div>
-        <p className="text-sm text-red-950 leading-relaxed">
+        <p className="text-sm text-red-950 leading-relaxed" data-contact="hydro-downed-wires">
           <strong>Downed Power Lines:</strong> {roadsMaintenance.urgentSafetyProtocols.downedWiresNotice}
         </p>
-        <p className="text-sm text-red-950 leading-relaxed border-t border-red-200/60 pt-2">
+        <p className="text-sm text-red-950 leading-relaxed border-t border-red-200/60 pt-2" data-contact="fallen-tree-dispatch">
           <strong>Fallen Trees on Roadway:</strong> {roadsMaintenance.urgentSafetyProtocols.fallenTreeOnRoad}
         </p>
       </section>
 
       {/* ── Pothole Reporting Guidelines ── */}
-      <section className="space-y-4">
+      <section
+        id="pothole-criteria"
+        className="space-y-4"
+        data-duplicate-prevention="50m-30days"
+      >
         <h2 className="text-2xl font-bold text-slate-900 font-serif">
           Pothole Inspection &amp; Severity Standards
         </h2>
@@ -52,7 +77,7 @@ export default function RoadsMaintenance() {
             </thead>
             <tbody className="divide-y divide-slate-100 text-slate-700">
               {roadsMaintenance.potholeReporting.sizeGuide.map((item) => (
-                <tr key={item.size} className="hover:bg-slate-50/80">
+                <tr key={item.size} className="hover:bg-slate-50/80" data-pothole-size={item.size.toLowerCase()}>
                   <td className="py-3 px-4 font-bold text-slate-900">
                     <span className={`inline-block px-2.5 py-0.5 rounded text-xs ${
                       item.size === 'Large' ? 'bg-red-100 text-red-800' : item.size === 'Medium' ? 'bg-amber-100 text-amber-800' : 'bg-slate-100 text-slate-800'
@@ -69,11 +94,11 @@ export default function RoadsMaintenance() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
-          <div className="p-4 bg-slate-50 rounded-xl border border-slate-200 text-xs text-slate-700 space-y-1">
+          <div className="p-4 bg-slate-50 rounded-xl border border-slate-200 text-xs text-slate-700 space-y-1" data-rule="travel-lane-priority">
             <strong className="text-slate-900 text-sm block">Travel Lane Rule</strong>
             <p>{roadsMaintenance.potholeReporting.travelLaneRule}</p>
           </div>
-          <div className="p-4 bg-slate-50 rounded-xl border border-slate-200 text-xs text-slate-700 space-y-1">
+          <div className="p-4 bg-slate-50 rounded-xl border border-slate-200 text-xs text-slate-700 space-y-1" data-rule="duplicate-consolidation">
             <strong className="text-slate-900 text-sm block">Duplicate Prevention Protocol</strong>
             <p>{roadsMaintenance.potholeReporting.duplicateDetectionThreshold}</p>
           </div>
@@ -81,7 +106,7 @@ export default function RoadsMaintenance() {
       </section>
 
       {/* ── Streetlights Outage Reporting ── */}
-      <section className="space-y-3 pt-4 border-t border-slate-200">
+      <section id="streetlights" className="space-y-3 pt-4 border-t border-slate-200" data-asset-type="streetlight-pole">
         <h2 className="text-xl font-bold text-slate-900 font-serif">
           Streetlight &amp; Pole Maintenance
         </h2>
