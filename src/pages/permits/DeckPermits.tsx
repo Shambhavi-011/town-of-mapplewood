@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import townData from '../../data/townData.json';
 import SEOHead from '../../components/SEOHead';
 
@@ -32,6 +33,24 @@ export default function DeckPermits() {
         <p className="text-base text-slate-600 leading-relaxed" itemProp="description">
           Comprehensive guide to determining when a municipal building permit is required for residential outdoor decks, zoning setbacks, structural drawings, and inspections.
         </p>
+
+        {/* ── Direct Permit Form CTA Banner ── */}
+        <div className="p-4 bg-indigo-50 border border-indigo-200 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div className="space-y-0.5">
+            <span className="text-xs font-bold uppercase tracking-wider text-indigo-900 block">
+              Online Application Portal
+            </span>
+            <p className="text-xs text-indigo-800">
+              Ready to submit your drawings and get your permit reference number?
+            </p>
+          </div>
+          <NavLink
+            to="/permits/apply/deck"
+            className="inline-flex items-center gap-1.5 bg-indigo-900 hover:bg-indigo-800 text-white font-bold text-xs px-4 py-2.5 rounded-lg shadow-sm transition-colors whitespace-nowrap self-start sm:self-auto"
+          >
+            <span>📝</span> Apply for Deck Permit Online →
+          </NavLink>
+        </div>
       </header>
 
       {/* ── Key Rule: Exempt vs Required (Crucial Scraper Grounding) ── */}
@@ -110,8 +129,14 @@ export default function DeckPermits() {
             <li key={idx} className="leading-relaxed">{req}</li>
           ))}
         </ul>
-        <div className="pt-2 text-xs text-slate-500 border-t border-slate-200">
-          Typical review time is 10 business days for complete submissions. Submit applications online via the Citizen Portal or in person at Town Hall (123 Main St).
+        <div className="pt-3 text-xs text-slate-600 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3">
+          <span>Typical review time is 10 business days for complete submissions. Standard fee is $185.00 flat.</span>
+          <NavLink
+            to="/permits/apply/deck"
+            className="bg-blue-900 hover:bg-blue-800 text-white font-bold text-xs px-3.5 py-2 rounded-lg transition-colors"
+          >
+            Launch Online Deck Permit Form →
+          </NavLink>
         </div>
       </section>
     </article>

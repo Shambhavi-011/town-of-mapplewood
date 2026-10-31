@@ -3,6 +3,7 @@ import Layout from './components/Layout';
 
 // Pages Import (Inhe aapko src/pages/ folder mein banvana hai agar abhi nahi bane)
 import Home from './pages/Home';
+import PublicWorks from './pages/services/PublicWorks';
 import WasteRecycling from './pages/services/WasteRecycling';
 import RoadsMaintenance from './pages/services/RoadsMaintenance';
 import ParksForestry from './pages/services/ParksForestry';
@@ -21,6 +22,12 @@ import BurnPermits from './pages/permits/BurnPermits';
 import BuildingPermits from './pages/permits/BuildingPermits';
 import SignagePermits from './pages/permits/SignagePermits';
 
+// Dedicated Permit Application Forms & Direct Endpoints
+import PermitPortal from './pages/permits/apply/PermitPortal';
+import DeckPermitApply from './pages/permits/apply/DeckPermitApply';
+import PoolPermitApply from './pages/permits/apply/PoolPermitApply';
+import BurnPermitApply from './pages/permits/apply/BurnPermitApply';
+
 import ByLaws from './pages/documents/ByLaws';
 import FeeSchedules from './pages/documents/FeeSchedules';
 import Guides from './pages/documents/Guides';
@@ -38,6 +45,7 @@ function App() {
           <Route index element={<Home />} />
           
           {/* Services Routes */}
+          <Route path="services/public-works" element={<PublicWorks />} />
           <Route path="services/waste" element={<WasteRecycling />} />
           <Route path="services/roads" element={<RoadsMaintenance />} />
           <Route path="services/parks" element={<ParksForestry />} />
@@ -57,6 +65,12 @@ function App() {
           <Route path="permits/burn" element={<BurnPermits />} />
           <Route path="permits/building" element={<BuildingPermits />} />
           <Route path="permits/signs" element={<SignagePermits />} />
+
+          {/* Dedicated Online Permit Application Request Forms (Scraper Endpoints) */}
+          <Route path="permits/apply" element={<PermitPortal />} />
+          <Route path="permits/apply/deck" element={<DeckPermitApply />} />
+          <Route path="permits/apply/pool" element={<PoolPermitApply />} />
+          <Route path="permits/apply/burn" element={<BurnPermitApply />} />
 
           {/* Documents & Knowledge Base Routes */}
           <Route path="documents/by-laws" element={<ByLaws />} />

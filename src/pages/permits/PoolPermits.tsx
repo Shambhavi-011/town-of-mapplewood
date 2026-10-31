@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import townData from '../../data/townData.json';
 import SEOHead from '../../components/SEOHead';
 
@@ -33,6 +34,24 @@ export default function PoolPermits() {
         <p className="text-base text-slate-600 leading-relaxed" itemProp="description">
           Requirements for private residential swimming pools, hot tubs, safety fencing enclosures, and self-closing gate inspections in the Town of Maplewood.
         </p>
+
+        {/* ── Direct Permit Form CTA Banner ── */}
+        <div className="p-4 bg-blue-50 border border-blue-200 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div className="space-y-0.5">
+            <span className="text-xs font-bold uppercase tracking-wider text-blue-900 block">
+              Online Enclosure Permit Portal
+            </span>
+            <p className="text-xs text-blue-800">
+              Applying to install an in-ground, above-ground, or seasonal pool?
+            </p>
+          </div>
+          <NavLink
+            to="/permits/apply/pool"
+            className="inline-flex items-center gap-1.5 bg-blue-900 hover:bg-blue-800 text-white font-bold text-xs px-4 py-2.5 rounded-lg shadow-sm transition-colors whitespace-nowrap self-start sm:self-auto"
+          >
+            <span>🏊</span> Apply for Pool Permit Online →
+          </NavLink>
+        </div>
       </header>
 
       {/* ── Mandatory Permit Rule ── */}
@@ -93,6 +112,15 @@ export default function PoolPermits() {
         <p className="text-xs text-slate-500">
           Applicants must submit a dimensioned site plan showing property boundaries, house location, pool dimensions, proposed fence enclosure location, and gate swing direction.
         </p>
+        <div className="pt-3 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3">
+          <span className="text-xs text-slate-600">Enclosure review SLA is 5 business days prior to excavation.</span>
+          <NavLink
+            to="/permits/apply/pool"
+            className="bg-blue-900 hover:bg-blue-800 text-white font-bold text-xs px-3.5 py-2 rounded-lg transition-colors"
+          >
+            Launch Online Pool Permit Form →
+          </NavLink>
+        </div>
       </section>
     </article>
   );

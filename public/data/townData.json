@@ -74,14 +74,43 @@
       "emergencyWaterMainBreaks": "Call (555) 123-9287 immediately for water main breaks, sudden drop in municipal water pressure, or discolored water notices."
     },
     "snowRemoval": {
-      "title": "Winter Road Maintenance & Snow Clearing",
+      "title": "Winter Road Maintenance, Snow Emergencies & Plowing Routes",
+      "codeReferences": {
+        "chapter257": "Chapter 257 (Vehicles and Traffic), Article IV (Emergency No Parking) and § 257-36.7 / § 257-2.5",
+        "chapter239": "Chapter 239 (Streets and Sidewalks), § 239-1 (Removal of snow and ice) and § 239-2 (Depositing snow in streets prohibited)"
+      },
       "priorityPlowingSchedule": [
-        { "priority": "Priority 1 (Arterial & Transit Routes)", "threshold": "Cleared within 4 to 6 hours after 5 cm of snowfall accumulation. Includes Main St, County Rd 8, emergency hospital routes." },
+        { "priority": "Priority 1 (Arterial & Transit Routes)", "threshold": "Cleared within 4 to 6 hours after 5 cm of snowfall accumulation. Includes Main St, Valley St, Springfield Ave, emergency hospital routes." },
         { "priority": "Priority 2 (Collector & School Zones)", "threshold": "Cleared within 8 hours following snowfall completion. Includes neighborhood feeder roads and bus zones." },
         { "priority": "Priority 3 (Residential Streets & Cul-de-sacs)", "threshold": "Cleared within 16 to 24 hours after 8 cm accumulation. Residential routes are plowed only once Priority 1 and 2 are fully maintained." }
       ],
-      "overnightParkingBan": "Under By-law 2023-88, on-street parking is strictly prohibited on all municipal streets between 2:00 AM and 6:00 AM from December 1 through March 31 to allow winter maintenance equipment to operate safely. Violations carry a $60 fine and possible vehicle towing.",
-      "sidewalkClearingByLaw": "Residential and commercial property owners are required by municipal by-law to clear snow and ice from adjacent public sidewalks within 24 hours following the end of snowfall."
+      "overnightParkingBan": "Under Municipal Code Chapter 257, on-street parking is strictly prohibited on all municipal streets between 2:00 AM and 6:00 AM. During winter snow events and declared States of Emergency, all on-street parking permits are suspended on snow-covered streets until plowing operations are concluded. Violations carry a $60 fine and mandatory vehicle towing.",
+      "sidewalkClearingByLaw": "Under § 239-1, residential and commercial property owners, tenants, and occupants are legally required to clear all snow and ice from abutting sidewalks within 24 hours following the end of snowfall. If ice cannot be removed, it must be thoroughly treated with salt or sand. Under § 239-2, throwing, shoveling, or plowing snow into already plowed public streets is strictly unlawful.",
+      "towingAndImpoundPolicy": "Under § 257-31, any unoccupied vehicle parked or standing in violation of emergency snow parking regulations is deemed a nuisance and a public menace. The Police Department is authorized to order immediate removal and impoundment. The registered owner is liable for all towing and daily storage fees prior to release.",
+      "designatedSnowEmergencyRoutes": [
+        { "street": "Valley Street (County Route 638)", "extent": "Millburn Township line to South Orange Village line", "side": "Both sides", "jurisdiction": "County / Municipal coordination" },
+        { "street": "Wyoming Avenue (County Route 630)", "extent": "South Orange line to Millburn Township line", "side": "Both sides", "jurisdiction": "Essex County Highway Division" },
+        { "street": "Ridgewood Road (County Route 642)", "extent": "Millburn border to South Orange border", "side": "Both sides", "jurisdiction": "Essex County Highway Division" },
+        { "street": "Springfield Avenue (Route 603)", "extent": "Entire length through Township of Maplewood", "side": "Both sides", "jurisdiction": "State / County Roadway" },
+        { "street": "Boyden Avenue", "extent": "Springfield Avenue to South Orange border", "side": "Both sides", "jurisdiction": "Township of Maplewood DPW" },
+        { "street": "Parker Avenue", "extent": "Valley Street to Prospect Street / Irvington border", "side": "Both sides", "jurisdiction": "Township of Maplewood DPW" },
+        { "street": "Maplewood Avenue", "extent": "Entire length through Maplewood Village business district", "side": "Both sides", "jurisdiction": "Township of Maplewood DPW" },
+        { "street": "Baker Street", "extent": "Maplewood Avenue to Ridgewood Road", "side": "Both sides", "jurisdiction": "Township of Maplewood DPW" },
+        { "street": "Prospect Street", "extent": "Springfield Avenue to Parker Avenue / South Orange border", "side": "Both sides", "jurisdiction": "Township of Maplewood DPW" },
+        { "street": "Tuscan Road", "extent": "Valley Street to Springfield Avenue", "side": "Both sides", "jurisdiction": "Township of Maplewood DPW" },
+        { "street": "Burnett Avenue", "extent": "Springfield Avenue to 48th Street / Union County border", "side": "Both sides", "jurisdiction": "Township of Maplewood DPW" },
+        { "street": "Elmwood Avenue", "extent": "Boyden Avenue to Irvington Township border", "side": "Both sides", "jurisdiction": "Township of Maplewood DPW" },
+        { "street": "Harvard Avenue", "extent": "Boyden Avenue to Irvington municipal line", "side": "Both sides", "jurisdiction": "Township of Maplewood DPW" },
+        { "street": "Jefferson Avenue", "extent": "Maplewood Avenue to Ridgewood Road", "side": "Both sides", "jurisdiction": "Township of Maplewood DPW" },
+        { "street": "Clinton Avenue", "extent": "Boyden Avenue to Prospect Street", "side": "Both sides", "jurisdiction": "Township of Maplewood DPW" },
+        { "street": "Hilton Avenue", "extent": "Springfield Avenue to Boyden Avenue", "side": "Both sides", "jurisdiction": "Township of Maplewood DPW" },
+        { "street": "Dunnell Road", "extent": "Entire length adjacent to Maplewood NJ Transit Train Station", "side": "Both sides", "jurisdiction": "Township of Maplewood DPW" },
+        { "street": "Oakview Avenue", "extent": "Valley Street to Ridgewood Road", "side": "Both sides", "jurisdiction": "Township of Maplewood DPW" },
+        { "street": "Meadowbrook Place", "extent": "Valley Street to Ridgewood Road", "side": "Both sides", "jurisdiction": "Township of Maplewood DPW" },
+        { "street": "Claremont Avenue", "extent": "Ridgewood Road to Wyoming Avenue", "side": "Both sides", "jurisdiction": "Township of Maplewood DPW" },
+        { "street": "Highland Avenue", "extent": "Maplewood Avenue to Wyoming Avenue", "side": "Both sides", "jurisdiction": "Township of Maplewood DPW" },
+        { "street": "Indiana Street", "extent": "Burnett Avenue to Springfield Avenue", "side": "Both sides", "jurisdiction": "Township of Maplewood DPW" }
+      ]
     },
     "animalControl": {
       "title": "Animal Services, Pet Licensing & Wildlife",
@@ -93,6 +122,92 @@
       },
       "leashByLaw": "Under By-law 2020-04, dogs must be kept on a physical leash no longer than 2.0 meters (6.5 feet) at all times in public spaces, parks, and sidewalks, except within the fenced perimeter of Maplewood Bark Park (42 River Valley Rd).",
       "lostFoundPets": "Stray or found domestic animals are sheltered at the Maplewood Regional Animal Care Center. Contact Animal Control Dispatch at (555) 123-4567 ext. 240."
+    },
+    "publicWorks": {
+      "title": "Department of Public Works (DPW) & Recycling Center",
+      "facility": {
+        "name": "Maplewood Department of Public Works Facility & Recycling Center",
+        "address": "359 Boyden Avenue, Maplewood, NJ 07040",
+        "phone": "(973) 762-1175",
+        "dispatchPhone": "(555) 123-7623",
+        "hours": {
+          "weekdays": "Monday to Friday: 8:00 AM – 3:00 PM",
+          "saturdays": "Saturday: 8:00 AM – 12:00 PM (Noon)",
+          "sundays": "Closed"
+        }
+      },
+      "dualStreamRecycling": {
+        "system": "Dual-Stream Curbside Recycling (alternating weekly between Fibers and Commingled Containers)",
+        "zoneSchedule": [
+          { "sections": "Sections 1 & 2", "day": "Mondays", "frequency": "Weekly alternating streams" },
+          { "sections": "Sections 3 & 4", "day": "Tuesdays", "frequency": "Weekly alternating streams" },
+          { "sections": "Sections 5 & 6", "day": "Wednesdays", "frequency": "Weekly alternating streams" }
+        ],
+        "fibersStream": "Clean flattened cardboard, corrugated boxes, newspapers, magazines, junk mail, office paper, phone books, and brown paper grocery bags. Keep dry and bundle or place in bins.",
+        "commingledStream": "Glass bottles and jars, aluminum cans, steel/tin food cans, and rigid plastic food/beverage containers stamped #1 through #7. Must be rinsed clean.",
+        "containerRequirements": "Must be set out in hard plastic containers/tubs (maximum 64 gallons). Plastic bags of any kind are strictly prohibited in curbside recycling."
+      },
+      "bulkDropOffProgram": {
+        "overview": "Biannual Saturday drop-off events held at the DPW Recycling Center (359 Boyden Ave) from 8:00 AM to 2:00 PM.",
+        "eligibility": "Township of Maplewood residents only. Proof of residency required: two forms of ID (photo driver's license and a recent utility or tax bill).",
+        "acceptedMaterials": [
+          "Household furniture (sofas, sectionals, dressers, tables, desks, mattresses, box springs, lamps)",
+          "Large rigid plastics / MRPs (plastic playsets, outdoor patio furniture, large plastic bins, laundry baskets)",
+          "Non-freon household appliances and metal fixtures",
+          "Bicycles, luggage, and large household items"
+        ],
+        "prohibitedMaterials": [
+          "Building and construction materials (sheetrock, drywall, concrete, brick, lumber, roofing shingles, ceramic tiles, siding)",
+          "Kitchen cabinets, bathroom vanities, and porcelain sinks/toilets",
+          "Automotive parts, tires, and motor vehicle batteries",
+          "Paint cans, stains, chemical solvents, and toxic materials",
+          "Tree trunks, large stumps, and commercial landscape debris"
+        ]
+      },
+      "seasonalLeafCollection": {
+        "schedule": "Four rotating collection rounds by municipal section conducted throughout October, November, and December.",
+        "guidelines": [
+          "Rake leaves into the street along the gutter/curb by Sunday night prior to your section's collection week.",
+          "Do NOT put leaves out on municipal roadways more than 7 calendar days before your scheduled collection week.",
+          "Keep leaf piles strictly free from tree branches, rocks, stones, metal, or non-organic debris.",
+          "Never place leaves in plastic bags; bagged leaves will NOT be collected by DPW vacuum crews.",
+          "Gas-powered leaf blowers are strictly prohibited year-round in Maplewood under municipal environmental noise code."
+        ],
+        "dropOffAlternative": "Residents may haul and drop off leaves directly at the DPW yard (359 Boyden Ave) during regular operating hours."
+      },
+      "springRakeOutProgram": {
+        "schedule": "Seasonal garden debris and spring cleanup service running from late March through April.",
+        "rules": [
+          "Tree branches must be cut to lengths of 4 feet or less and securely tied with natural twine into bundles under 50 lbs.",
+          "Leaves, dead garden plants, and grass rakings must be contained in biodegradable paper yard-waste bags or reusable hard bins.",
+          "Loose debris left in street gutters during spring rake-out is strictly prohibited and subject to municipal fine."
+        ]
+      },
+      "streetSweeping": {
+        "schedule": "Residential and commercial streets are swept on scheduled bi-weekly rotations from April through November.",
+        "parkingRestrictions": "Temporary on-street parking prohibitions apply on designated sweeping days to enable curb-to-curb street sweeper clearance."
+      },
+      "urbanForestryAndTreePermits": {
+        "treeRemovalPermit": "Under Township Tree Protection By-laws, a municipal Tree Removal Permit is mandatory prior to removing any healthy tree with a trunk diameter of 8 inches (20 cm) or greater on private property.",
+        "municipalTreeCare": "DPW Forestry crews conduct ongoing pruning, safety assessments, and hazard removal for all trees on municipal road allowances, public parks, and rights-of-way.",
+        "freeArborDaySaplings": "DPW hosts an annual Arbor Day free tree sapling giveaway for residents at the 359 Boyden Ave yard to replenish the urban tree canopy."
+      },
+      "jitneyCommuterService": {
+        "overview": "Municipal commuter bus service transporting residents between residential neighborhoods and the Maplewood NJ Transit Train Station during peak weekday morning and evening commute windows.",
+        "routes": [
+          { "name": "Boyden Route", "corridor": "East Maplewood / Boyden Avenue" },
+          { "name": "Parker Route", "corridor": "South Maplewood / Parker Avenue" },
+          { "name": "Wyoming Route", "corridor": "West Maplewood / Wyoming Avenue" },
+          { "name": "Valley Route", "corridor": "Central Maplewood / Valley Street" }
+        ],
+        "passCost": "$95.00 annual commuter pass, or individual tickets purchased at Town Hall and online.",
+        "fleetSustainability": "Transition to 100% zero-emission electric jitney buses currently in deployment."
+      },
+      "specialDisposalServices": {
+        "freeMulchAndCompost": "Free organic shredded wood mulch and screened leaf compost available for resident pickup at 359 Boyden Ave (self-load with own shovels and containers).",
+        "electronicsEwaste": "Electronic waste (computers, monitors, laptops, televisions, printers, phones) accepted year-round at the DPW Recycling Center.",
+        "shredItEvents": "Confidential paper document shredding events hosted semi-annually at the DPW yard (maximum 4 standard file boxes per household)."
+      }
     }
   },
   "taxes": {
@@ -189,10 +304,49 @@
     "signagePermits": {
       "title": "Commercial & Temporary Signage Permits",
       "regulations": "Governed by By-law 2021-34. Commercial storefront fascia signs, pylon signs, and temporary promotional banners require municipal permits. Portable A-frame (sandwich board) signs require an annual $50 sidewalk permit and must maintain a minimum 1.8-meter unobstructed pedestrian pathway."
+    },
+    "onlineApplicationEndpoints": {
+      "portalUrl": "https://maplewood.fictionaltown.com/permits/apply",
+      "deckPermit": {
+        "title": "Deck Construction Permit Online Application",
+        "url": "https://maplewood.fictionaltown.com/permits/apply/deck",
+        "code": "PERM-DECK",
+        "fee": "$185.00 CAD",
+        "sla": "10 business days",
+        "method": "POST"
+      },
+      "poolPermit": {
+        "title": "Pool Enclosure Permit Online Application (By-law 2022-18)",
+        "url": "https://maplewood.fictionaltown.com/permits/apply/pool",
+        "code": "PERM-POOL",
+        "fee": "$150.00 CAD",
+        "sla": "5 business days",
+        "method": "POST"
+      },
+      "burnPermit": {
+        "title": "Open-Air Burn Permit Instant Application (By-law 2021-09)",
+        "url": "https://maplewood.fictionaltown.com/permits/apply/burn",
+        "code": "PERM-BURN",
+        "fee": "$25.00 CAD",
+        "sla": "Instant Automated Approval",
+        "method": "POST"
+      }
     }
   },
   "documents": {
     "byLaws": [
+      {
+        "number": "Chapter 257",
+        "title": "Vehicles & Traffic Code: Snow Emergency Routes (§ 257-36.7 & § 257-2.5)",
+        "summary": "Establishes emergency no-parking restrictions on designated snow emergency routes upon declaration of emergency or snow-covered roadways. Authorizes immediate towing and impoundment of obstructing vehicles under § 257-31.",
+        "effectiveDate": "Codified under Ord. No. 1993-96 & amendments"
+      },
+      {
+        "number": "Chapter 239",
+        "title": "Streets & Sidewalks: Snow & Ice Removal (§ 239-1 & § 239-2)",
+        "summary": "Mandates property owners and occupants clear sidewalks within 24 hours of snowfall cessation. Strictly prohibits plowing, shoveling, or blowing snow into public roadways that have already been cleared.",
+        "effectiveDate": "Codified under Township Code"
+      },
       {
         "number": "2024-12",
         "title": "Noise Control By-law",

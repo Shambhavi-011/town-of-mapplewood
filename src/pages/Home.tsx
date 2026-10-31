@@ -177,6 +177,97 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── Featured Direct Permit Forms & Online Intake Hub ── */}
+      <section className="bg-gradient-to-r from-blue-950 via-slate-900 to-indigo-950 text-white p-6 sm:p-8 rounded-2xl shadow-md space-y-6">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div className="space-y-1">
+            <div className="flex items-center gap-2">
+              <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+              <span className="text-xs font-bold uppercase tracking-wider text-blue-300 font-mono">
+                Direct Citizen &amp; Chatbot Endpoints
+              </span>
+            </div>
+            <h2 className="text-2xl font-bold font-serif">
+              Online Permit Application Forms
+            </h2>
+            <p className="text-xs sm:text-sm text-slate-300 max-w-2xl">
+              Applying for construction or agricultural burns? Use our dedicated online intake forms. Direct links allow AI scrapers and citizens to submit permits immediately with automated confirmation numbers.
+            </p>
+          </div>
+          <NavLink
+            to="/permits/apply"
+            className="bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition-all shadow self-start md:self-auto whitespace-nowrap"
+          >
+            All Permit Forms Portal →
+          </NavLink>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <NavLink
+            to="/permits/apply/deck"
+            className="p-4 bg-white/10 hover:bg-white/15 rounded-xl border border-white/15 backdrop-blur-xs transition-all space-y-2 group"
+          >
+            <div className="flex items-center justify-between">
+              <span className="text-2xl">📐</span>
+              <span className="text-[10px] font-mono bg-indigo-500/30 text-indigo-200 px-2 py-0.5 rounded border border-indigo-400/30">
+                $185.00
+              </span>
+            </div>
+            <h3 className="font-bold text-sm text-white group-hover:text-blue-200">
+              Deck Construction Permit
+            </h3>
+            <p className="text-xs text-slate-300 leading-relaxed">
+              For attached decks or height &gt;60cm. Submit drawings and setback verifications.
+            </p>
+            <div className="text-[11px] text-amber-300 font-semibold pt-1 flex items-center gap-1">
+              Apply Online <span className="group-hover:translate-x-1 transition-transform">→</span>
+            </div>
+          </NavLink>
+
+          <NavLink
+            to="/permits/apply/pool"
+            className="p-4 bg-white/10 hover:bg-white/15 rounded-xl border border-white/15 backdrop-blur-xs transition-all space-y-2 group"
+          >
+            <div className="flex items-center justify-between">
+              <span className="text-2xl">🏊</span>
+              <span className="text-[10px] font-mono bg-blue-500/30 text-blue-200 px-2 py-0.5 rounded border border-blue-400/30">
+                $150.00
+              </span>
+            </div>
+            <h3 className="font-bold text-sm text-white group-hover:text-blue-200">
+              Pool Enclosure Permit
+            </h3>
+            <p className="text-xs text-slate-300 leading-relaxed">
+              Mandatory under By-law 2022-18 for &gt;60cm depth. 1.5m fence &amp; latch inspection.
+            </p>
+            <div className="text-[11px] text-amber-300 font-semibold pt-1 flex items-center gap-1">
+              Apply Online <span className="group-hover:translate-x-1 transition-transform">→</span>
+            </div>
+          </NavLink>
+
+          <NavLink
+            to="/permits/apply/burn"
+            className="p-4 bg-white/10 hover:bg-white/15 rounded-xl border border-white/15 backdrop-blur-xs transition-all space-y-2 group"
+          >
+            <div className="flex items-center justify-between">
+              <span className="text-2xl">🔥</span>
+              <span className="text-[10px] font-mono bg-orange-500/30 text-orange-200 px-2 py-0.5 rounded border border-orange-400/30">
+                $25.00 Instant
+              </span>
+            </div>
+            <h3 className="font-bold text-sm text-white group-hover:text-orange-200">
+              Open-Air Burn Permit
+            </h3>
+            <p className="text-xs text-slate-300 leading-relaxed">
+              Rural zones &amp; County Rd 8 only. Max pile 2mx2mx1m. Instant active approval.
+            </p>
+            <div className="text-[11px] text-amber-300 font-semibold pt-1 flex items-center gap-1">
+              Apply Online <span className="group-hover:translate-x-1 transition-transform">→</span>
+            </div>
+          </NavLink>
+        </div>
+      </section>
+
       {/* ── Dual Section: Upcoming Tax Dates & Council Activity ── */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* Taxes & Financial Deadlines */}

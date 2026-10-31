@@ -7,6 +7,12 @@ export default function Sitemap() {
       title: 'Municipal Services & Public Works',
       links: [
         {
+          title: 'Department of Public Works (DPW) & Recycling Center',
+          url: '/services/public-works',
+          desc: '359 Boyden Ave facility: Mon-Fri 8am-3pm, Sat 8am-12pm. Dual-stream recycling schedules (Sections 1-6), bulk drop-off rules, fall leaf collection, spring rake-out, Jitney commuter bus, and tree permits.',
+          facts: 'Location: 359 Boyden Ave · Phone: (973) 762-1175 · Dual-stream & Bulk Drop-off'
+        },
+        {
           title: 'Waste & Recycling Collection',
           url: '/services/waste',
           desc: 'Curbside by 7:00 AM, missed collection reports after 5:00 PM, 2-day resolution SLA, green organics, blue box, bulk items.',
@@ -105,6 +111,35 @@ export default function Sitemap() {
           url: '/permits/signs',
           desc: 'By-law 2021-34 for storefront fascia, pylon signs, and annual $50 sidewalk A-frame sandwich boards (1.8m pedestrian walkway).',
           facts: 'Sidewalk A-frames: $50/yr · Walkway: 1.8m clearance'
+        }
+      ]
+    },
+    {
+      title: 'Online Permit Intake Forms (Direct Scraper & Chatbot Endpoints)',
+      links: [
+        {
+          title: 'Permit Application Portal Hub',
+          url: '/permits/apply',
+          desc: 'Centralized directory of online permit application forms and direct routing endpoints for residents, contractors, and AI chatbots.',
+          facts: 'Portal: Online intake · Live confirmation numbers · Microdata enabled'
+        },
+        {
+          title: 'Residential Deck Permit Application Form',
+          url: '/permits/apply/deck',
+          desc: 'Dedicated intake form for deck construction permits ($185 fee). Collects dimensions, setbacks (1.5m rear / 1.2m side), site plans, and generates instant application reference numbers.',
+          facts: 'Endpoint: /permits/apply/deck · Fee: $185.00 · SLA: 10 days'
+        },
+        {
+          title: 'Pool Enclosure Permit Application Form (By-law 2022-18)',
+          url: '/permits/apply/pool',
+          desc: 'Dedicated intake form for swimming pool enclosures and safety fences ($150 fee). Verifies minimum 1.5m fence and 1.35m latch height prior to excavation.',
+          facts: 'Endpoint: /permits/apply/pool · Fee: $150.00 · SLA: 5 days'
+        },
+        {
+          title: 'Open-Air Burn Permit Application Form (By-law 2021-09)',
+          url: '/permits/apply/burn',
+          desc: 'Instant automated issuance form for rural & County Rd 8 agricultural burn permits ($25 seasonal fee). Enforces 2mx2mx1m pile limits and adult 18+ supervision.',
+          facts: 'Endpoint: /permits/apply/burn · Fee: $25.00 · Issuance: Instant active certificate'
         }
       ]
     },

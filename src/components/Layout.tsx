@@ -18,6 +18,7 @@ export default function Layout() {
   const getBreadcrumbTitle = (part: string) => {
     switch (part) {
       case 'services': return 'Municipal Services';
+      case 'public-works': return 'Public Works & Recycling Center';
       case 'waste': return 'Waste & Recycling';
       case 'roads': return 'Roads & Maintenance';
       case 'parks': return 'Parks & Forestry';
@@ -30,6 +31,9 @@ export default function Layout() {
       case 'pre-authorized': return 'Pre-Authorized Debit';
       case 'calculator': return 'Tax Estimator';
       case 'permits': return 'Permits & Planning';
+      case 'apply': return 'Online Permit Application Portal';
+      case 'deck': return 'Deck Permit Form';
+      case 'pool': return 'Pool Enclosure Form';
       case 'decks': return 'Deck Permits';
       case 'pools': return 'Pool Enclosure Permits';
       case 'burn': return 'Open-Air Burn Permits';
@@ -131,6 +135,7 @@ export default function Layout() {
               </NavLink>
               <div className="absolute left-0 top-full hidden group-hover:block w-64 bg-white text-slate-800 rounded-b-lg shadow-xl border border-slate-200 py-2 z-50">
                 <div className="px-3 py-1 text-xs font-bold text-slate-400 uppercase tracking-wider">Public Works &amp; Services</div>
+                <NavLink to="/services/public-works" className="block px-4 py-2 text-sm hover:bg-blue-50 text-slate-700 hover:text-blue-900 font-semibold text-blue-950">DPW &amp; Recycling Center (359 Boyden)</NavLink>
                 <NavLink to="/services/waste" className="block px-4 py-2 text-sm hover:bg-blue-50 text-slate-700 hover:text-blue-900">Waste, Recycling &amp; Organics</NavLink>
                 <NavLink to="/services/roads" className="block px-4 py-2 text-sm hover:bg-blue-50 text-slate-700 hover:text-blue-900">Roads, Potholes &amp; Infrastructure</NavLink>
                 <NavLink to="/services/parks" className="block px-4 py-2 text-sm hover:bg-blue-50 text-slate-700 hover:text-blue-900">Parks, Trails &amp; Forestry</NavLink>
@@ -159,13 +164,30 @@ export default function Layout() {
               <NavLink to="/permits/building" className={navLinkClass}>
                 <span>📋</span> Permits &amp; Planning <span className="text-[10px]">▼</span>
               </NavLink>
-              <div className="absolute left-0 top-full hidden group-hover:block w-64 bg-white text-slate-800 rounded-b-lg shadow-xl border border-slate-200 py-2 z-50">
+              <div className="absolute left-0 top-full hidden group-hover:block w-72 bg-white text-slate-800 rounded-b-lg shadow-xl border border-slate-200 py-2 z-50">
                 <div className="px-3 py-1 text-xs font-bold text-slate-400 uppercase tracking-wider">Building &amp; Planning Department</div>
                 <NavLink to="/permits/decks" className="block px-4 py-2 text-sm hover:bg-blue-50 text-slate-700 hover:text-blue-900">Residential Deck Permits</NavLink>
                 <NavLink to="/permits/pools" className="block px-4 py-2 text-sm hover:bg-blue-50 text-slate-700 hover:text-blue-900">Pool Enclosure By-law &amp; Permits</NavLink>
                 <NavLink to="/permits/burn" className="block px-4 py-2 text-sm hover:bg-blue-50 text-slate-700 hover:text-blue-900">Open-Air Burn Permits</NavLink>
                 <NavLink to="/permits/building" className="block px-4 py-2 text-sm hover:bg-blue-50 text-slate-700 hover:text-blue-900">Building &amp; Renovation Permits</NavLink>
                 <NavLink to="/permits/signs" className="block px-4 py-2 text-sm hover:bg-blue-50 text-slate-700 hover:text-blue-900">Signage &amp; Advertising Permits</NavLink>
+
+                <div className="my-1 border-t border-slate-100"></div>
+                <div className="px-3 py-1 text-xs font-bold text-amber-800 uppercase tracking-wider bg-amber-50/70">
+                  Online Permit Application Forms
+                </div>
+                <NavLink to="/permits/apply" className="block px-4 py-1.5 text-xs font-bold text-blue-950 hover:bg-blue-50">
+                  Permit Application Portal Hub →
+                </NavLink>
+                <NavLink to="/permits/apply/deck" className="block px-4 py-1 text-xs text-slate-600 hover:text-blue-900 hover:bg-blue-50">
+                  • Apply for Deck Permit ($185)
+                </NavLink>
+                <NavLink to="/permits/apply/pool" className="block px-4 py-1 text-xs text-slate-600 hover:text-blue-900 hover:bg-blue-50">
+                  • Apply for Pool Enclosure ($150)
+                </NavLink>
+                <NavLink to="/permits/apply/burn" className="block px-4 py-1 text-xs text-slate-600 hover:text-blue-900 hover:bg-blue-50">
+                  • Apply for Burn Permit ($25 instant)
+                </NavLink>
               </div>
             </div>
 
@@ -194,6 +216,7 @@ export default function Layout() {
           <div className="lg:hidden bg-blue-950 text-white px-4 py-3 space-y-2 border-t border-blue-900">
             <NavLink to="/" onClick={() => setMobileMenuOpen(false)} className="block py-1.5 text-sm font-semibold">Home</NavLink>
             <div className="pt-2 pb-1 border-t border-blue-900 text-xs font-bold text-blue-300 uppercase">Services</div>
+            <NavLink to="/services/public-works" onClick={() => setMobileMenuOpen(false)} className="block pl-3 py-1 text-sm text-amber-200 font-semibold">DPW &amp; Recycling Center (359 Boyden)</NavLink>
             <NavLink to="/services/waste" onClick={() => setMobileMenuOpen(false)} className="block pl-3 py-1 text-sm text-blue-100">Waste &amp; Recycling</NavLink>
             <NavLink to="/services/roads" onClick={() => setMobileMenuOpen(false)} className="block pl-3 py-1 text-sm text-blue-100">Roads &amp; Maintenance</NavLink>
             <NavLink to="/services/parks" onClick={() => setMobileMenuOpen(false)} className="block pl-3 py-1 text-sm text-blue-100">Parks &amp; Forestry</NavLink>
@@ -205,10 +228,14 @@ export default function Layout() {
             <NavLink to="/taxes/payment" onClick={() => setMobileMenuOpen(false)} className="block pl-3 py-1 text-sm text-blue-100">Payment Methods</NavLink>
             <NavLink to="/taxes/pre-authorized" onClick={() => setMobileMenuOpen(false)} className="block pl-3 py-1 text-sm text-blue-100">Pre-Authorized Debit</NavLink>
             <NavLink to="/taxes/calculator" onClick={() => setMobileMenuOpen(false)} className="block pl-3 py-1 text-sm text-blue-100">Tax Calculator</NavLink>
-            <div className="pt-2 pb-1 border-t border-blue-900 text-xs font-bold text-blue-300 uppercase">Permits</div>
-            <NavLink to="/permits/decks" onClick={() => setMobileMenuOpen(false)} className="block pl-3 py-1 text-sm text-blue-100">Deck Permits</NavLink>
-            <NavLink to="/permits/pools" onClick={() => setMobileMenuOpen(false)} className="block pl-3 py-1 text-sm text-blue-100">Pool Permits</NavLink>
-            <NavLink to="/permits/burn" onClick={() => setMobileMenuOpen(false)} className="block pl-3 py-1 text-sm text-blue-100">Burn Permits</NavLink>
+            <div className="pt-2 pb-1 border-t border-blue-900 text-xs font-bold text-blue-300 uppercase">Permits &amp; Planning</div>
+            <NavLink to="/permits/apply" onClick={() => setMobileMenuOpen(false)} className="block pl-3 py-1 text-sm text-amber-300 font-semibold">📝 Online Permit Application Forms</NavLink>
+            <NavLink to="/permits/apply/deck" onClick={() => setMobileMenuOpen(false)} className="block pl-5 py-0.5 text-xs text-blue-200">• Apply for Deck Permit ($185)</NavLink>
+            <NavLink to="/permits/apply/pool" onClick={() => setMobileMenuOpen(false)} className="block pl-5 py-0.5 text-xs text-blue-200">• Apply for Pool Enclosure ($150)</NavLink>
+            <NavLink to="/permits/apply/burn" onClick={() => setMobileMenuOpen(false)} className="block pl-5 py-0.5 text-xs text-blue-200">• Apply for Burn Permit ($25)</NavLink>
+            <NavLink to="/permits/decks" onClick={() => setMobileMenuOpen(false)} className="block pl-3 py-1 text-sm text-blue-100">Deck Regulations</NavLink>
+            <NavLink to="/permits/pools" onClick={() => setMobileMenuOpen(false)} className="block pl-3 py-1 text-sm text-blue-100">Pool Regulations</NavLink>
+            <NavLink to="/permits/burn" onClick={() => setMobileMenuOpen(false)} className="block pl-3 py-1 text-sm text-blue-100">Burn Regulations</NavLink>
             <NavLink to="/permits/building" onClick={() => setMobileMenuOpen(false)} className="block pl-3 py-1 text-sm text-blue-100">Building Permits</NavLink>
             <NavLink to="/permits/signs" onClick={() => setMobileMenuOpen(false)} className="block pl-3 py-1 text-sm text-blue-100">Signage Permits</NavLink>
             <div className="pt-2 pb-1 border-t border-blue-900 text-xs font-bold text-blue-300 uppercase">Documents</div>
@@ -296,6 +323,7 @@ export default function Layout() {
                 Public Works &amp; Services
               </h3>
               <ul className="text-sm space-y-2">
+                <li><NavLink to="/services/public-works" className="hover:text-blue-400 font-semibold text-blue-200">DPW &amp; Recycling Depot (359 Boyden)</NavLink></li>
                 <li><NavLink to="/services/waste" className="hover:text-blue-400">Waste, Recycling &amp; Compost</NavLink></li>
                 <li><NavLink to="/services/roads" className="hover:text-blue-400">Potholes &amp; Road Repairs</NavLink></li>
                 <li><NavLink to="/services/snow" className="hover:text-blue-400">Winter Parking &amp; Snow Plowing</NavLink></li>
@@ -312,6 +340,7 @@ export default function Layout() {
                 <li><NavLink to="/taxes/info" className="hover:text-blue-400">Property Tax Assessments</NavLink></li>
                 <li><NavLink to="/taxes/payment" className="hover:text-blue-400">Payment Options &amp; Due Dates</NavLink></li>
                 <li><NavLink to="/taxes/calculator" className="hover:text-blue-400">Tax Estimator Calculator</NavLink></li>
+                <li><NavLink to="/permits/apply" className="text-amber-300 font-semibold hover:text-amber-200">Online Permit Application Portal</NavLink></li>
                 <li><NavLink to="/permits/decks" className="hover:text-blue-400">Deck Building Regulations</NavLink></li>
                 <li><NavLink to="/permits/pools" className="hover:text-blue-400">Pool Enclosure By-law 2022-18</NavLink></li>
                 <li><NavLink to="/permits/burn" className="hover:text-blue-400">Open-Air Burn Permits</NavLink></li>

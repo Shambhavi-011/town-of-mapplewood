@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import townData from '../../data/townData.json';
 import SEOHead from '../../components/SEOHead';
 
@@ -33,6 +34,24 @@ export default function BurnPermits() {
         <p className="text-base text-slate-600 leading-relaxed" itemProp="description">
           Regulations, eligibility zones, fire ban rules, and application requirements for open-air agricultural and brush burning in the Town of Maplewood.
         </p>
+
+        {/* ── Direct Permit Form CTA Banner ── */}
+        <div className="p-4 bg-orange-50 border border-orange-200 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div className="space-y-0.5">
+            <span className="text-xs font-bold uppercase tracking-wider text-orange-900 block">
+              Automated Online Burn Permitting
+            </span>
+            <p className="text-xs text-orange-800">
+              Eligible rural property owner? Get your active seasonal burn certificate instantly ($25 fee).
+            </p>
+          </div>
+          <NavLink
+            to="/permits/apply/burn"
+            className="inline-flex items-center gap-1.5 bg-orange-600 hover:bg-orange-700 text-white font-bold text-xs px-4 py-2.5 rounded-lg shadow-sm transition-colors whitespace-nowrap self-start sm:self-auto"
+          >
+            <span>🔥</span> Apply for Burn Permit Online →
+          </NavLink>
+        </div>
       </header>
 
       {/* ── Zoning Eligibility Warning ── */}
@@ -72,6 +91,15 @@ export default function BurnPermits() {
         <p className="text-xs sm:text-sm leading-relaxed">
           {burnPermits.fireBanRule}
         </p>
+        <div className="pt-3 border-t border-red-200 flex flex-wrap items-center justify-between gap-3">
+          <span className="text-xs text-red-900 font-semibold">Immediate verification &amp; instant permit license generation.</span>
+          <NavLink
+            to="/permits/apply/burn"
+            className="bg-orange-600 hover:bg-orange-700 text-white font-bold text-xs px-3.5 py-2 rounded-lg transition-colors"
+          >
+            Launch Instant Burn Permit Form →
+          </NavLink>
+        </div>
       </section>
     </article>
   );

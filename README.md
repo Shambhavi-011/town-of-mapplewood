@@ -43,11 +43,12 @@ Every route is structured using strict semantic HTML (`<article>`, `<header>`, `
 ### 🚛 Public Works & Services
 | Route | Page Component | Municipal Highlights & Rules |
 |---|---|---|
+| `/services/public-works` | [`PublicWorks.tsx`](src/pages/services/PublicWorks.tsx) | **DPW Facility (359 Boyden Ave):** Mon–Fri 8am–3pm, Sat 8am–12pm (Phone: 973-762-1175). Dual-stream recycling by section (Sec 1-2 Mon, Sec 3-4 Tue, Sec 5-6 Wed), biannual bulk drop-off days (furniture, mattresses, MRPs with 2 Maplewood IDs; no construction debris), 4 rotating fall curbside leaf pickup rounds (zero plastic bags, gas-powered leaf blowers banned), spring rake-out (max 4-foot branch bundles), street sweeping, tree removal permits (>8-inch diameter), Jitney commuter train shuttle ($95/yr), free mulch/compost, and electronics e-waste depot. |
 | `/services/waste` | [`WasteRecycling.tsx`](src/pages/services/WasteRecycling.tsx) | Bins out by **7:00 AM**; missed collection reports strictly **after 5:00 PM**; 2-business-day resolution SLA; green bin, blue box, and bulk item schedules. |
 | `/services/roads` | [`RoadsMaintenance.tsx`](src/pages/services/RoadsMaintenance.tsx) | Pothole size matrix (<25cm, 25–60cm, >60cm); travel lane severity rule; **50m & 30-day duplicate prevention**; urgent downed wire hotline (`1-800-434-1235`); streetlight pole IDs (e.g. `ML-0412`). |
 | `/services/parks` | [`ParksForestry.tsx`](src/pages/services/ParksForestry.tsx) | 18 municipal parks, 35 km trails, boulevard vs. private tree rules under By-law 2023-45, park bench and playground hazard reporting. |
 | `/services/water` | [`WaterServices.tsx`](src/pages/services/WaterServices.tsx) | Aquifer drinking water, seasonal odd/even watering restrictions (May 15 – Sept 15, 6–8 AM & 7–9 PM), emergency water main break hotline (`(555) 123-9287`). |
-| `/services/snow` | [`SnowRemoval.tsx`](src/pages/services/SnowRemoval.tsx) | Priority 1–3 plowing routes, annual winter overnight parking ban (**2:00 AM – 6:00 AM from Dec 1 to Mar 31**, $60 fine), 24h sidewalk clearing by-law. |
+| `/services/snow` | [`SnowRemoval.tsx`](src/pages/services/SnowRemoval.tsx) | **Chapter 257 Snow Emergency Routes:** 22 designated corridors with emergency no-parking (§ 257-36.7 & § 257-2.5); mandatory towing under § 257-31; suspension of overnight permits; Priority 1–3 plowing schedules; 24-hour sidewalk clearing mandate (§ 239-1); prohibition on depositing snow into plowed roads (§ 239-2). |
 | `/services/animals` | [`AnimalControl.tsx`](src/pages/services/AnimalControl.tsx) | Mandatory dog licensing ($30 spayed/neutered, $45 intact), leash by-law (max 2.0m length), Bark Park rules, lost/found pet shelter. |
 
 ### 💰 Property Taxes & Finance
@@ -61,11 +62,19 @@ Every route is structured using strict semantic HTML (`<article>`, `<header>`, `
 ### 📋 Building & Planning Permits
 | Route | Page Component | Municipal Highlights & Rules |
 |---|---|---|
-| `/permits/decks` | [`DeckPermits.tsx`](src/pages/permits/DeckPermits.tsx) | **Exempt vs Mandatory:** Freestanding <60cm (24") & <10m² (108 sq ft) is exempt; attached decks or >60cm require building permit ($185 fee); 1.5m rear / 1.2m side setbacks. |
-| `/permits/pools` | [`PoolPermits.tsx`](src/pages/permits/PoolPermits.tsx) | **By-law 2022-18:** Required for water depth >60cm; minimum **1.5m (5.0ft)** non-climbable fence; self-closing and self-latching gate with latch at 1.35m height; ASTM F1346 locking hot tub cover exemption; $150 fee. |
-| `/permits/burn` | [`BurnPermits.tsx`](src/pages/permits/BurnPermits.tsx) | **By-law 2021-09:** Permitted only in Rural (A-1, RU) zones & County Rd 8; burn pile max 2m × 2m × 1m; adult 18+ with charged hose; sunrise to sunset; automatic revocation during fire bans. |
+| `/permits/decks` | [`DeckPermits.tsx`](src/pages/permits/DeckPermits.tsx) | **Exempt vs Mandatory:** Freestanding <60cm (24") & <10m² (108 sq ft) is exempt; attached decks or >60cm require building permit ($185 fee); 1.5m rear / 1.2m side setbacks. Includes direct link to online application form. |
+| `/permits/pools` | [`PoolPermits.tsx`](src/pages/permits/PoolPermits.tsx) | **By-law 2022-18:** Required for water depth >60cm; minimum **1.5m (5.0ft)** non-climbable fence; self-closing and self-latching gate with latch at 1.35m height; ASTM F1346 locking hot tub cover exemption; $150 fee. Includes direct link to online application form. |
+| `/permits/burn` | [`BurnPermits.tsx`](src/pages/permits/BurnPermits.tsx) | **By-law 2021-09:** Permitted only in Rural (A-1, RU) zones & County Rd 8; burn pile max 2m × 2m × 1m; adult 18+ with charged hose; sunrise to sunset; automatic revocation during fire bans. Includes direct link to online application form. |
 | `/permits/building` | [`BuildingPermits.tsx`](src/pages/permits/BuildingPermits.tsx) | Renovation and addition permits, secondary basement suites, accessory buildings >15m², 10-day OBC review timeline, mandatory inspection stages. |
 | `/permits/signs` | [`SignagePermits.tsx`](src/pages/permits/SignagePermits.tsx) | By-law 2021-34 for storefront fascia, pylon signs, and annual $50 sidewalk A-frame sandwich boards (1.8m pedestrian clearance required). |
+
+### 📝 Dedicated Online Permit Application Forms (Direct Scraper & Chatbot Endpoints)
+| Endpoint Route | Page Component | Permit Type & Functionality |
+|---|---|---|
+| `/permits/apply` | [`PermitPortal.tsx`](src/pages/permits/apply/PermitPortal.tsx) | **Permit Intake Portal Hub:** Master index and scraper routing spec for all permit intake forms. |
+| `/permits/apply/deck` | [`DeckPermitApply.tsx`](src/pages/permits/apply/DeckPermitApply.tsx) | **Residential Deck Permit Intake:** Collects applicant info, structural connection (freestanding vs attached), height, area, setbacks (1.5m rear / 1.2m side), site plans, and generates instant application tracking number (`PERM-DECK-2026-XXXX`). Standard fee: $185.00. |
+| `/permits/apply/pool` | [`PoolPermitApply.tsx`](src/pages/permits/apply/PoolPermitApply.tsx) | **Pool Enclosure Permit Intake:** Enforces By-law 2022-18 for pools >60cm depth. Collects enclosure fence height (min 1.5m), gate latch specs (min 1.35m swinging outward), One Call ticket #, and generates `PERM-POOL-2026-XXXX`. Fee: $150.00. |
+| `/permits/apply/burn` | [`BurnPermitApply.tsx`](src/pages/permits/apply/BurnPermitApply.tsx) | **Open-Air Burn Permit Instant Issuance:** Enforces By-law 2021-09 for rural and County Rd 8 properties. Enforces 2mx2mx1m pile limits, 15m clearances, adult 18+ supervisor, and issues an immediate active certificate (`BURN-2026-XXXX`). Fee: $25.00. |
 
 ### 📑 Legislative & Public Records
 | Route | Page Component | Municipal Highlights & Rules |
@@ -134,6 +143,7 @@ maplewood-town-site/
         ├── Contact.tsx             # Town Hall & departmental directory
         ├── Sitemap.tsx             # Comprehensive HTML Site Map & Crawler Index
         ├── services/
+        │   ├── PublicWorks.tsx     # Department of Public Works & Recycling Center Hub
         │   ├── WasteRecycling.tsx
         │   ├── RoadsMaintenance.tsx
         │   ├── ParksForestry.tsx
