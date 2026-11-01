@@ -94,23 +94,29 @@ export default function Home() {
 
           <div className="pt-2 flex flex-wrap gap-3 text-xs md:text-sm">
             <NavLink
-              to="/services/waste"
-              className="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-5 py-2.5 rounded-lg shadow transition-all hover:shadow-lg flex items-center gap-2"
+              to="/services/request"
+              className="bg-amber-400 hover:bg-amber-300 text-blue-950 font-bold px-5 py-2.5 rounded-lg shadow transition-all hover:shadow-lg flex items-center gap-2"
             >
-              <span>Explore All Services</span>
+              <span>🛠️ 311 Service Requests</span>
               <span>&rarr;</span>
+            </NavLink>
+            <NavLink
+              to="/about"
+              className="bg-blue-700 hover:bg-blue-600 text-white font-semibold px-5 py-2.5 rounded-lg shadow transition-all flex items-center gap-2 border border-blue-600"
+            >
+              <span>🏛️ Town Info &amp; Council</span>
+            </NavLink>
+            <NavLink
+              to="/services/waste"
+              className="bg-white/10 hover:bg-white/20 text-white font-semibold px-5 py-2.5 rounded-lg border border-white/20 backdrop-blur-sm transition-all flex items-center gap-2"
+            >
+              <span>Municipal Services</span>
             </NavLink>
             <NavLink
               to="/taxes/calculator"
               className="bg-white/10 hover:bg-white/20 text-white font-semibold px-5 py-2.5 rounded-lg border border-white/20 backdrop-blur-sm transition-all flex items-center gap-2"
             >
               <span>Tax Calculator</span>
-            </NavLink>
-            <NavLink
-              to="/contact"
-              className="bg-white/10 hover:bg-white/20 text-white font-semibold px-5 py-2.5 rounded-lg border border-white/20 backdrop-blur-sm transition-all flex items-center gap-2"
-            >
-              <span>Town Hall Directory</span>
             </NavLink>
           </div>
         </div>
@@ -332,6 +338,60 @@ export default function Home() {
           </div>
         </section>
       </div>
+
+      {/* ── Town Profile & 311 Action Center Highlights ── */}
+      <section className="bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-8 space-y-6">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-200 pb-4">
+          <div>
+            <div className="inline-block bg-blue-100 text-blue-900 text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded font-mono mb-1">
+              Town Profile &middot; Est. 1888
+            </div>
+            <h2 className="text-2xl font-bold font-serif text-slate-900">
+              Civic Administration &amp; 311 Citizen Services
+            </h2>
+            <p className="text-xs sm:text-sm text-slate-600">
+              Representing 42,850 residents across 4 municipal wards with transparent civic operations and rapid response work orders.
+            </p>
+          </div>
+          <div className="flex items-center gap-2">
+            <NavLink
+              to="/about"
+              className="bg-white hover:bg-slate-100 border border-slate-300 text-slate-800 text-xs font-bold px-3.5 py-2 rounded-xl transition-colors shadow-xs"
+            >
+              Meet Mayor &amp; Council &rarr;
+            </NavLink>
+            <NavLink
+              to="/services/request"
+              className="bg-blue-900 hover:bg-blue-800 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition-colors shadow-xs"
+            >
+              Submit 311 Request &rarr;
+            </NavLink>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
+          <div className="p-4 bg-white rounded-xl border border-slate-200 shadow-xs">
+            <span className="text-xs text-slate-500 uppercase font-mono block">Elected Council</span>
+            <strong className="text-xl font-bold text-slate-900 font-serif">Mayor + 5</strong>
+            <span className="text-[11px] text-slate-500 block">4 Ward Councillors</span>
+          </div>
+          <div className="p-4 bg-white rounded-xl border border-slate-200 shadow-xs">
+            <span className="text-xs text-slate-500 uppercase font-mono block">Public Works Yard</span>
+            <strong className="text-xl font-bold text-slate-900 font-serif">359 Boyden</strong>
+            <span className="text-[11px] text-slate-500 block">Recycling &amp; Bulk Depot</span>
+          </div>
+          <div className="p-4 bg-white rounded-xl border border-slate-200 shadow-xs">
+            <span className="text-xs text-slate-500 uppercase font-mono block">Fire &amp; Rescue</span>
+            <strong className="text-xl font-bold text-slate-900 font-serif">2 Stations</strong>
+            <span className="text-[11px] text-slate-500 block">Valley Rd &amp; County Rd 8</span>
+          </div>
+          <div className="p-4 bg-white rounded-xl border border-slate-200 shadow-xs">
+            <span className="text-xs text-slate-500 uppercase font-mono block">Pothole Response</span>
+            <strong className="text-xl font-bold text-emerald-700 font-serif">24 Hours</strong>
+            <span className="text-[11px] text-slate-500 block">High Severity / Lane SLA</span>
+          </div>
+        </div>
+      </section>
 
       {/* ── Municipal Contact & Help Desk Info ── */}
       <section className="bg-blue-950 text-white rounded-2xl p-6 md:p-8 shadow-md">

@@ -4,6 +4,7 @@ import Layout from './components/Layout';
 // Pages Import (Inhe aapko src/pages/ folder mein banvana hai agar abhi nahi bane)
 import Home from './pages/Home';
 import PublicWorks from './pages/services/PublicWorks';
+import ServiceRequestPortal from './pages/services/ServiceRequestPortal';
 import WasteRecycling from './pages/services/WasteRecycling';
 import RoadsMaintenance from './pages/services/RoadsMaintenance';
 import ParksForestry from './pages/services/ParksForestry';
@@ -34,6 +35,7 @@ import Guides from './pages/documents/Guides';
 import CouncilMinutes from './pages/documents/CouncilMinutes';
 
 import Contact from './pages/Contact';
+import TownInformation from './pages/TownInformation';
 import Sitemap from './pages/Sitemap';
 
 function App() {
@@ -46,6 +48,8 @@ function App() {
           
           {/* Services Routes */}
           <Route path="services/public-works" element={<PublicWorks />} />
+          <Route path="services/request" element={<ServiceRequestPortal />} />
+          <Route path="services/track" element={<ServiceRequestPortal />} />
           <Route path="services/waste" element={<WasteRecycling />} />
           <Route path="services/roads" element={<RoadsMaintenance />} />
           <Route path="services/parks" element={<ParksForestry />} />
@@ -78,7 +82,9 @@ function App() {
           <Route path="documents/guides" element={<Guides />} />
           <Route path="documents/minutes" element={<CouncilMinutes />} />
 
-          {/* Contact & Sitemap */}
+          {/* Contact, About & Sitemap */}
+          <Route path="about" element={<TownInformation />} />
+          <Route path="town-hall" element={<TownInformation />} />
           <Route path="contact" element={<Contact />} />
           <Route path="sitemap" element={<Sitemap />} />
         </Route>

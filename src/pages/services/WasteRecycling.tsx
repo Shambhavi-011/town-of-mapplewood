@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import townData from '../../data/townData.json';
 import SEOHead from '../../components/SEOHead';
 
@@ -33,6 +34,32 @@ export default function WasteRecycling() {
         <p className="text-base text-slate-600 leading-relaxed" itemProp="description">
           Comprehensive guide to residential waste collection, organic green bins, blue box recycling, bulk item pickup, and missed collection resolution for the Town of Maplewood.
         </p>
+
+        {/* ── 311 Citizen Service Request Action Card ── */}
+        <div className="p-4 bg-blue-50 border border-blue-200 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div className="space-y-0.5">
+            <span className="text-xs font-bold uppercase tracking-wider text-blue-900 block font-mono">
+              311 Citizen Action &middot; Missed Pickup Reporting
+            </span>
+            <p className="text-xs text-blue-950">
+              Was your recycling, organics, or garbage missed? File a verified report after 5:00 PM.
+            </p>
+          </div>
+          <div className="flex items-center gap-2">
+            <NavLink
+              to="/services/request?type=missedWaste"
+              className="bg-blue-900 hover:bg-blue-800 text-white font-bold text-xs px-4 py-2.5 rounded-lg shadow-sm transition-colors whitespace-nowrap"
+            >
+              🚛 Report Missed Collection &rarr;
+            </NavLink>
+            <NavLink
+              to="/services/track"
+              className="bg-white hover:bg-slate-50 border border-slate-300 text-slate-700 font-bold text-xs px-3.5 py-2.5 rounded-lg transition-colors whitespace-nowrap"
+            >
+              🔍 Track Status
+            </NavLink>
+          </div>
+        </div>
       </header>
 
       {/* ── Curbside Placement Rules ── */}

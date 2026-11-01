@@ -2,19 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Core Hub Pages -->
   <url>
-    <loc>https://maplewood.fictionaltown.com/</loc>
+    <loc>https://mapplewood-fictional-town.onrender.com/</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://maplewood.fictionaltown.com/contact</loc>
+    <loc>https://mapplewood-fictional-town.onrender.com/contact</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://maplewood.fictionaltown.com/sitemap</loc>
+    <loc>https://mapplewood-fictional-town.onrender.com/about</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mapplewood-fictional-town.onrender.com/services/request</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mapplewood-fictional-town.onrender.com/services/track</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mapplewood-fictional-town.onrender.com/sitemap</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -22,43 +40,43 @@
 
   <!-- Municipal Services -->
   <url>
-    <loc>https://maplewood.fictionaltown.com/services/public-works</loc>
+    <loc>https://mapplewood-fictional-town.onrender.com/services/public-works</loc>
     <lastmod>2026-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://maplewood.fictionaltown.com/services/waste</loc>
+    <loc>https://mapplewood-fictional-town.onrender.com/services/waste</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://maplewood.fictionaltown.com/services/roads</loc>
+    <loc>https://mapplewood-fictional-town.onrender.com/services/roads</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://maplewood.fictionaltown.com/services/parks</loc>
+    <loc>https://mapplewood-fictional-town.onrender.com/services/parks</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maplewood.fictionaltown.com/services/water</loc>
+    <loc>https://mapplewood-fictional-town.onrender.com/services/water</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maplewood.fictionaltown.com/services/snow</loc>
+    <loc>https://mapplewood-fictional-town.onrender.com/services/snow</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maplewood.fictionaltown.com/services/animals</loc>
+    <loc>https://mapplewood-fictional-town.onrender.com/services/animals</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -66,25 +84,25 @@
 
   <!-- Property Taxes & Finance -->
   <url>
-    <loc>https://maplewood.fictionaltown.com/taxes/info</loc>
+    <loc>https://mapplewood-fictional-town.onrender.com/taxes/info</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://maplewood.fictionaltown.com/taxes/payment</loc>
+    <loc>https://mapplewood-fictional-town.onrender.com/taxes/payment</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maplewood.fictionaltown.com/taxes/pre-authorized</loc>
+    <loc>https://mapplewood-fictional-town.onrender.com/taxes/pre-authorized</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maplewood.fictionaltown.com/taxes/calculator</loc>
+    <loc>https://mapplewood-fictional-town.onrender.com/taxes/calculator</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -92,31 +110,31 @@
 
   <!-- Permits & Planning -->
   <url>
-    <loc>https://maplewood.fictionaltown.com/permits/decks</loc>
+    <loc>https://mapplewood-fictional-town.onrender.com/permits/decks</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://maplewood.fictionaltown.com/permits/pools</loc>
+    <loc>https://mapplewood-fictional-town.onrender.com/permits/pools</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://maplewood.fictionaltown.com/permits/burn</loc>
+    <loc>https://mapplewood-fictional-town.onrender.com/permits/burn</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://maplewood.fictionaltown.com/permits/building</loc>
+    <loc>https://mapplewood-fictional-town.onrender.com/permits/building</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maplewood.fictionaltown.com/permits/signs</loc>
+    <loc>https://mapplewood-fictional-town.onrender.com/permits/signs</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -124,25 +142,25 @@
 
   <!-- Online Permit Intake Endpoints (Scraper Ready) -->
   <url>
-    <loc>https://maplewood.fictionaltown.com/permits/apply</loc>
+    <loc>https://mapplewood-fictional-town.onrender.com/permits/apply</loc>
     <lastmod>2026-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://maplewood.fictionaltown.com/permits/apply/deck</loc>
+    <loc>https://mapplewood-fictional-town.onrender.com/permits/apply/deck</loc>
     <lastmod>2026-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://maplewood.fictionaltown.com/permits/apply/pool</loc>
+    <loc>https://mapplewood-fictional-town.onrender.com/permits/apply/pool</loc>
     <lastmod>2026-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://maplewood.fictionaltown.com/permits/apply/burn</loc>
+    <loc>https://mapplewood-fictional-town.onrender.com/permits/apply/burn</loc>
     <lastmod>2026-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -150,25 +168,25 @@
 
   <!-- Documents & Legislative Records -->
   <url>
-    <loc>https://maplewood.fictionaltown.com/documents/by-laws</loc>
+    <loc>https://mapplewood-fictional-town.onrender.com/documents/by-laws</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://maplewood.fictionaltown.com/documents/fees</loc>
+    <loc>https://mapplewood-fictional-town.onrender.com/documents/fees</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maplewood.fictionaltown.com/documents/guides</loc>
+    <loc>https://mapplewood-fictional-town.onrender.com/documents/guides</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://maplewood.fictionaltown.com/documents/minutes</loc>
+    <loc>https://mapplewood-fictional-town.onrender.com/documents/minutes</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

@@ -1,19 +1,188 @@
 {
   "townInfo": {
     "name": "Town of Maplewood",
-    "domain": "maplewood.fictionaltown.com",
+    "domain": "mapplewood-fictional-town.onrender.com",
     "motto": "Growing Together in Community and Nature",
     "address": "123 Main Street, Maplewood, ON M4P 1T8",
     "phone": "(555) 123-4567",
     "serviceQueue311": "311 (within town limits) or (555) 311-MAPL",
     "email": "info@maplewood.fictionaltown.com",
     "hours": "Monday to Friday: 8:30 AM – 4:30 PM (Closed statutory holidays)",
+    "incorporatedYear": 1888,
+    "population": 42850,
+    "households": 16420,
+    "landAreaKm2": 64.2,
+    "annualOperatingBudget": "$58,400,000 CAD",
     "emergencyHotlines": {
       "policeFireAmbulance": "911",
       "roadsEmergency": "(555) 123-7623 (24/7 Dispatch)",
       "waterSewerEmergency": "(555) 123-9287 (24/7 Water Dispatch)",
       "hydroDownedWires": "Maplewood Hydro & Electric: 1-800-434-1235 (24/7 Urgent Line)"
-    }
+    },
+    "mayorAndCouncil": {
+      "term": "2024–2028 Municipal Council Term",
+      "councilMeetingSchedule": "1st and 3rd Tuesday of each month at 7:00 PM in Council Chambers (Live-streamed)",
+      "mayor": {
+        "name": "Eleanor Vance",
+        "title": "Mayor & Head of Council",
+        "email": "mayor.vance@maplewood.fictionaltown.com",
+        "phone": "(555) 123-4567 ext. 101",
+        "bio": "Serving her second term as Mayor, focusing on green infrastructure, fiscal sustainability, and digital civic access."
+      },
+      "deputyMayor": {
+        "name": "Marcus Sterling",
+        "title": "Deputy Mayor & Councillor-at-Large",
+        "email": "m.sterling@maplewood.fictionaltown.com",
+        "phone": "(555) 123-4567 ext. 102",
+        "bio": "Leads the Standing Committee on Planning, Economic Development and Intergovernmental Affairs."
+      },
+      "councillors": [
+        {
+          "ward": "Ward 1",
+          "name": "Claire Fontaine",
+          "area": "Downtown, Heritage District & Millpond",
+          "email": "c.fontaine@maplewood.fictionaltown.com",
+          "phone": "(555) 123-4567 ext. 103"
+        },
+        {
+          "ward": "Ward 2",
+          "name": "David K. Chen",
+          "area": "North Maplewood, Innovation Corridor & High Park",
+          "email": "d.chen@maplewood.fictionaltown.com",
+          "phone": "(555) 123-4567 ext. 104"
+        },
+        {
+          "ward": "Ward 3",
+          "name": "Fatima Al-Mansoor",
+          "area": "West Valley, Rural Agricultural Corridors & County Rd 8",
+          "email": "f.almansoor@maplewood.fictionaltown.com",
+          "phone": "(555) 123-4567 ext. 105"
+        },
+        {
+          "ward": "Ward 4",
+          "name": "Robert MacIntyre",
+          "area": "East Maplewood, Boyden Heights & Riverdale",
+          "email": "r.macintyre@maplewood.fictionaltown.com",
+          "phone": "(555) 123-4567 ext. 106"
+        }
+      ]
+    },
+    "leadershipAndAdministration": [
+      {
+        "department": "Office of the CAO",
+        "leader": "Arthur Pendelton",
+        "title": "Chief Administrative Officer",
+        "email": "cao@maplewood.fictionaltown.com",
+        "phone": "(555) 123-4567 ext. 100",
+        "responsibilities": "Overall corporate administration, strategic plan delivery, and municipal department coordination."
+      },
+      {
+        "department": "Clerk & Legislative Services",
+        "leader": "Brenda Hastings",
+        "title": "Town Clerk",
+        "email": "clerk@maplewood.fictionaltown.com",
+        "phone": "(555) 123-4567 ext. 110",
+        "responsibilities": "Council secretarial, municipal by-laws, vital statistics, elections, and Freedom of Information (MFIPPA)."
+      },
+      {
+        "department": "Finance & Taxation",
+        "leader": "Jason Miller, CPA, CGA",
+        "title": "Treasurer & Director of Finance",
+        "email": "finance@maplewood.fictionaltown.com",
+        "phone": "(555) 123-4567 ext. 210",
+        "responsibilities": "Property tax billing, municipal budget, capital financing, and financial reporting."
+      },
+      {
+        "department": "Public Works & Engineering",
+        "leader": "Gregory Shaw, P.Eng.",
+        "title": "Director of Public Works",
+        "email": "publicworks@maplewood.fictionaltown.com",
+        "phone": "(555) 123-4567 ext. 230",
+        "responsibilities": "Road maintenance, winter plowing, curbside collection, DPW yard, and water distribution infrastructure."
+      },
+      {
+        "department": "Building & Planning",
+        "leader": "Donald Tremblay",
+        "title": "Chief Building Official (CBO)",
+        "email": "building@maplewood.fictionaltown.com",
+        "phone": "(555) 123-4567 ext. 250",
+        "responsibilities": "Ontario Building Code enforcement, deck and pool permits, zoning compliance, and site inspections."
+      },
+      {
+        "department": "Fire & Rescue Services",
+        "leader": "Michael Rossi",
+        "title": "Fire Chief & CEMC",
+        "email": "fire@maplewood.fictionaltown.com",
+        "phone": "(555) 123-4567 ext. 280",
+        "responsibilities": "Emergency fire suppression, rescue operations, fire prevention inspections, burn permits, and emergency management."
+      },
+      {
+        "department": "By-law & Animal Control",
+        "leader": "Karen Lindqvist",
+        "title": "Supervisor of By-law Enforcement",
+        "email": "bylaw@maplewood.fictionaltown.com",
+        "phone": "(555) 123-4567 ext. 300",
+        "responsibilities": "Property standards, noise by-law, parking enforcement, dog licensing, and animal care shelter management."
+      }
+    ],
+    "municipalFacilities": [
+      {
+        "name": "Maplewood Town Hall",
+        "type": "Civic Administration",
+        "address": "123 Main Street, Maplewood, ON M4P 1T8",
+        "hours": "Mon–Fri: 8:30 AM – 4:30 PM",
+        "phone": "(555) 123-4567",
+        "features": "Council Chambers, Tax Office, Clerk counter, 24/7 exterior payment drop-box, accessible elevator."
+      },
+      {
+        "name": "Department of Public Works Yard & Recycling Center",
+        "type": "Operations & Depot",
+        "address": "359 Boyden Avenue, Maplewood, NJ 07040",
+        "hours": "Mon–Fri: 8:00 AM – 3:00 PM; Sat: 8:00 AM – 12:00 PM",
+        "phone": "(973) 762-1175",
+        "features": "Dual-stream recycling depot, electronics e-waste, bulk drop-off days, free mulch and compost pick-up."
+      },
+      {
+        "name": "Fire Station 1 (Headquarters)",
+        "type": "Emergency Services",
+        "address": "45 Valley Road, Maplewood, ON M4P 2B1",
+        "hours": "24/7 Emergency Dispatch; Administration: Mon–Fri 9am–4pm",
+        "phone": "Emergency: 911; Non-Emergency: (555) 123-3473",
+        "features": "Fire suppression apparatus, rescue boat, hazmat response, and fire safety education center."
+      },
+      {
+        "name": "Fire Station 2 (Rural & West District)",
+        "type": "Emergency Services",
+        "address": "820 County Road 8, Maplewood, ON M4P 3X9",
+        "hours": "24/7 Emergency Response",
+        "phone": "Emergency: 911; Non-Emergency: (555) 123-3474",
+        "features": "Tanker shuttle service for non-hydrant rural zones, agricultural rescue equipment, and brush fire unit."
+      },
+      {
+        "name": "Maplewood Memorial Community Complex",
+        "type": "Recreation & Culture",
+        "address": "200 Parkside Drive, Maplewood, ON M4P 1Z5",
+        "hours": "Mon–Sun: 6:00 AM – 10:00 PM",
+        "phone": "(555) 123-7327",
+        "features": "25m indoor swimming pool, twin ice rinks, community meeting halls, senior activity wing, and fitness center."
+      },
+      {
+        "name": "Maplewood Public Library",
+        "type": "Public Library",
+        "address": "140 Main Street, Maplewood, ON M4P 1T9",
+        "hours": "Tue–Thu: 10am–8pm; Fri–Sat: 10am–5pm; Sun: 1pm–5pm",
+        "phone": "(555) 123-2665",
+        "features": "Digital makerspace, 3D printing, public computers, Ontario Building Code physical reference shelf, study rooms."
+      },
+      {
+        "name": "Maplewood Regional Animal Care Center & Bark Park",
+        "type": "Animal Services & Park",
+        "address": "42 River Valley Road, Maplewood, ON M4P 4C2",
+        "hours": "Shelter: Mon–Sat 10am–4pm; Bark Park: Dawn to Dusk",
+        "phone": "(555) 123-4567 ext. 240",
+        "features": "Municipal dog licensing, stray animal intake and adoption, 3-acre fully fenced double-gated off-leash park."
+      }
+    ]
   },
   "services": {
     "wasteRecycling": {
@@ -257,78 +426,75 @@
     }
   },
   "permits": {
+    "notice": "Permit information is intentionally minimal. For complete regulations, contact the Building Department at 123 Main St.",
     "deckPermits": {
-      "title": "Residential Deck Construction Permits",
+      "title": "Residential Deck Permits",
       "permitRequirementRules": {
-        "exemptDecks": "A building permit is NOT required if the deck meets ALL of the following criteria: (1) It is completely freestanding (not structurally attached to the dwelling), (2) The walking surface does not exceed 60 cm (24 inches / 2.0 feet) above finished grade at any point, and (3) The total surface area is under 10 square meters (108 square feet). Note: Exemption from a permit does NOT exempt the structure from zoning setbacks.",
-        "mandatoryPermitDecks": "A building permit IS required if the deck: (1) Is physically attached to the house or any other primary building, regardless of height, OR (2) Has a finished walking surface higher than 60 cm (24 inches) above ground, OR (3) Forms part of an access or exit path required by building code."
+        "exemptDecks": "Certain low-profile freestanding decks may be exempt. Contact Building Dept for verification.",
+        "mandatoryPermitDecks": "Permits generally required for attached or elevated decks. Inquire at Town Hall."
       },
-      "zoningSetbacks": "Minimum rear-yard setback: 1.5 meters from property line. Minimum interior side-yard setback: 1.2 meters from property line.",
-      "guardrailRequirements": "Walking surface between 60 cm and 180 cm above ground requires a minimum 90 cm (36 inches) high guardrail. Walking surface higher than 180 cm (6 feet) requires a minimum 107 cm (42 inches) guardrail with non-climbable vertical spindles spaced no wider than 10 cm (3.9 inches) apart.",
+      "zoningSetbacks": "Standard property setbacks apply. Inquire with Building Department.",
+      "guardrailRequirements": "Standard safety guardrails required for elevated walking surfaces.",
       "applicationRequirements": [
-        "Completed Residential Permit Application Form",
-        "Dimensioned Site Plan (scaled drawing showing property boundaries, existing structures, and exact setbacks to new deck)",
-        "Construction Framing Drawings (post sizing, pier footings, beam spans, joist dimensions, railing design)",
-        "Permit Fee: $185.00 flat fee (covers plan review and two mandatory inspections: Footings prior to concrete pour, and Final completion)."
+        "Basic application form",
+        "Site sketch showing property lines",
+        "Framing outline and review fee"
       ]
     },
     "poolPermits": {
-      "title": "Swimming Pool Enclosure Permits (By-Law 2022-18)",
-      "mandatoryPermitRule": "Under Municipal By-law 2022-18, a Pool Enclosure Permit must be issued by the Chief Building Official BEFORE any excavation, installation, or water filling begins for any private swimming pool, hot tub, or decorative water pond capable of holding water deeper than 60 cm (24 inches). This applies equally to in-ground, above-ground, temporary, and inflatable pools.",
+      "title": "Pool Enclosure Permits",
+      "mandatoryPermitRule": "Permits may be required prior to installing residential pools or outdoor water features. Inquire at Town Hall.",
       "fenceEnclosureSpecifications": {
-        "minimumHeight": "Minimum 1.5 meters (5.0 feet / 60 inches) continuous vertical height measured from outside grade.",
-        "climbingPrevention": "Fences must have no horizontal rails or climbable features with spacing under 1.2 meters. Chain-link mesh diamonds must not exceed 38 mm (1.5 inches).",
-        "gateRequirements": "Every access gate through the enclosure must be equipped with a self-closing spring device and a self-latching mechanism positioned on the inside face of the gate at least 1.35 meters (53 inches) above ground level. Gates must swing outwards away from the pool area.",
-        "hotTubExemption": "A hot tub with a locking rigid safety cover bearing ASTM F1346 certification is exempt from the fence enclosure requirement provided the cover is kept locked at all times when not in use."
+        "minimumHeight": "Standard enclosure height applies. Inquire with Building Department.",
+        "climbingPrevention": "Basic non-climbable perimeter required.",
+        "gateRequirements": "Self-closing, self-latching gate required.",
+        "hotTubExemption": "Locking safety covers may qualify for exemptions upon review."
       },
-      "permitFee": "$150.00 flat review fee. Includes pre-excavation site inspection and final enclosure safety inspection."
+      "permitFee": "Standard application review fee."
     },
     "burnPermits": {
-      "title": "Open-Air Burn Permits & Fire Regulations",
-      "zoningEligibility": "Open-air burning is strictly permitted ONLY on properties zoned Rural (A-1, A-2, RU) or properties along County Road 8 and designated agricultural corridors. Open-air burning is strictly prohibited in urban residential subdivisions, townhome complexes, and commercial zones.",
+      "title": "Open-Air Burn Permits",
+      "zoningEligibility": "Rural areas only. Inquire with Fire & Emergency Services.",
       "permitConditions": [
-        "Permit valid for the calendar year of issue; fee is $25.00 per season.",
-        "Burning permitted only between sunrise and sunset. Fires must be completely extinguished 30 minutes before sunset.",
-        "Burn pile dimensions must not exceed 2.0 meters by 2.0 meters with a maximum height of 1.0 meter.",
-        "Burn site must maintain a minimum 15-meter clearance from all structures, overhead utility lines, and property boundaries.",
-        "A responsible adult (18 years or older) must supervise the fire at all times with active extinguishing equipment (charged hose or pressurized water pump) on site.",
-        "Prohibited materials: tires, plastics, asphalt shingles, pressure-treated lumber, garbage, industrial waste, or hazardous chemicals."
+        "Permit required prior to burning",
+        "Daylight hours only",
+        "Adult supervision required on site"
       ],
-      "fireBanRule": "All open-air burning permits are automatically revoked during municipal, county, or provincial Fire Bans declared by the Maplewood Fire Chief. Failure to adhere results in a minimum $500 fine plus firefighting emergency response cost recovery ($485/hour per apparatus)."
+      "fireBanRule": "Open-air burning is prohibited during municipal fire bans."
     },
     "buildingPermits": {
-      "title": "General Building & Construction Permits",
-      "scope": "Required for new home construction, additions, finished basements with secondary suites, structural alterations, plumbing additions, demolitions, and accessory buildings (sheds, garages) greater than 15 square meters (161 square feet).",
-      "reviewTimelines": "Residential applications are reviewed within 10 business days of complete submission. Commercial/industrial applications within 15 business days in accordance with the Ontario Building Code."
+      "title": "General Building Permits",
+      "scope": "Permits may be required for structural work, additions, and alterations. Inquire with Chief Building Official.",
+      "reviewTimelines": "Standard administrative review period."
     },
     "signagePermits": {
-      "title": "Commercial & Temporary Signage Permits",
-      "regulations": "Governed by By-law 2021-34. Commercial storefront fascia signs, pylon signs, and temporary promotional banners require municipal permits. Portable A-frame (sandwich board) signs require an annual $50 sidewalk permit and must maintain a minimum 1.8-meter unobstructed pedestrian pathway."
+      "title": "Commercial Signage",
+      "regulations": "Commercial signage is subject to town sign by-law. Contact planning office."
     },
     "onlineApplicationEndpoints": {
-      "portalUrl": "https://maplewood.fictionaltown.com/permits/apply",
+      "portalUrl": "https://mapplewood-fictional-town.onrender.com/permits/apply",
       "deckPermit": {
-        "title": "Deck Construction Permit Online Application",
-        "url": "https://maplewood.fictionaltown.com/permits/apply/deck",
+        "title": "Deck Permit Application",
+        "url": "https://mapplewood-fictional-town.onrender.com/permits/apply/deck",
         "code": "PERM-DECK",
-        "fee": "$185.00 CAD",
-        "sla": "10 business days",
+        "fee": "Subject to review",
+        "sla": "Standard review",
         "method": "POST"
       },
       "poolPermit": {
-        "title": "Pool Enclosure Permit Online Application (By-law 2022-18)",
-        "url": "https://maplewood.fictionaltown.com/permits/apply/pool",
+        "title": "Pool Enclosure Application",
+        "url": "https://mapplewood-fictional-town.onrender.com/permits/apply/pool",
         "code": "PERM-POOL",
-        "fee": "$150.00 CAD",
-        "sla": "5 business days",
+        "fee": "Subject to review",
+        "sla": "Standard review",
         "method": "POST"
       },
       "burnPermit": {
-        "title": "Open-Air Burn Permit Instant Application (By-law 2021-09)",
-        "url": "https://maplewood.fictionaltown.com/permits/apply/burn",
+        "title": "Open-Air Burn Application",
+        "url": "https://mapplewood-fictional-town.onrender.com/permits/apply/burn",
         "code": "PERM-BURN",
-        "fee": "$25.00 CAD",
-        "sla": "Instant Automated Approval",
+        "fee": "Subject to review",
+        "sla": "Standard review",
         "method": "POST"
       }
     }
@@ -411,6 +577,71 @@
       { "meetingDate": "September 23, 2026", "type": "Regular Council Meeting", "status": "Approved", "highlights": "Reviewed Winter Road Maintenance Plan, endorsed Wayhall municipal AI chatbot initiative." },
       { "meetingDate": "September 9, 2026", "type": "Planning & Zoning Committee", "status": "Approved", "highlights": "Public hearing on downtown revitalization zoning amendment and secondary suite provisions." },
       { "meetingDate": "August 26, 2026", "type": "Regular Council Meeting", "status": "Approved", "highlights": "Authorized water treatment plant membrane filtration upgrade and aquifer conservation report." }
+    ]
+  },
+  "serviceRequests": {
+    "portalTitle": "Maplewood 311 Citizen Service Request Portal",
+    "portalDescription": "Submit, track, and resolve non-emergency municipal service requests online. Connect directly with Public Works, Roads, Parks, Waste, and By-law enforcement crews.",
+    "hotline": "311 (Local) or (555) 311-MAPL",
+    "emergencyNotice": "For life-threatening emergencies call 911 immediately. For active water main breaks call (555) 123-9287. For downed power lines call 1-800-434-1235.",
+    "categories": [
+      {
+        "id": "pothole",
+        "name": "Pothole & Road Surface Hazard",
+        "department": "Roads & Fleet Maintenance",
+        "icon": "🚧",
+        "sla": "24 hours (High severity/Travel lane) to 3-5 days (Standard)",
+        "requiredFields": ["Exact street address or cross-street", "Lane direction", "Pothole size estimation"],
+        "duplicateRadiusMeters": 50,
+        "duplicateWindowDays": 30
+      },
+      {
+        "id": "missedWaste",
+        "name": "Missed Curbside Waste / Recycling Collection",
+        "department": "Public Works & Waste Management",
+        "icon": "🚛",
+        "sla": "2 business days",
+        "reportingPolicy": "Reports accepted only after 5:00 PM on your scheduled collection day. Setout must have occurred before 7:00 AM.",
+        "requiredFields": ["Property address", "Collection stream (Garbage, Blue Box, Green Bin)", "Time set at curb"]
+      },
+      {
+        "id": "streetlight",
+        "name": "Streetlight Outage / Damaged Fixture",
+        "department": "Traffic & Street Lighting Operations",
+        "icon": "💡",
+        "sla": "5 to 7 business days",
+        "requiredFields": ["6-digit pole tag (e.g., ML-0412)", "Closest street address", "Outage type (dark, flickering, physical damage)"]
+      },
+      {
+        "id": "parkTree",
+        "name": "Park Equipment Hazard or Boulevard Tree Issue",
+        "department": "Parks, Trails & Urban Forestry",
+        "icon": "🌳",
+        "sla": "48 hours (Safety hazard) to 10 days (Pruning inspection)",
+        "requiredFields": ["Park name or boulevard address", "Tree location (within 4.5m of curb)", "Hazard type (hanging branch, damaged bench, playground)"]
+      },
+      {
+        "id": "waterIssue",
+        "name": "Water Quality / Low Pressure / Meter Reading",
+        "department": "Water Distribution & Conservation",
+        "icon": "💧",
+        "sla": "2 to 4 business days",
+        "requiredFields": ["Service address", "Issue description", "Water meter serial number"]
+      },
+      {
+        "id": "general311",
+        "name": "General Municipal Inquiry or By-law Concern",
+        "department": "Citizen Experience & By-law Services",
+        "icon": "🏛️",
+        "sla": "3 business days",
+        "requiredFields": ["Resident name & contact", "Subject department", "Detailed inquiry description"]
+      }
+    ],
+    "statusWorkflow": [
+      { "code": "New", "label": "Received", "desc": "Request logged and validated in municipal 311 intake queue." },
+      { "code": "Assigned", "label": "Crew Assigned", "desc": "Dispatched to responsible department supervisor and work order created." },
+      { "code": "InProgress", "label": "Work in Progress", "desc": "Field crew on site or inspection underway." },
+      { "code": "Closed", "label": "Completed & Resolved", "desc": "Work completed and verified. Closed in municipal system." }
     ]
   }
 }

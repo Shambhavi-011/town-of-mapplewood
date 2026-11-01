@@ -44,7 +44,7 @@ export default function PoolPermitApply() {
   };
 
   const handleCopyEndpoint = () => {
-    navigator.clipboard.writeText('https://maplewood.fictionaltown.com/permits/apply/pool');
+    navigator.clipboard.writeText('https://mapplewood-fictional-town.onrender.com/permits/apply/pool');
     setCopiedEndpoint(true);
     setTimeout(() => setCopiedEndpoint(false), 2000);
   };
@@ -54,7 +54,7 @@ export default function PoolPermitApply() {
       className="space-y-8 max-w-4xl mx-auto bg-white p-6 sm:p-10 rounded-2xl border border-slate-200 shadow-sm"
       itemScope
       itemType="https://schema.org/ApplyAction"
-      data-endpoint-url="https://maplewood.fictionaltown.com/permits/apply/pool"
+      data-endpoint-url="https://mapplewood-fictional-town.onrender.com/permits/apply/pool"
       data-permit-type="Swimming Pool Enclosure Permit"
       data-bylaw-reference="Town of Maplewood By-law 2022-18"
       data-fee="150.00"
@@ -84,7 +84,7 @@ export default function PoolPermitApply() {
         </div>
         <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-slate-400 font-mono text-[11px]">
           <div>
-            URL: <code className="text-sky-300">https://maplewood.fictionaltown.com/permits/apply/pool</code>
+            URL: <code className="text-sky-300">https://mapplewood-fictional-town.onrender.com/permits/apply/pool</code>
           </div>
           <div>• Code: <span className="text-white">PERM-POOL</span></div>
           <div>• Fee: <span className="text-white">$150.00 flat</span></div>

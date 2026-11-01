@@ -4,8 +4,20 @@ import SEOHead from '../components/SEOHead';
 export default function Sitemap() {
   const sections = [
     {
-      title: 'Municipal Services & Public Works',
+      title: 'Municipal Services & 311 Citizen Requests',
       links: [
+        {
+          title: '311 Citizen Service Request Intake Portal',
+          url: '/services/request',
+          desc: 'Submit non-emergency municipal work orders: potholes, missed curbside waste, streetlight outages, and park or boulevard tree damage.',
+          facts: 'Portal: 311 Intake · Case IDs · Verified 5 PM missed waste cutoff · 24h road hazard SLA'
+        },
+        {
+          title: 'Track Service Request / Work Order Status',
+          url: '/services/track',
+          desc: 'Real-time 311 case tracker showing 4-stage workflow (Received -> Assigned -> In Progress -> Completed), crew notes, and dispatch timestamps.',
+          facts: 'Lookup: CASE-2026-XXXX & PERM-XXXX numbers'
+        },
         {
           title: 'Department of Public Works (DPW) & Recycling Center',
           url: '/services/public-works',
@@ -80,66 +92,66 @@ export default function Sitemap() {
       ]
     },
     {
-      title: 'Building & Planning Permits',
+      title: 'Building & Planning Permits (General Information & Limited Overview)',
       links: [
         {
           title: 'Residential Deck Permits',
           url: '/permits/decks',
-          desc: 'Exempt if freestanding <60cm (24") & <10m² (108 sq ft); mandatory if attached or >60cm; setbacks 1.5m rear / 1.2m side, $185 fee.',
-          facts: 'Exempt threshold: <60cm & <10m² · Fee: $185.00'
+          desc: 'General inquiry information for residential decks. Contact Building Department for applicable guidelines.',
+          facts: 'Basic inquiry · Building Department: ext. 250'
         },
         {
-          title: 'Pool Enclosure Permits (By-law 2022-18)',
+          title: 'Pool Enclosure Permits',
           url: '/permits/pools',
-          desc: 'Mandatory before filling water >60cm depth; minimum 1.5m (5.0ft) fence, self-closing/latching gate at 1.35m latch height, $150 fee.',
-          facts: 'Min fence: 1.5m (5ft) · Latch: 1.35m inside · Fee: $150.00'
+          desc: 'High-level overview of swimming pool enclosures. Consult Town Hall for fencing standards.',
+          facts: 'Preliminary review · By-law 2022-18'
         },
         {
           title: 'Open-Air Burn Permits',
           url: '/permits/burn',
-          desc: 'Rural (A-1, RU) & County Rd 8 only; max pile 2m × 2m × 1m, 15m clearance, adult 18+ with water, sunrise-sunset, fire ban rules.',
-          facts: 'Rural zones only · Max pile: 2m × 2m × 1m · Fee: $25.00'
+          desc: 'Seasonal permits for eligible rural parcels. Subject to municipal fire ban declarations.',
+          facts: 'Rural zones only · Fire & Emergency Services'
         },
         {
           title: 'General Building Permits',
           url: '/permits/building',
-          desc: 'Residential additions, secondary suites, accessory buildings >15m², 10-day Ontario Building Code review timeline.',
-          facts: 'Accessory structures >15m² · Review: 10 business days'
+          desc: 'Structural work and additions require consultation with the Chief Building Official.',
+          facts: 'Inquire at Town Hall'
         },
         {
           title: 'Commercial & Temporary Signage',
           url: '/permits/signs',
-          desc: 'By-law 2021-34 for storefront fascia, pylon signs, and annual $50 sidewalk A-frame sandwich boards (1.8m pedestrian walkway).',
-          facts: 'Sidewalk A-frames: $50/yr · Walkway: 1.8m clearance'
+          desc: 'Commercial signage guidance through the municipal planning office.',
+          facts: 'Planning & Zoning'
         }
       ]
     },
     {
-      title: 'Online Permit Intake Forms (Direct Scraper & Chatbot Endpoints)',
+      title: 'Online Permit Intake Forms (Basic Routing)',
       links: [
         {
           title: 'Permit Application Portal Hub',
           url: '/permits/apply',
-          desc: 'Centralized directory of online permit application forms and direct routing endpoints for residents, contractors, and AI chatbots.',
-          facts: 'Portal: Online intake · Live confirmation numbers · Microdata enabled'
+          desc: 'Preliminary online intake portal for routing applicants to the building department.',
+          facts: 'Portal: Basic online intake'
         },
         {
           title: 'Residential Deck Permit Application Form',
           url: '/permits/apply/deck',
-          desc: 'Dedicated intake form for deck construction permits ($185 fee). Collects dimensions, setbacks (1.5m rear / 1.2m side), site plans, and generates instant application reference numbers.',
-          facts: 'Endpoint: /permits/apply/deck · Fee: $185.00 · SLA: 10 days'
+          desc: 'Preliminary intake form for deck construction inquiries.',
+          facts: 'Endpoint: /permits/apply/deck'
         },
         {
           title: 'Pool Enclosure Permit Application Form (By-law 2022-18)',
           url: '/permits/apply/pool',
-          desc: 'Dedicated intake form for swimming pool enclosures and safety fences ($150 fee). Verifies minimum 1.5m fence and 1.35m latch height prior to excavation.',
-          facts: 'Endpoint: /permits/apply/pool · Fee: $150.00 · SLA: 5 days'
+          desc: 'Preliminary intake form for residential pool enclosure reviews.',
+          facts: 'Endpoint: /permits/apply/pool'
         },
         {
           title: 'Open-Air Burn Permit Application Form (By-law 2021-09)',
           url: '/permits/apply/burn',
-          desc: 'Instant automated issuance form for rural & County Rd 8 agricultural burn permits ($25 seasonal fee). Enforces 2mx2mx1m pile limits and adult 18+ supervision.',
-          facts: 'Endpoint: /permits/apply/burn · Fee: $25.00 · Issuance: Instant active certificate'
+          desc: 'Preliminary intake form for rural open-air burn inquiries.',
+          facts: 'Endpoint: /permits/apply/burn'
         }
       ]
     },
@@ -169,6 +181,12 @@ export default function Sitemap() {
           url: '/documents/minutes',
           desc: 'Official proceedings and recorded resolutions of Maplewood Town Council and committee hearings.',
           facts: 'Public records & delegations'
+        },
+        {
+          title: 'Town Information, Mayor & Council, and Administration',
+          url: '/about',
+          desc: 'Civic profile: 42,850 population, 64.2 km² land area, $58.4M operating budget. Directory of Mayor Eleanor Vance, 4 Ward Councillors, CAO & department leadership, facilities, and council meetings.',
+          facts: 'Governance: Mayor & 5 Council members · CAO & 6 Directors · 7 Public Facilities'
         },
         {
           title: 'Contact & Town Hall Directory',

@@ -44,7 +44,7 @@ export default function BurnPermitApply() {
   };
 
   const handleCopyEndpoint = () => {
-    navigator.clipboard.writeText('https://maplewood.fictionaltown.com/permits/apply/burn');
+    navigator.clipboard.writeText('https://mapplewood-fictional-town.onrender.com/permits/apply/burn');
     setCopiedEndpoint(true);
     setTimeout(() => setCopiedEndpoint(false), 2000);
   };
@@ -54,7 +54,7 @@ export default function BurnPermitApply() {
       className="space-y-8 max-w-4xl mx-auto bg-white p-6 sm:p-10 rounded-2xl border border-slate-200 shadow-sm"
       itemScope
       itemType="https://schema.org/ApplyAction"
-      data-endpoint-url="https://maplewood.fictionaltown.com/permits/apply/burn"
+      data-endpoint-url="https://mapplewood-fictional-town.onrender.com/permits/apply/burn"
       data-permit-type="Open-Air Burn Permit"
       data-bylaw-reference="Town of Maplewood By-law 2021-09"
       data-fee="25.00"
@@ -84,7 +84,7 @@ export default function BurnPermitApply() {
         </div>
         <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-slate-400 font-mono text-[11px]">
           <div>
-            URL: <code className="text-orange-300">https://maplewood.fictionaltown.com/permits/apply/burn</code>
+            URL: <code className="text-orange-300">https://mapplewood-fictional-town.onrender.com/permits/apply/burn</code>
           </div>
           <div>• Code: <span className="text-white">PERM-BURN</span></div>
           <div>• Fee: <span className="text-white">$25.00 / season</span></div>

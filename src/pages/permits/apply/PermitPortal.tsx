@@ -16,7 +16,7 @@ export default function PermitPortal() {
       id: 'deck',
       name: 'Residential Deck Building Permit Form',
       code: 'PERM-DECK',
-      url: 'https://maplewood.fictionaltown.com/permits/apply/deck',
+      url: 'https://mapplewood-fictional-town.onrender.com/permits/apply/deck',
       path: '/permits/apply/deck',
       infoPath: '/permits/decks',
       fee: '$185.00 CAD',
@@ -33,7 +33,7 @@ export default function PermitPortal() {
       id: 'pool',
       name: 'Swimming Pool & Hot Tub Enclosure Permit Form',
       code: 'PERM-POOL',
-      url: 'https://maplewood.fictionaltown.com/permits/apply/pool',
+      url: 'https://mapplewood-fictional-town.onrender.com/permits/apply/pool',
       path: '/permits/apply/pool',
       infoPath: '/permits/pools',
       fee: '$150.00 CAD',
@@ -50,7 +50,7 @@ export default function PermitPortal() {
       id: 'burn',
       name: 'Open-Air Agricultural Burn Permit Form',
       code: 'PERM-BURN',
-      url: 'https://maplewood.fictionaltown.com/permits/apply/burn',
+      url: 'https://mapplewood-fictional-town.onrender.com/permits/apply/burn',
       path: '/permits/apply/burn',
       infoPath: '/permits/burn',
       fee: '$25.00 / season',
@@ -87,7 +87,7 @@ export default function PermitPortal() {
             </span>
           </div>
           <span className="text-[11px] font-mono bg-slate-800 text-amber-300 px-2.5 py-1 rounded border border-slate-700">
-            Base: https://maplewood.fictionaltown.com
+            Base: https://mapplewood-fictional-town.onrender.com
           </span>
         </div>
         <p className="text-xs text-slate-300 leading-relaxed font-sans">

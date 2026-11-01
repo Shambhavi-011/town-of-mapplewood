@@ -10,7 +10,7 @@ interface SEOHeadProps {
 
 export default function SEOHead({ title, description, category, schemaData }: SEOHeadProps) {
   const location = useLocation();
-  const canonicalUrl = `https://maplewood.fictionaltown.com${location.pathname}`;
+  const canonicalUrl = `https://mapplewood-fictional-town.onrender.com${location.pathname}`;
   const fullTitle = `${title} | Town of Maplewood`;
 
   useEffect(() => {
@@ -69,7 +69,7 @@ export default function SEOHead({ title, description, category, schemaData }: SE
       provider: {
         '@type': 'GovernmentOrganization',
         name: 'Town of Maplewood',
-        url: 'https://maplewood.fictionaltown.com',
+        url: 'https://mapplewood-fictional-town.onrender.com',
         telephone: '(555) 123-4567'
       },
       url: canonicalUrl

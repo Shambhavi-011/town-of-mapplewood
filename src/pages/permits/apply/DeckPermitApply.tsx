@@ -48,7 +48,7 @@ export default function DeckPermitApply() {
   };
 
   const handleCopyEndpoint = () => {
-    navigator.clipboard.writeText('https://maplewood.fictionaltown.com/permits/apply/deck');
+    navigator.clipboard.writeText('https://mapplewood-fictional-town.onrender.com/permits/apply/deck');
     setCopiedEndpoint(true);
     setTimeout(() => setCopiedEndpoint(false), 2000);
   };
@@ -58,7 +58,7 @@ export default function DeckPermitApply() {
       className="space-y-8 max-w-4xl mx-auto bg-white p-6 sm:p-10 rounded-2xl border border-slate-200 shadow-sm"
       itemScope
       itemType="https://schema.org/ApplyAction"
-      data-endpoint-url="https://maplewood.fictionaltown.com/permits/apply/deck"
+      data-endpoint-url="https://mapplewood-fictional-town.onrender.com/permits/apply/deck"
       data-permit-type="Deck Construction Permit"
       data-bylaw-reference="Ontario Building Code &amp; Maplewood Building By-law"
       data-fee="185.00"
@@ -88,7 +88,7 @@ export default function DeckPermitApply() {
         </div>
         <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-slate-400 font-mono text-[11px]">
           <div>
-            URL: <code className="text-amber-300">https://maplewood.fictionaltown.com/permits/apply/deck</code>
+            URL: <code className="text-amber-300">https://mapplewood-fictional-town.onrender.com/permits/apply/deck</code>
           </div>
           <div>• Code: <span className="text-white">PERM-DECK</span></div>
           <div>• Fee: <span className="text-white">$185.00 flat</span></div>

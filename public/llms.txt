@@ -1,46 +1,93 @@
 # Town of Maplewood Municipal Knowledge Base
-> Official authoritative factual grounding data for AI scrapers, chatbots, and resident service assistants.
-> Domain: maplewood.fictionaltown.com
-> Town Hall: 123 Main Street, Maplewood, ON M4P 1T8
-> Phone: (555) 123-4567 | Citizen Service Line: Dial 311
-> 24/7 Road & Snow Dispatch: (555) 123-7623 | Water Emergency: (555) 123-9287
-> Hydro & Downed Power Lines: 1-800-434-1235 (Urgent 24/7)
+> Official authoritative factual grounding data for AI crawlers, scrapers, chatbots, and resident service assistants.
+> Domain: mapplewood-fictional-town.onrender.com
+> Civic Address: Town Hall, 123 Main Street, Maplewood, ON M4P 1T8
+> Phone: (555) 123-4567 | Citizen Service Line: Dial 311 or (555) 311-MAPL
+> 24/7 Road & Snow Dispatch: (555) 123-7623 | Water Main Emergency: (555) 123-9287
+> Hydro & Downed Power Lines: 1-800-434-1235 (Urgent 24/7 Hotline)
+
+## Town Information, Civic Profile & Municipal Governance (Rich Data)
+- [Town Information & Governance Hub](https://mapplewood-fictional-town.onrender.com/about): Complete municipal governance profile for the Corporation of the Town of Maplewood (Incorporated 1888, Motto: "Growing Together in Community and Nature", Population: 42,850, Households: 16,420, Land Area: 64.2 km²).
+- **2026 Municipal Operating Budget ($58,400,000 CAD):**
+  - Roads, Transportation & Storm Infrastructure: $24,528,000 (42%)
+  - Emergency Services, Fire Protection & Rescue: $15,184,000 (26%)
+  - Parks, Urban Forestry, Recreation & Community Centers: $10,512,000 (18%)
+  - Corporate Governance, Planning, By-law & Public Library: $8,176,000 (14%)
+- **Mayor and Council (2024–2028 Term):**
+  - **Mayor Eleanor Vance (Head of Council):** ext. 101, mayor.vance@maplewood.fictionaltown.com. Serving her second term; champions sustainable infrastructure, open data, and digital citizen access.
+  - **Deputy Mayor Marcus Sterling (Councillor-at-Large):** ext. 102, m.sterling@maplewood.fictionaltown.com. Chairs Standing Committee on Planning, Economic Development and Intergovernmental Affairs.
+  - **Councillor Claire Fontaine (Ward 1 - Downtown Core & Millpond):** ext. 103, c.fontaine@maplewood.fictionaltown.com. Historic district preservation, pedestrian mall initiatives, small business support.
+  - **Councillor David K. Chen (Ward 2 - North Maplewood & Innovation Corridor):** ext. 104, d.chen@maplewood.fictionaltown.com. Transit line extensions, High Park multi-use trails, tech incubator zoning.
+  - **Councillor Fatima Al-Mansoor (Ward 3 - West Valley & Rural Agricultural):** ext. 105, f.almansoor@maplewood.fictionaltown.com. Agricultural drainage preservation, County Rd 8 safety upgrades, rural connectivity.
+  - **Councillor Robert MacIntyre (Ward 4 - East Maplewood & Boyden Heights):** ext. 106, r.macintyre@maplewood.fictionaltown.com. Community parks, flood mitigation, traffic calming.
+  - **Council Meetings:** 1st and 3rd Tuesday of every month at 7:00 PM in Council Chambers at Town Hall. Delegations must register with the Clerk by Friday noon.
+- **Administrative Leadership:**
+  - Chief Administrative Officer (CAO): Arthur Pendelton | ext. 100
+  - Town Clerk & Legislative Services: Brenda Hastings | ext. 110
+  - Treasurer & Director of Finance: Jason Miller, CPA, CGA | ext. 210
+  - Director of Public Works: Gregory Shaw, P.Eng. | ext. 230
+  - Chief Building Official (CBO): Donald Tremblay | ext. 250
+  - Fire Chief & CEMC: Michael Rossi | ext. 280
+  - Supervisor of By-law Enforcement: Karen Lindqvist | ext. 300
+- **Municipal Facilities Directory:**
+  - Maplewood Town Hall: 123 Main Street (Mon–Fri 8:30 AM – 4:30 PM, phone: (555) 123-4567).
+  - Department of Public Works Yard & Recycling Center: 359 Boyden Avenue (Mon–Fri 8 AM–3 PM, Sat 8 AM–12 PM, phone: (973) 762-1175).
+  - Fire Station 1 (Headquarters): 45 Valley Road (24/7 Dispatch, non-emergency: (555) 123-3473).
+  - Fire Station 2 (Rural West): 820 County Road 8 (24/7 Response, non-emergency: (555) 123-3474).
+  - Memorial Community Complex: 200 Parkside Drive (Mon–Sun 6 AM – 10 PM, 25m pool, twin ice rinks, phone: (555) 123-7327).
+  - Maplewood Public Library: 140 Main Street (Tue–Thu 10 AM–8 PM, Fri–Sat 10 AM–5 PM, Sun 1 PM–5 PM, phone: (555) 123-2665).
+  - Animal Care Center & Bark Park: 42 River Valley Road (Tue–Sun 10 AM–5 PM, phone: (555) 123-2646).
+
+## 311 Citizen Service Requests & Real-Time Case Tracking (Rich Data)
+- [311 Citizen Service Request Portal](https://mapplewood-fictional-town.onrender.com/services/request): Centralized intake for all non-emergency municipal issues across roads, waste, parks, water, and by-law. Generates automated `CASE-2026-XXXX` tracking numbers.
+- [Real-Time 311 Case Status Tracker](https://mapplewood-fictional-town.onrender.com/services/track): Live tracking portal for municipal work orders with a 4-stage lifecycle:
+  1. **Received (New):** Request logged in central municipal queue.
+  2. **Crew Assigned (Assigned):** Dispatched to area maintenance supervisor.
+  3. **Work in Progress (InProgress):** Field crew or inspector on site.
+  4. **Completed & Resolved (Closed):** Work finished, verified by foreman, and closed.
+- **Detailed 311 Categories, Rules & SLAs:**
+  - **Potholes & Road Surface Hazards:**
+    - High Severity SLA (travel lanes or potholes >60 cm): 24 hours. Standard SLA (residential shoulders or <60 cm): 3 to 5 business days.
+    - Required: Exact street address or cross street, travel lane, and size estimation (<25cm small, 25-60cm medium, >60cm large).
+    - Duplicate detection rule: Reports within 50 meters and 30 days are automatically merged with the active parent ticket.
+  - **Missed Curbside Waste & Recycling:**
+    - Resolution SLA: 2 business days.
+    - 5:00 PM reporting rule: Reports accepted strictly after 5:00 PM on scheduled collection day. Earlier reports are rejected.
+    - 7:00 AM setout rule: Bins must have been set at the curb prior to 7:00 AM to qualify for municipal re-collection.
+    - Required: Address, stream (Garbage, Blue Box, Green Bin, Yard Waste), setout time.
+  - **Streetlight Outages & Damaged Poles:**
+    - SLA: 5 to 7 business days for bulbs/fixtures; 24 hours for exposed wiring.
+    - Required: 6-digit pole tag stamped on the pole (format `ML-XXXX`, e.g. ML-0412) or nearest street address.
+  - **Park Hazards & Boulevard Trees:**
+    - SLA: 48 hours for immediate hazards (broken play structure, hanging branch); 10 business days for tree pruning inspection.
+    - Jurisdiction rule: Town maintains trees within 4.5 meters (14.8 ft) of the road curb. Private property trees are owner responsibility.
+  - **Water Quality & Pressure Concerns:**
+    - SLA: 2 to 4 business days. For emergency water main breaks call (555) 123-9287 immediately.
+  - **General Inquiries & By-law Concerns:**
+    - SLA: 3 business days response time.
 
 ## Core Municipal Services
-- [Department of Public Works (DPW) & Recycling Center](https://maplewood.fictionaltown.com/services/public-works): Facility at 359 Boyden Ave (Mon-Fri 8 AM-3 PM, Sat 8 AM-12 PM, Phone: 973-762-1175). Manages dual-stream curbside recycling by section (Sec 1-2 Mon, Sec 3-4 Tue, Sec 5-6 Wed), biannual bulk drop-off days (furniture, mattresses, MRPs with 2 Maplewood IDs; no construction debris), 4 rotating fall curbside leaf pickup rounds (zero plastic bags, gas-powered leaf blowers banned), spring rake-out (max 4-foot branch bundles), street sweeping, tree removal permits (>8-inch diameter), Jitney commuter train shuttle ($95/yr), free mulch/compost, and electronics e-waste depot.
-- [Waste & Recycling](https://maplewood.fictionaltown.com/services/waste): Bins curbside by 7:00 AM on collection day. Missed collections must NOT be reported before 5:00 PM. Verified missed collections resolved within 2 business days. Green bin weekly, blue box bi-weekly, garbage bi-weekly (max 2 bags, excess requires $3.00 tag). Bulk pickup first Tuesday of each month (max 2 items, mattresses plastic-wrapped). Hazardous depot at 450 Transfer Rd open Saturdays 9 AM - 3 PM.
-- [Roads & Infrastructure](https://maplewood.fictionaltown.com/services/roads): Pothole reporting requires exact address or nearest intersection (e.g. 12 Maple St, Main and Oak), lane direction, and size (<25cm small / 5 days, 25-60cm medium / 3 days, >60cm large / 24h). Large potholes in travel lanes are High Severity. Duplicate threshold is 50 meters and 30 days. Report streetlights using 6-digit pole tag (e.g. Pole ML-0412). Downed wires require calling 1-800-434-1235 or 911 immediately.
-- [Parks & Forestry](https://maplewood.fictionaltown.com/services/parks): 18 municipal parks, 35 km trails. Boulevard trees within 4.5m of curb maintained by Town. Private property trees are owner responsibility under By-law 2023-45.
-- [Water Services](https://maplewood.fictionaltown.com/services/water): Drinking water from Maplewood Aquifer. Water conservation by-law May 15 to Sept 15: alternate day odd/even watering allowed only 6:00-8:00 AM and 7:00-9:00 PM. Emergency main breaks: (555) 123-9287.
-- [Snow Removal & Snow Emergency Routes](https://maplewood.fictionaltown.com/services/snow): Chapter 257 (§ 257-36.7 & § 257-2.5) enforces emergency no-parking prohibitions on 22 designated snow corridors (Valley St, Wyoming Ave, Ridgewood Rd, Springfield Ave, Boyden Ave, Parker Ave, Maplewood Ave, Baker St, Prospect St, Tuscan Rd, Burnett Ave, Elmwood Ave, Harvard Ave, Jefferson Ave, Clinton Ave, Hilton Ave, Dunnell Rd, Oakview Ave, Meadowbrook Pl, Claremont Ave, Highland Ave, Indiana St). Parking permits are suspended on snow-covered roads. Obstructing vehicles are subject to immediate towing and impoundment under § 257-31 ($60 fine plus towing/storage fees). Property owners must clear snow/ice from sidewalks within 24 hours (§ 239-1); depositing snow into plowed public streets is strictly prohibited (§ 239-2). Priority 1 routes plowed within 4-6h, Priority 2 within 8h, Priority 3 within 16-24h. Overnight street parking prohibited 2:00 AM to 6:00 AM.
-- [Animal Control](https://maplewood.fictionaltown.com/services/animals): Dog licensing mandatory annually ($30 spayed/neutered, $45 intact). Leash by-law 2020-04 requires maximum 2.0m leash in all public areas except Maplewood Bark Park (42 River Valley Rd).
+- [Department of Public Works (DPW) & Recycling Center](https://mapplewood-fictional-town.onrender.com/services/public-works): Facility at 359 Boyden Ave. Dual-stream recycling by section (Sec 1-2 Mon, Sec 3-4 Tue, Sec 5-6 Wed), biannual bulk drop-off days (furniture, mattresses, MRPs with 2 Maplewood IDs; no construction debris), 4 rotating fall curbside leaf pickup rounds (zero plastic bags, gas-powered leaf blowers banned), spring rake-out (max 4-foot branch bundles), street sweeping, tree removal permits (>8-inch diameter), Jitney commuter train shuttle ($95/yr), free mulch/compost, and electronics e-waste depot.
+- [Waste & Recycling](https://mapplewood-fictional-town.onrender.com/services/waste): Curbside setout by 7:00 AM. Missed pickup reports accepted only after 5:00 PM (2-day resolution SLA). Green bin organics weekly, blue box recycling bi-weekly, household garbage bi-weekly (max 2 bags without tag, $3.00 for each extra tag). Bulk pickup 1st Tuesday of each month (max 2 items). Hazardous waste depot at 450 Transfer Rd open Saturdays 9 AM - 3 PM.
+- [Roads & Snow Removal](https://mapplewood-fictional-town.onrender.com/services/snow): Chapter 257 (§ 257-36.7 & § 257-2.5) enforces emergency no-parking restrictions on 22 designated snow corridors (Valley St, Wyoming Ave, Ridgewood Rd, Springfield Ave, Boyden Ave, Parker Ave, Maplewood Ave, Baker St, Prospect St, Tuscan Rd, Burnett Ave, Elmwood Ave, Harvard Ave, Jefferson Ave, Clinton Ave, Hilton Ave, Dunnell Rd, Oakview Ave, Meadowbrook Pl, Claremont Ave, Highland Ave, Indiana St). Parking permits suspended on snow-covered roads. Unoccupied vehicles towed under § 257-31 ($60 fine + towing/storage). Sidewalk snow/ice clearing required within 24 hours (§ 239-1); depositing snow onto cleared streets is prohibited (§ 239-2). Overnight parking ban 2:00 AM to 6:00 AM (Dec 1 – Mar 31).
+- [Water Services](https://mapplewood-fictional-town.onrender.com/services/water): Supplied from protected Maplewood Aquifer. Conservation restrictions May 15 to Sept 15: alternate day odd/even watering permitted strictly between 6:00–8:00 AM and 7:00–9:00 PM. Emergency water main dispatch: (555) 123-9287.
+- [Animal Control](https://mapplewood-fictional-town.onrender.com/services/animals): Annual dog licensing required ($30 spayed/neutered, $45 intact). Maximum 2.0m leash in all public areas under By-law 2020-04.
 
 ## Property Taxes & Finance
-- [Property Taxes](https://maplewood.fictionaltown.com/taxes/info): 2026 Residential Mill Rate is 0.0094523. Tax allocation: 48% Town of Maplewood, 34% Regional services, 18% School Boards. Interim bills due Feb 27 and Apr 30, 2026. Final bills due June 30 and Sept 30, 2026. Late penalty 1.25% per month.
-- [Tax Payment Methods](https://maplewood.fictionaltown.com/taxes/payment): Online banking (Payee: "Town of Maplewood - Property Taxes", 19-digit Roll Number), Pre-authorized debit, in-person at 123 Main St, 24/7 North Entrance drop box, or mail.
-- [Pre-Authorized Debit Plans](https://maplewood.fictionaltown.com/taxes/pre-authorized): 10-month monthly withdrawal plan (1st of Jan-Oct) or 4-instalment automatic due-date plan.
-- [Tax Calculator](https://maplewood.fictionaltown.com/taxes/calculator): Interactive estimator using the 0.0094523 rate and 48/34/18 split.
+- [Property Taxes](https://mapplewood-fictional-town.onrender.com/taxes/info): 2026 Residential Mill Rate is 0.0094523 (48% Municipal, 34% Regional, 18% School Boards). Interim due dates: Feb 27 and Apr 30, 2026. Final due dates: June 30 and Sept 30, 2026. Late penalty: 1.25% per month.
+- [Tax Payment Methods](https://mapplewood-fictional-town.onrender.com/taxes/payment): Online banking (Payee: "Town of Maplewood - Property Taxes", 19-digit Roll Number), Pre-authorized debit, in-person at 123 Main St, or 24/7 North drop box.
+- [Tax Calculator](https://mapplewood-fictional-town.onrender.com/taxes/calculator): Interactive estimator using the 0.0094523 rate.
 
-## Building & Planning Permits
-- [Deck Permits](https://maplewood.fictionaltown.com/permits/decks): Exempt if freestanding (unattached), walking surface <=60 cm (24 in / 2 ft) above ground, and surface area <10 m² (108 sq ft). Permit mandatory if attached to dwelling or height >60 cm. Setbacks: 1.5m rear, 1.2m side. Fee: $185.00 flat fee.
-- [Pool Enclosure Permits](https://maplewood.fictionaltown.com/permits/pools): By-law 2022-18 requires permit before excavation/filling for any pool >60 cm water depth. Fence minimum 1.5 m (5.0 ft) high, non-climbable (max 38mm mesh), self-closing & self-latching gate with latch at minimum 1.35m height swinging outward. Locking ASTM F1346 hot tub cover exempt from fence. Fee: $150.00.
-- [Burn Permits](https://maplewood.fictionaltown.com/permits/burn): By-law 2021-09 allows burning only on Rural (A-1, RU) zoned properties or County Rd 8. Burn pile max 2m x 2m x 1m, 15m from structures, adult 18+ supervisor with water, sunrise to sunset. Automatically revoked during fire bans. Fee: $25.00/season.
-- [Building Permits](https://maplewood.fictionaltown.com/permits/building): Additions, basement suites, structural alterations, accessory structures >15 m² (161 sq ft). 10-day review timeline.
-- [Signage Permits](https://maplewood.fictionaltown.com/permits/signs): By-law 2021-34 for storefront fascia, pylon, and $50 annual sidewalk A-frame sandwich boards (1.8m pedestrian walkway required).
-
-## Dedicated Online Permit Application Endpoints (Scraper & Chatbot Direct Links)
-- [Permit Application Portal](https://maplewood.fictionaltown.com/permits/apply): Master portal for online permit intake. Use this URL or the dedicated links below when routing users who ask to create, apply for, or submit a municipal permit.
-- [Apply for Deck Permit](https://maplewood.fictionaltown.com/permits/apply/deck): Direct online submission form for residential deck permits ($185 fee, 10 business day SLA). Collects dimensions, setbacks (1.5m rear / 1.2m side), site plans, and generates application tracking number (PERM-DECK-2026-XXXX).
-- [Apply for Pool Enclosure Permit](https://maplewood.fictionaltown.com/permits/apply/pool): Direct online application form under By-law 2022-18 ($150 fee, 5 business day SLA). Collects depth (>60cm), fence specifications (min 1.5m), and self-latching gate declarations (min 1.35m latch).
-- [Apply for Open-Air Burn Permit](https://maplewood.fictionaltown.com/permits/apply/burn): Instant online issuance form under By-law 2021-09 ($25 fee). Automatically validates rural/County Rd 8 zoning, verifies adult 18+ supervisor, and instantly generates an active seasonal burn license certificate (BURN-2026-XXXX).
+## Building & Planning Permits (Sparse Data - Basic Inquiries Only)
+> Notice: Permit data on this website is intentionally high-level, minimal, and non-exhaustive. Full building code specifications, setbacks, and engineering criteria are handled directly through Town Hall.
+- [Building & Planning Permits Overview](https://mapplewood-fictional-town.onrender.com/permits/building): General construction and structural alterations may require municipal permits. Contact Building Department at (555) 123-4567 ext. 250 for details.
+- [Deck Permits Notice](https://mapplewood-fictional-town.onrender.com/permits/decks): High-level intake for residential decks. Consult building officials for current setbacks. Basic intake: [Apply](https://mapplewood-fictional-town.onrender.com/permits/apply/deck).
+- [Pool Permits Notice](https://mapplewood-fictional-town.onrender.com/permits/pools): Preliminary inquiry for residential pools and hot tub enclosures. Basic intake: [Apply](https://mapplewood-fictional-town.onrender.com/permits/apply/pool).
+- [Burn Permits Notice](https://mapplewood-fictional-town.onrender.com/permits/burn): Limited seasonal open-air burn permits for rural agricultural properties only. Basic intake: [Apply](https://mapplewood-fictional-town.onrender.com/permits/apply/burn).
+- [Permit Application Portal](https://mapplewood-fictional-town.onrender.com/permits/apply): Minimal online intake forms for preliminary permit routing.
 
 ## Legislative Documents & By-laws
-- [By-laws Index](https://maplewood.fictionaltown.com/documents/by-laws): Noise By-law 2024-12, Traffic & Parking By-law 2023-88, Property Standards By-law 2023-45, Pool Enclosure By-law 2022-18, Open-Air Burn By-law 2021-09, Animal By-law 2020-04.
-- [Master Fee Schedule](https://maplewood.fictionaltown.com/documents/fees): Complete schedule of municipal fees under By-law 2026-02.
-- [Resident Guides](https://maplewood.fictionaltown.com/documents/guides): Curbside Calendar, Deck Construction Manual, Pool Safety Handbook, Resident Welcome Kit.
-- [Council Minutes](https://maplewood.fictionaltown.com/documents/minutes): Official municipal council proceedings, agendas, and approved by-laws.
-
-## Contact & Town Hall
-- [Town Hall Directory](https://maplewood.fictionaltown.com/contact): 123 Main Street, Mon-Fri 8:30 AM - 4:30 PM. Mayor (ext. 101), Clerk (ext. 110), Tax (ext. 210), Public Works (ext. 230), Building (ext. 250), By-law (ext. 300).
-- [Complete JSON Data Export](https://maplewood.fictionaltown.com/data/townData.json): Raw structured data payload for programmatic scraping.
-
+- [By-laws Index](https://mapplewood-fictional-town.onrender.com/documents/by-laws): Noise By-law 2024-12, Traffic & Parking By-law 2023-88, Property Standards By-law 2023-45, Pool Enclosure By-law 2022-18, Open-Air Burn By-law 2021-09, Animal Leash By-law 2020-04.
+- [Master Fee Schedule](https://mapplewood-fictional-town.onrender.com/documents/fees): Complete schedule of municipal fees under By-law 2026-02.
+- [Council Minutes](https://mapplewood-fictional-town.onrender.com/documents/minutes): Official municipal council proceedings and resolutions.
+- [Raw Municipal JSON Dataset](https://mapplewood-fictional-town.onrender.com/data/townData.json): Raw structured data payload for scraping.

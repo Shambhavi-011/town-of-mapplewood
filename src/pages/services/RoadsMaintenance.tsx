@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import townData from '../../data/townData.json';
 import SEOHead from '../../components/SEOHead';
 
@@ -33,6 +34,32 @@ export default function RoadsMaintenance() {
         <p className="text-base text-slate-600 leading-relaxed" itemProp="description">
           Reporting guidelines for road damage, potholes, streetlighting outages, and municipal infrastructure repairs across the Town of Maplewood.
         </p>
+
+        {/* ── 311 Citizen Service Request Action Card ── */}
+        <div className="p-4 bg-amber-50 border border-amber-300 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div className="space-y-0.5">
+            <span className="text-xs font-bold uppercase tracking-wider text-amber-900 block font-mono">
+              311 Citizen Service Action
+            </span>
+            <p className="text-xs text-amber-950">
+              Need to report an active pothole, pavement depression, or dark streetlight?
+            </p>
+          </div>
+          <div className="flex items-center gap-2">
+            <NavLink
+              to="/services/request?type=pothole"
+              className="bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs px-4 py-2.5 rounded-lg shadow-sm transition-colors whitespace-nowrap"
+            >
+              🚧 Report a Pothole &rarr;
+            </NavLink>
+            <NavLink
+              to="/services/track"
+              className="bg-white hover:bg-slate-50 border border-slate-300 text-slate-700 font-bold text-xs px-3.5 py-2.5 rounded-lg transition-colors whitespace-nowrap"
+            >
+              🔍 Track Status
+            </NavLink>
+          </div>
+        </div>
       </header>
 
       {/* ── Critical Urgent Safety Warning Banner ── */}

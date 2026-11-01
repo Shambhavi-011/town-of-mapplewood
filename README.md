@@ -6,7 +6,8 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC.svg)](https://tailwindcss.com/)
 [![License](https://img.shields.io/badge/License-Municipal_Demo-green.svg)]()
 
-> **Domain:** `maplewood.fictionaltown.com`  
+> **Live Production URL:** [`https://mapplewood-fictional-town.onrender.com/`](https://mapplewood-fictional-town.onrender.com/)  
+> **Domain:** `mapplewood-fictional-town.onrender.com`  
 > **Municipal Slogan:** *"Growing Together in Community and Nature"*  
 > **Physical Address:** 123 Main Street, Maplewood, ON M4P 1T8  
 > **Citizen Helpline:** Dial `311` or `(555) 123-4567`  
@@ -34,15 +35,18 @@ Every route is structured using strict semantic HTML (`<article>`, `<header>`, `
 
 ## 🧭 Site Architecture & Routes
 
-### 🏛️ Main Civic Hub
+### 🏛️ Main Civic Hub & Governance
 | Route | Page Component | Description |
 |---|---|---|
-| `/` | [`Home.tsx`](src/pages/Home.tsx) | Civic dashboard with alert banner, quick action cards, tax instalment deadlines & council updates |
+| `/` | [`Home.tsx`](src/pages/Home.tsx) | Civic dashboard with alert banner, quick action cards, civic stats, tax deadlines & council updates |
+| `/about` | [`TownInformation.tsx`](src/pages/TownInformation.tsx) | **Town Governance & Profile:** Mayor Eleanor Vance, Deputy Mayor Marcus Sterling, 4 Ward Councillors, CAO & department leadership, $58.4M operating budget, and 7 public municipal facilities. |
 | `/contact` | [`Contact.tsx`](src/pages/Contact.tsx) | Town Hall address, office hours, departmental directory, 311 line & 24/7 emergency dispatch |
 
-### 🚛 Public Works & Services
+### 🛠️ 311 Citizen Service Requests & Public Works
 | Route | Page Component | Municipal Highlights & Rules |
 |---|---|---|
+| `/services/request` | [`ServiceRequestPortal.tsx`](src/pages/services/ServiceRequestPortal.tsx) | **311 Intake Portal:** Report potholes (24h travel lane SLA), missed curbside waste (after 5 PM check), dark streetlights (6-digit pole tag), or boulevard tree hazards with instant Case ID generation (`CASE-2026-XXXX`). |
+| `/services/track` | [`ServiceRequestPortal.tsx`](src/pages/services/ServiceRequestPortal.tsx) | **Live Case Tracker:** Real-time 4-stage tracking workflow (Received -> Assigned -> In Progress -> Completed), crew notes, and resolution history. |
 | `/services/public-works` | [`PublicWorks.tsx`](src/pages/services/PublicWorks.tsx) | **DPW Facility (359 Boyden Ave):** Mon–Fri 8am–3pm, Sat 8am–12pm (Phone: 973-762-1175). Dual-stream recycling by section (Sec 1-2 Mon, Sec 3-4 Tue, Sec 5-6 Wed), biannual bulk drop-off days (furniture, mattresses, MRPs with 2 Maplewood IDs; no construction debris), 4 rotating fall curbside leaf pickup rounds (zero plastic bags, gas-powered leaf blowers banned), spring rake-out (max 4-foot branch bundles), street sweeping, tree removal permits (>8-inch diameter), Jitney commuter train shuttle ($95/yr), free mulch/compost, and electronics e-waste depot. |
 | `/services/waste` | [`WasteRecycling.tsx`](src/pages/services/WasteRecycling.tsx) | Bins out by **7:00 AM**; missed collection reports strictly **after 5:00 PM**; 2-business-day resolution SLA; green bin, blue box, and bulk item schedules. |
 | `/services/roads` | [`RoadsMaintenance.tsx`](src/pages/services/RoadsMaintenance.tsx) | Pothole size matrix (<25cm, 25–60cm, >60cm); travel lane severity rule; **50m & 30-day duplicate prevention**; urgent downed wire hotline (`1-800-434-1235`); streetlight pole IDs (e.g. `ML-0412`). |

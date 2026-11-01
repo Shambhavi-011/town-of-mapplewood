@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { NavLink, Outlet, useLocation } from 'react-router-dom';
+import WayhallChatWidget from './WayhallChatWidget';
 
 export default function Layout() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -18,6 +19,8 @@ export default function Layout() {
   const getBreadcrumbTitle = (part: string) => {
     switch (part) {
       case 'services': return 'Municipal Services';
+      case 'request': return '311 Citizen Service Requests';
+      case 'track': return 'Track Request Status';
       case 'public-works': return 'Public Works & Recycling Center';
       case 'waste': return 'Waste & Recycling';
       case 'roads': return 'Roads & Maintenance';
@@ -45,6 +48,8 @@ export default function Layout() {
       case 'guides': return 'Resident Guides';
       case 'minutes': return 'Council Minutes';
       case 'contact': return 'Contact & Town Hall';
+      case 'about': return 'Town Information & Governance';
+      case 'town-hall': return 'Town Information & Governance';
       default: return part.charAt(0).toUpperCase() + part.slice(1);
     }
   };
@@ -68,7 +73,7 @@ export default function Layout() {
             <span className="text-slate-400">Citizen Service: <strong className="text-white">Dial 311</strong></span>
             <span className="text-slate-600">|</span>
             <span className="bg-slate-800 text-slate-200 px-2 py-0.5 rounded text-[11px] font-mono">
-              maplewood.fictionaltown.com
+              mapplewood-fictional-town.onrender.com
             </span>
           </div>
         </div>
@@ -133,7 +138,17 @@ export default function Layout() {
               <NavLink to="/services/waste" className={navLinkClass}>
                 <span>🚛</span> Municipal Services <span className="text-[10px]">▼</span>
               </NavLink>
-              <div className="absolute left-0 top-full hidden group-hover:block w-64 bg-white text-slate-800 rounded-b-lg shadow-xl border border-slate-200 py-2 z-50">
+              <div className="absolute left-0 top-full hidden group-hover:block w-72 bg-white text-slate-800 rounded-b-lg shadow-xl border border-slate-200 py-2 z-50">
+                <div className="px-3 py-1 text-xs font-bold text-amber-900 uppercase tracking-wider bg-amber-50">
+                  311 Citizen Action Center
+                </div>
+                <NavLink to="/services/request" className="block px-4 py-2 text-sm hover:bg-blue-50 text-blue-950 font-bold">
+                  📝 Submit 311 Service Request
+                </NavLink>
+                <NavLink to="/services/track" className="block px-4 py-1.5 text-xs hover:bg-blue-50 text-blue-800 font-semibold mb-1">
+                  🔍 Track Work Order Status
+                </NavLink>
+                <div className="border-t border-slate-100 my-1"></div>
                 <div className="px-3 py-1 text-xs font-bold text-slate-400 uppercase tracking-wider">Public Works &amp; Services</div>
                 <NavLink to="/services/public-works" className="block px-4 py-2 text-sm hover:bg-blue-50 text-slate-700 hover:text-blue-900 font-semibold text-blue-950">DPW &amp; Recycling Center (359 Boyden)</NavLink>
                 <NavLink to="/services/waste" className="block px-4 py-2 text-sm hover:bg-blue-50 text-slate-700 hover:text-blue-900">Waste, Recycling &amp; Organics</NavLink>
@@ -205,6 +220,10 @@ export default function Layout() {
               </div>
             </div>
 
+            <NavLink to="/about" className={navLinkClass}>
+              <span>🏛️</span> Town Info &amp; Council
+            </NavLink>
+
             <NavLink to="/contact" className={navLinkClass}>
               <span>📍</span> Town Hall &amp; Contact
             </NavLink>
@@ -216,6 +235,8 @@ export default function Layout() {
           <div className="lg:hidden bg-blue-950 text-white px-4 py-3 space-y-2 border-t border-blue-900">
             <NavLink to="/" onClick={() => setMobileMenuOpen(false)} className="block py-1.5 text-sm font-semibold">Home</NavLink>
             <div className="pt-2 pb-1 border-t border-blue-900 text-xs font-bold text-blue-300 uppercase">Services</div>
+            <NavLink to="/services/request" onClick={() => setMobileMenuOpen(false)} className="block pl-3 py-1 text-sm text-amber-300 font-semibold">📝 Submit 311 Service Request</NavLink>
+            <NavLink to="/services/track" onClick={() => setMobileMenuOpen(false)} className="block pl-3 py-1 text-xs text-blue-200 font-semibold">🔍 Track Work Order Status</NavLink>
             <NavLink to="/services/public-works" onClick={() => setMobileMenuOpen(false)} className="block pl-3 py-1 text-sm text-amber-200 font-semibold">DPW &amp; Recycling Center (359 Boyden)</NavLink>
             <NavLink to="/services/waste" onClick={() => setMobileMenuOpen(false)} className="block pl-3 py-1 text-sm text-blue-100">Waste &amp; Recycling</NavLink>
             <NavLink to="/services/roads" onClick={() => setMobileMenuOpen(false)} className="block pl-3 py-1 text-sm text-blue-100">Roads &amp; Maintenance</NavLink>
@@ -243,7 +264,8 @@ export default function Layout() {
             <NavLink to="/documents/fees" onClick={() => setMobileMenuOpen(false)} className="block pl-3 py-1 text-sm text-blue-100">Fee Schedules</NavLink>
             <NavLink to="/documents/guides" onClick={() => setMobileMenuOpen(false)} className="block pl-3 py-1 text-sm text-blue-100">Guides</NavLink>
             <NavLink to="/documents/minutes" onClick={() => setMobileMenuOpen(false)} className="block pl-3 py-1 text-sm text-blue-100">Council Minutes</NavLink>
-            <div className="pt-2 border-t border-blue-900">
+            <div className="pt-2 border-t border-blue-900 space-y-1">
+              <NavLink to="/about" onClick={() => setMobileMenuOpen(false)} className="block py-1 text-sm font-semibold text-white">🏛️ Town Info, Mayor &amp; Council</NavLink>
               <NavLink to="/contact" onClick={() => setMobileMenuOpen(false)} className="block py-1 text-sm font-semibold text-amber-300">Contact Town Hall</NavLink>
             </div>
           </div>
@@ -297,6 +319,8 @@ export default function Layout() {
           </div>
         </div>
       </div>
+      {/* ── Wayhall AI Chatbot Floating Interactive Widget (As per US-12, US-13, US-08) ── */}
+      <WayhallChatWidget />
 
       {/* ── Official Municipal Footer ── */}
       <footer className="bg-slate-900 text-slate-300 border-t-4 border-blue-800 pt-12 pb-8">
@@ -352,6 +376,7 @@ export default function Layout() {
                 Council &amp; Legislative
               </h3>
               <ul className="text-sm space-y-2">
+                <li><NavLink to="/about" className="hover:text-blue-400 font-semibold text-amber-300">Mayor, Council &amp; Administration</NavLink></li>
                 <li><NavLink to="/documents/by-laws" className="hover:text-blue-400">Municipal By-laws Index</NavLink></li>
                 <li><NavLink to="/documents/fees" className="hover:text-blue-400">2026 Master Fee Schedule</NavLink></li>
                 <li><NavLink to="/documents/minutes" className="hover:text-blue-400">Council Meeting Minutes</NavLink></li>

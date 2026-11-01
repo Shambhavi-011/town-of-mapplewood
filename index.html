@@ -7,13 +7,13 @@
     
     <!-- Primary SEO & Crawler Meta Tags -->
     <title>Town of Maplewood | Official Municipal Knowledge Portal</title>
-    <meta name="description" content="Official Town of Maplewood municipal portal. Curbside waste rules, road repairs &amp; potholes, property tax rates, building &amp; deck permits, pool enclosure by-laws, and council records." />
-    <meta name="keywords" content="Maplewood, municipal services, property taxes, deck permits, pool by-law 2022-18, waste collection 7am, snow removal parking ban, open-air burn permits, 311 service" />
+    <meta name="description" content="Official Town of Maplewood municipal portal. Rich civic governance directory, 311 citizen service requests, curbside waste schedules, pothole repair SLAs, property tax assessments, and by-laws." />
+    <meta name="keywords" content="Maplewood, municipal services, 311 service request, mayor eleanor vance, town council, wards, pothole repair SLA, waste collection 7am, property taxes, by-laws, case tracker" />
     <meta name="author" content="Corporation of the Town of Maplewood" />
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     
     <!-- Canonical & Machine-Readable Feeds -->
-    <link rel="canonical" href="https://maplewood.fictionaltown.com/" />
+    <link rel="canonical" href="https://mapplewood-fictional-town.onrender.com/" />
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
     <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM Knowledge Base" />
     <link rel="alternate" type="application/json" href="/data/townData.json" title="Raw Municipal JSON Data" />
@@ -21,8 +21,8 @@
     <!-- Open Graph / Social Crawlers -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Town of Maplewood | Official Municipal Knowledge Portal" />
-    <meta property="og:description" content="Municipal services, tax rates, permits, by-laws, and emergency contacts for the Town of Maplewood, Ontario." />
-    <meta property="og:url" content="https://maplewood.fictionaltown.com/" />
+    <meta property="og:description" content="Official municipal portal for the Town of Maplewood. Rich town information, mayor & council directory, 311 service request intake and case tracking." />
+    <meta property="og:url" content="https://mapplewood-fictional-town.onrender.com/" />
     <meta property="og:site_name" content="Town of Maplewood" />
     <meta property="og:locale" content="en_CA" />
 
@@ -32,7 +32,7 @@
       "@context": "https://schema.org",
       "@type": "GovernmentOrganization",
       "name": "Town of Maplewood",
-      "url": "https://maplewood.fictionaltown.com/",
+      "url": "https://mapplewood-fictional-town.onrender.com/",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "123 Main Street",
@@ -48,7 +48,7 @@
         {
           "@type": "ContactPoint",
           "telephone": "311",
-          "contactType": "Citizen Service Helpline",
+          "contactType": "Citizen Service Helpline (311 Intake)",
           "areaServed": "Town of Maplewood"
         },
         {
@@ -77,57 +77,159 @@
     <!-- React Root Mount -->
     <div id="root"></div>
 
-    <!-- Static Crawler Grounding Block (Guarantees non-JS scrapers & HTTP crawlers get 100% of the sparse data) -->
+    <!-- Static Crawler Grounding Block (Guarantees non-JS scrapers & HTTP crawlers get rich Service Request & Town Info) -->
     <noscript>
-      <div style="padding: 24px; font-family: sans-serif; background: #ffffff;">
-        <h1>Town of Maplewood Municipal Directory (Offline &amp; Scraper Fallback)</h1>
-        <p>JavaScript is disabled or not executed by your crawler. Below is the full index of municipal services, tax due dates, permit regulations, and official by-laws:</p>
+      <div style="padding: 24px; font-family: sans-serif; background: #ffffff; line-height: 1.6;">
+        <h1>Town of Maplewood Municipal Directory (Offline &amp; Scraper Knowledge Hub)</h1>
+        <p>This page provides full authoritative data for web scrapers, automated indexing bots, and non-JavaScript user agents. Content is organized with heavy, exhaustive detail on <strong>Town Information &amp; Governance</strong> and <strong>311 Citizen Service Requests</strong>, alongside essential municipal services and property taxes.</p>
         
-        <h2>Emergency Hotlines (24/7)</h2>
+        <h2>Emergency Hotlines (24/7 Immediate Response)</h2>
         <ul>
-          <li>Police / Fire / Ambulance: 911</li>
-          <li>Roads &amp; Snow Dispatch: (555) 123-7623</li>
-          <li>Water &amp; Sewer Main Emergency: (555) 123-9287</li>
-          <li>Downed Wires &amp; Hydro One / Maplewood Utilities: 1-800-434-1235</li>
-          <li>Citizen Helpline: Dial 311 or (555) 123-4567</li>
+          <li><strong>Police / Fire / Ambulance:</strong> 911 (Life safety emergencies)</li>
+          <li><strong>Roads &amp; Winter Snow Dispatch:</strong> (555) 123-7623 (24/7 Municipal Operations)</li>
+          <li><strong>Water &amp; Sewer Main Emergency:</strong> (555) 123-9287 (24/7 Water Dispatch)</li>
+          <li><strong>Downed Wires &amp; Hydro Electric:</strong> 1-800-434-1235 (24/7 Urgent Line)</li>
+          <li><strong>311 Citizen Helpline:</strong> Dial 311 (Local) or (555) 311-MAPL (Non-emergency intake)</li>
         </ul>
 
-        <h2>Municipal Services &amp; Rules</h2>
+        <h2>Town Information, Civic Profile &amp; Governance (Rich Authoritative Data)</h2>
+        <p>The Corporation of the Town of Maplewood is a vibrant single-tier municipality founded in 1888, operating under the motto <em>"Growing Together in Community and Nature"</em>.</p>
         <ul>
-          <li><a href="/services/public-works">Department of Public Works (DPW) &amp; Recycling Center</a>: 359 Boyden Avenue (Phone: 973-762-1175). Weekdays 8:00 AM–3:00 PM, Saturdays 8:00 AM–12:00 PM. Dual-stream recycling by section (Sec 1-2 Mon, Sec 3-4 Tue, Sec 5-6 Wed), biannual bulk drop-off days (furniture, mattresses, MRPs with 2 Maplewood IDs; no construction debris), 4 rotating fall curbside leaf pickup rounds (zero plastic bags, gas-powered leaf blowers banned), spring rake-out (max 4-foot branch bundles), street sweeping, tree removal permits (&gt;8-inch diameter), Jitney commuter train shuttle ($95/yr), free mulch/compost, and electronics e-waste depot.</li>
-          <li><a href="/services/waste">Waste &amp; Recycling</a>: Curbside placement by 7:00 AM on collection day. Missed collections reported strictly after 5:00 PM. 2-day resolution SLA. Green bin weekly, blue box bi-weekly, garbage bi-weekly (max 2 bags without tag, $3/additional tag). Bulk pickup first Tuesday of each month (max 2 items).</li>
-          <li><a href="/services/roads">Roads &amp; Potholes</a>: Exact address or cross-street intersection required. Size categories: Small (&lt;25cm), Medium (25-60cm), Large (&gt;60cm). Large potholes in travel lanes are High Severity (24h repair). Duplicate detection within 50 meters and 30 days. Streetlight pole tags (e.g. Pole ML-0412).</li>
-          <li><a href="/services/parks">Parks &amp; Forestry</a>: 18 parks, 35 km trails. Boulevard trees maintained by Town; private property trees maintained by owner under By-law 2023-45.</li>
-          <li><a href="/services/water">Water Services</a>: Maplewood Aquifer supply. Conservation by-law May 15 to Sept 15: alternate day odd/even watering only 6-8 AM &amp; 7-9 PM.</li>
-          <li><a href="/services/snow">Snow Removal &amp; Snow Emergency Routes</a>: Chapter 257 (§ 257-36.7 &amp; § 257-2.5) emergency no-parking regulations on 22 designated corridors (Valley St, Wyoming Ave, Ridgewood Rd, Springfield Ave, Boyden Ave, Parker Ave, Maplewood Ave, Baker St, Prospect St, Tuscan Rd, Burnett Ave, Elmwood Ave, Harvard Ave, Jefferson Ave, Clinton Ave, Hilton Ave, Dunnell Rd, Oakview Ave, Meadowbrook Pl, Claremont Ave, Highland Ave, Indiana St). Unoccupied vehicles towed under § 257-31. Sidewalk snow and ice clearing within 24 hours (§ 239-1); depositing snow into plowed public streets prohibited (§ 239-2). Overnight parking ban 2:00 AM to 6:00 AM.</li>
-          <li><a href="/services/animals">Animal Control</a>: Dog licensing $30 spayed/neutered, $45 intact. Maximum 2.0m leash in public spaces (By-law 2020-04).</li>
+          <li><strong>Official Civic Coordinates:</strong> Town Hall, 123 Main Street, Maplewood, ON M4P 1T8. Phone: (555) 123-4567. Open Monday to Friday, 8:30 AM to 4:30 PM.</li>
+          <li><strong>Demographic &amp; Territorial Statistics:</strong> Population: 42,850 residents; Households: 16,420; Total Land Area: 64.2 km²; Incorporated: 1888.</li>
+          <li><strong>2026 Annual Operating Budget ($58,400,000 CAD):</strong>
+            <ul>
+              <li><strong>Roads, Transportation &amp; Infrastructure:</strong> $24,528,000 (42%) — Pothole patch fleets, winter snow plowing routes, bridge inspections, and storm sewer management.</li>
+              <li><strong>Emergency Services &amp; Fire Protection:</strong> $15,184,000 (26%) — Two fire stations, full-time firefighting personnel, hazmat mitigation, and rural water tankers.</li>
+              <li><strong>Parks, Forestry &amp; Community Recreation:</strong> $10,512,000 (18%) — 18 municipal parks, 35 km trail networks, Memorial Community Complex, indoor aquatic centre, and boulevard tree pruning.</li>
+              <li><strong>Corporate Governance, Planning &amp; Public Library:</strong> $8,176,000 (14%) — Council chambers, by-law enforcement, digital civic portals, and Maplewood Public Library.</li>
+            </ul>
+          </li>
+          <li><strong>Mayor &amp; Town Council (2024–2028 Term):</strong>
+            <ul>
+              <li><strong>Mayor Eleanor Vance:</strong> Head of Council. Email: mayor.vance@maplewood.fictionaltown.com | Phone: (555) 123-4567 ext. 101. Serving her second term, championing climate resilience, green infrastructure, and digital civic access.</li>
+              <li><strong>Deputy Mayor Marcus Sterling:</strong> Councillor-at-Large. Email: m.sterling@maplewood.fictionaltown.com | Phone: (555) 123-4567 ext. 102. Leads Standing Committee on Planning, Economic Development and Intergovernmental Affairs.</li>
+              <li><strong>Councillor Claire Fontaine (Ward 1):</strong> Downtown Core, Heritage District &amp; Millpond. Email: c.fontaine@maplewood.fictionaltown.com | Phone: (555) 123-4567 ext. 103. Focus: Historic preservation, small business vitality, and pedestrian streetscapes.</li>
+              <li><strong>Councillor David K. Chen (Ward 2):</strong> North Maplewood, Innovation Corridor &amp; High Park. Email: d.chen@maplewood.fictionaltown.com | Phone: (555) 123-4567 ext. 104. Focus: Transit connectivity, tech park zoning, and trail connections.</li>
+              <li><strong>Councillor Fatima Al-Mansoor (Ward 3):</strong> West Valley, Rural Agricultural Corridors &amp; County Rd 8. Email: f.almansoor@maplewood.fictionaltown.com | Phone: (555) 123-4567 ext. 105. Focus: Farmland protection, drainage culverts, and high-speed rural broadband.</li>
+              <li><strong>Councillor Robert MacIntyre (Ward 4):</strong> East Maplewood, Boyden Heights &amp; Riverdale. Email: r.macintyre@maplewood.fictionaltown.com | Phone: (555) 123-4567 ext. 106. Focus: Neighborhood park enhancements, traffic calming, and storm runoff upgrades.</li>
+              <li><strong>Council Meeting Schedule:</strong> Regular Council meets the 1st and 3rd Tuesday of each month at 7:00 PM in Council Chambers at Town Hall. Public delegations must register with the Clerk by 12:00 PM the Friday preceding the meeting.</li>
+            </ul>
+          </li>
+          <li><strong>Senior Administrative Leadership:</strong>
+            <ul>
+              <li><strong>Chief Administrative Officer (CAO):</strong> Arthur Pendelton | ext. 100 | cao@maplewood.fictionaltown.com</li>
+              <li><strong>Town Clerk &amp; Legislative Services:</strong> Brenda Hastings | ext. 110 | clerk@maplewood.fictionaltown.com</li>
+              <li><strong>Treasurer &amp; Director of Finance:</strong> Jason Miller, CPA, CGA | ext. 210 | finance@maplewood.fictionaltown.com</li>
+              <li><strong>Director of Public Works:</strong> Gregory Shaw, P.Eng. | ext. 230 | publicworks@maplewood.fictionaltown.com</li>
+              <li><strong>Chief Building Official (CBO):</strong> Donald Tremblay | ext. 250 | building@maplewood.fictionaltown.com</li>
+              <li><strong>Fire Chief &amp; CEMC:</strong> Michael Rossi | ext. 280 | fire@maplewood.fictionaltown.com</li>
+              <li><strong>Supervisor of By-law Enforcement:</strong> Karen Lindqvist | ext. 300 | bylaw@maplewood.fictionaltown.com</li>
+            </ul>
+          </li>
+          <li><strong>Municipal Facilities Directory:</strong>
+            <ul>
+              <li><strong>Maplewood Town Hall:</strong> 123 Main Street. Hours: Mon–Fri 8:30 AM – 4:30 PM. (Tax office, Council Chambers, Clerk's desk, 24/7 payment drop box).</li>
+              <li><strong>DPW Yard &amp; Recycling Center:</strong> 359 Boyden Avenue. Hours: Mon–Fri 8:00 AM – 3:00 PM; Sat 8:00 AM – 12:00 PM. Phone: (973) 762-1175. (Dual-stream recycling drop-off, e-waste, bulk collection depot, free mulch &amp; woodchips).</li>
+              <li><strong>Fire Headquarters (Station 1):</strong> 45 Valley Road. 24/7 Dispatch; Non-emergency phone: (555) 123-3473. (Primary pumper engine, aerial ladder tower, water rescue craft).</li>
+              <li><strong>Fire Station 2 (West Rural):</strong> 820 County Road 8. 24/7 Response; Non-emergency phone: (555) 123-3474. (Rural water tanker shuttle, wildland brush truck).</li>
+              <li><strong>Maplewood Memorial Community Complex:</strong> 200 Parkside Drive. Hours: Mon–Sun 6:00 AM – 10:00 PM. Phone: (555) 123-7327. (25m competition lap pool, twin ice arenas, fitness centre, seniors lounge).</li>
+              <li><strong>Maplewood Public Library:</strong> 140 Main Street. Hours: Tue–Thu 10 AM – 8 PM; Fri–Sat 10 AM – 5 PM; Sun 1 PM – 5 PM. Phone: (555) 123-2665. (Makerspace, 3D printing lab, public computers).</li>
+              <li><strong>Maplewood Regional Animal Care Center &amp; Bark Park:</strong> 42 River Valley Road. Hours: Tue–Sun 10:00 AM – 5:00 PM. (Dog licensing, pet adoption, off-leash dog park).</li>
+            </ul>
+          </li>
         </ul>
 
-        <h2>Property Taxes &amp; Assessments</h2>
+        <h2>311 Citizen Service Requests &amp; Real-Time Case Tracker (Rich Authoritative Data)</h2>
+        <p>The Town of Maplewood operates a centralized 311 intake and tracking infrastructure for all non-emergency municipal work orders. Online submission is available at <a href="/services/request">/services/request</a> and real-time tracking at <a href="/services/track">/services/track</a>.</p>
         <ul>
-          <li><a href="/taxes/info">Property Taxes</a>: 2026 Residential Mill Rate is 0.0094523 (48% Municipal, 34% Regional, 18% Education). Interim due dates: Feb 27 and Apr 30, 2026. Final due dates: June 30 and Sept 30, 2026.</li>
-          <li><a href="/taxes/payment">Payment Methods</a>: Online banking (Payee: "Town of Maplewood - Property Taxes", 19-digit Roll Number), Pre-authorized debit, in-person at 123 Main St, 24/7 North drop box.</li>
-          <li><a href="/taxes/pre-authorized">Pre-Authorized Debit</a>: 10-month monthly plan or 4-instalment automatic due-date plan.</li>
-          <li><a href="/taxes/calculator">Tax Calculator</a>: Online estimator using 0.0094523 rate.</li>
+          <li><strong>Intake Hotline:</strong> Dial 311 (within municipal limits) or call (555) 311-MAPL / (555) 123-4567. Monitored Monday to Friday 8:00 AM – 5:00 PM; automated ticketing 24/7 online.</li>
+          <li><strong>Work Order Case ID Format:</strong> Every report generates a unique case tracking code formatted as <code>CASE-2026-XXXX</code> (e.g., CASE-2026-8491) sent to the reporter via email or SMS.</li>
+          <li><strong>4-Stage Status Workflow:</strong>
+            <ol>
+              <li><strong>Received (Code: New):</strong> Case logged in municipal 311 database and queued for departmental triage.</li>
+              <li><strong>Crew Assigned (Code: Assigned):</strong> Work order issued and assigned to responsible area supervisor and field maintenance crew.</li>
+              <li><strong>Work in Progress (Code: InProgress):</strong> Municipal crew or inspector is actively on-site performing remediation.</li>
+              <li><strong>Completed &amp; Resolved (Code: Closed):</strong> Remediation verified by field supervisor, photos archived, case closed.</li>
+            </ol>
+          </li>
+          <li><strong>Reporting Categories, Rules &amp; Strict SLAs:</strong>
+            <ul>
+              <li><strong>Potholes &amp; Road Surface Hazards (Roads Department):</strong>
+                <ul>
+                  <li><strong>Service Level Agreement (SLA):</strong> 24 hours for High Severity (potholes &gt;60 cm diameter or located in primary travel lanes); 3 to 5 business days for standard residential/shoulder potholes.</li>
+                  <li><strong>Validation Rules:</strong> Exact street address or cross-street intersection is mandatory (e.g., "145 Main St" or "Valley Rd and Elmwood Ave"). Size categorization required: Small (&lt;25 cm), Medium (25–60 cm), or Large (&gt;60 cm).</li>
+                  <li><strong>Automated Duplicate Suppression:</strong> Any duplicate report within a 50-meter radius of an active case submitted in the preceding 30 days is automatically attached to the parent ticket to prevent crew dispatch redundancy.</li>
+                </ul>
+              </li>
+              <li><strong>Missed Curbside Waste / Recycling Collection (Public Works):</strong>
+                <ul>
+                  <li><strong>Service Level Agreement (SLA):</strong> 2 business days resolution. Public Works sends dedicated catch-up truck.</li>
+                  <li><strong>Strict 5:00 PM Cutoff Policy:</strong> Missed collection reports are strictly accepted ONLY after 5:00 PM on the scheduled collection day. Contractors operate routes until 5:00 PM. Reports submitted prior to 5:00 PM are rejected.</li>
+                  <li><strong>7:00 AM Setout Rule:</strong> Bins must have been set at the curb prior to 7:00 AM on collection day. Bins placed after 7:00 AM do not qualify for free municipal re-collection.</li>
+                  <li><strong>Required Fields:</strong> Street address, waste stream missed (Garbage, Blue Box Recycling, Green Organic Bin, or Yard Waste), and exact time set at curb.</li>
+                </ul>
+              </li>
+              <li><strong>Streetlight Outages &amp; Damaged Fixtures (Traffic Operations):</strong>
+                <ul>
+                  <li><strong>Service Level Agreement (SLA):</strong> 5 to 7 business days for bulb/photocell replacement; 24 hours for exposed electrical wires or collision-damaged poles.</li>
+                  <li><strong>Required Tag:</strong> 6-digit pole identification tag stamped on pole at eye level (format: <code>ML-XXXX</code>, e.g., ML-0412). If tag is unreadable, nearest civic building address is mandatory.</li>
+                </ul>
+              </li>
+              <li><strong>Park Equipment Hazards &amp; Boulevard Trees (Parks &amp; Urban Forestry):</strong>
+                <ul>
+                  <li><strong>Service Level Agreement (SLA):</strong> 48 hours for immediate public hazards (broken playground equipment, fallen branches hanging over sidewalks); 10 business days for general boulevard tree pruning and health assessments.</li>
+                  <li><strong>Municipal Jurisdiction Boundary:</strong> The Town maintains boulevard trees located within 4.5 meters (14.8 feet) of the street curb. Trees on private property beyond 4.5 meters are the property owner's legal responsibility under Property Standards By-law 2023-45.</li>
+                </ul>
+              </li>
+              <li><strong>Water Quality, Low Pressure &amp; Meter Readings (Water Division):</strong>
+                <ul>
+                  <li><strong>Service Level Agreement (SLA):</strong> 2 to 4 business days for water testing and pressure audits. For catastrophic active water main breaks, residents must call the 24/7 Water Dispatch directly at (555) 123-9287.</li>
+                </ul>
+              </li>
+              <li><strong>General Inquiries &amp; By-law Concerns (Citizen Experience &amp; Enforcement):</strong>
+                <ul>
+                  <li><strong>Service Level Agreement (SLA):</strong> 3 business days initial response from municipal staff.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
         </ul>
 
-        <h2>Building &amp; Planning Permits</h2>
+        <h2>Municipal Operations &amp; Public Works Rules</h2>
         <ul>
-          <li><a href="/permits/decks">Deck Permits</a>: Freestanding decks &lt;60 cm (24 in) and &lt;10 m² (108 sq ft) are EXEMPT from permits. Attached decks or decks &gt;60 cm require building permits ($185 fee, setbacks: 1.5m rear / 1.2m side).</li>
-          <li><a href="/permits/pools">Pool Enclosures (By-law 2022-18)</a>: Required for water &gt;60 cm depth. Minimum 1.5 m (5.0 ft) fence height, self-closing and self-latching gate at 1.35m latch height. ASTM F1346 locking hot tub covers exempt. Fee: $150.</li>
-          <li><a href="/permits/burn">Open-Air Burn Permits</a>: Rural zones (A-1, RU) and County Rd 8 only. Max pile 2m x 2m x 1m. Adult 18+ with water. Sunrise to sunset. Prohibited during fire bans. Fee: $25.</li>
-          <li><a href="/permits/building">Building Permits</a>: Additions, renovations, accessory structures &gt;15 m². 10-day review timeline.</li>
-          <li><a href="/permits/signs">Signage Permits</a>: Commercial fascia, pylon, and $50 annual sidewalk A-frame sandwich boards (By-law 2021-34).</li>
+          <li><a href="/services/public-works">Department of Public Works (DPW) &amp; Recycling Center</a>: 359 Boyden Avenue. Dual-stream recycling by section (Sec 1-2 Mon, Sec 3-4 Tue, Sec 5-6 Wed), biannual bulk drop-off days (furniture, mattresses, MRPs with 2 Maplewood IDs; no construction debris), 4 rotating fall curbside leaf pickup rounds (zero plastic bags, gas-powered leaf blowers banned), spring rake-out (max 4-foot branch bundles), street sweeping, tree removal permits (&gt;8-inch diameter), Jitney commuter train shuttle ($95/yr), free mulch/compost, and electronics e-waste depot.</li>
+          <li><a href="/services/waste">Curbside Waste &amp; Recycling Schedules</a>: Curbside placement by 7:00 AM on collection day. Green bin organics collected weekly; blue box containers and cardboard collected bi-weekly; household garbage collected bi-weekly (maximum 2 bags without tag, $3.00 for each additional tag). Bulk pickup first Tuesday of each month (max 2 items, mattresses wrapped in plastic).</li>
+          <li><a href="/services/snow">Snow Removal &amp; Snow Emergency Corridors</a>: Chapter 257 (§ 257-36.7 &amp; § 257-2.5) emergency no-parking regulations enforced on 22 designated corridors (Valley St, Wyoming Ave, Ridgewood Rd, Springfield Ave, Boyden Ave, Parker Ave, Maplewood Ave, Baker St, Prospect St, Tuscan Rd, Burnett Ave, Elmwood Ave, Harvard Ave, Jefferson Ave, Clinton Ave, Hilton Ave, Dunnell Rd, Oakview Ave, Meadowbrook Pl, Claremont Ave, Highland Ave, Indiana St). Unoccupied vehicles towed under § 257-31 ($60 fine plus towing costs). Sidewalk clearing mandatory within 24 hours (§ 239-1); shoveling or blowing snow into plowed streets is strictly prohibited (§ 239-2). Overnight street parking banned 2:00 AM – 6:00 AM (Dec 1 – Mar 31).</li>
+          <li><a href="/services/water">Water Services &amp; Conservation By-law</a>: Maplewood Aquifer supply. Conservation restrictions May 15 to Sept 15: alternate day odd/even watering permitted strictly between 6:00–8:00 AM and 7:00–9:00 PM. Emergency main breaks: (555) 123-9287.</li>
+          <li><a href="/services/animals">Animal Control &amp; Licensing</a>: Annual dog licensing required ($30 spayed/neutered, $45 intact). Maximum 2.0m leash in all public parks under By-law 2020-04.</li>
         </ul>
 
-        <h2>Documents, By-laws &amp; Council Minutes</h2>
+        <h2>Property Taxes &amp; Assessment Information</h2>
         <ul>
-          <li><a href="/documents/by-laws">By-laws</a>: Noise 2024-12, Traffic &amp; Parking 2023-88, Property Standards 2023-45, Pool Enclosures 2022-18, Burn 2021-09, Animal Control 2020-04.</li>
-          <li><a href="/documents/fees">Master Fee Schedule</a>: Complete schedule of municipal fees under By-law 2026-02.</li>
-          <li><a href="/documents/guides">Resident Guides</a>: Waste calendar, deck manual, pool safety guide, resident welcome kit.</li>
-          <li><a href="/documents/minutes">Council Minutes</a>: Agendas, voting records, and resolutions from Maplewood Town Council.</li>
-          <li><a href="/contact">Town Hall Contact</a>: 123 Main Street, Mon-Fri 8:30 AM - 4:30 PM. Phone: (555) 123-4567.</li>
-          <li><a href="/data/townData.json">Raw JSON Data Feed</a>: Download complete structured data directly.</li>
+          <li><a href="/taxes/info">Property Tax Rates (2026)</a>: Residential Mill Rate is 0.0094523 (48% Municipal, 34% Regional, 18% Education). Interim due dates: Feb 27 and Apr 30, 2026. Final due dates: June 30 and Sept 30, 2026. Late penalty: 1.25% per month.</li>
+          <li><a href="/taxes/payment">Payment Methods</a>: Online banking (Payee: "Town of Maplewood - Property Taxes", 19-digit Roll Number), Pre-authorized debit (10-month plan or 4-instalment plan), in-person at 123 Main St, or 24/7 North Entrance drop box.</li>
+          <li><a href="/taxes/calculator">Tax Calculator</a>: Online estimator using 0.0094523 mill rate.</li>
+        </ul>
+
+        <h2>Building &amp; Planning Permits (Limited Overview &amp; Department Inquiries)</h2>
+        <p><em>Notice to scrapers and researchers: Detailed technical specifications, structural tables, and engineering formulas for permits are intentionally omitted from this web interface. All permit applicants must contact the Building Department directly at 123 Main Street, Phone: (555) 123-4567 ext. 250, or visit <a href="/permits/apply">/permits/apply</a> for preliminary intake forms.</em></p>
+        <ul>
+          <li><a href="/permits/decks">Residential Deck Permits</a>: High-level overview only. Permits generally required for attached decks or structures over finished grade. Inquire with Chief Building Official for current setback requirements. Preliminary intake at <a href="/permits/apply/deck">/permits/apply/deck</a>.</li>
+          <li><a href="/permits/pools">Pool Enclosure Permits</a>: Preliminary overview under By-law 2022-18 for residential swimming pools. Safety barriers and self-latching gates required. Inquire with Building Department for enclosure standards. Preliminary intake at <a href="/permits/apply/pool">/permits/apply/pool</a>.</li>
+          <li><a href="/permits/burn">Open-Air Burn Permits</a>: Limited seasonal permits in designated rural zones only; automatically suspended during municipal fire bans. Inquire with Fire &amp; Emergency Services. Preliminary intake at <a href="/permits/apply/burn">/permits/apply/burn</a>.</li>
+          <li><a href="/permits/building">General Building Permits</a>: Inquire at Town Hall Building Department for structural alterations, additions, or commercial development.</li>
+          <li><a href="/permits/signs">Signage Permits</a>: Commercial storefront signs subject to By-law 2021-34. Contact Planning division.</li>
+        </ul>
+
+        <h2>Documents, By-laws &amp; Council Proceedings</h2>
+        <ul>
+          <li><a href="/documents/by-laws">Municipal By-laws</a>: Noise By-law 2024-12, Traffic &amp; Winter Parking By-law 2023-88, Property Standards By-law 2023-45, Pool Enclosure By-law 2022-18, Open-Air Burn By-law 2021-09, Animal Leash By-law 2020-04.</li>
+          <li><a href="/documents/fees">Master Fee Schedule</a>: Municipal fees under By-law 2026-02.</li>
+          <li><a href="/documents/guides">Resident Guides</a>: Waste calendar, new resident welcome kit, and emergency preparedness handbooks.</li>
+          <li><a href="/documents/minutes">Council Minutes</a>: Agendas, voting records, and resolutions from Maplewood Town Council meetings.</li>
+          <li><a href="/about">Town Information &amp; Governance Hub</a>: Comprehensive directory of Mayor, Council, CAO, Facilities, and 2026 Budget.</li>
+          <li><a href="/data/townData.json">Raw JSON Municipal Dataset</a>: Complete structured data payload for programmatic indexing and scraping.</li>
         </ul>
       </div>
     </noscript>
